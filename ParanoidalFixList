@@ -1,6 +1,6 @@
 [Версия фактории 2.73 + Space age]
 [Моды описаны по сравнению со списком модов из master ветки параноидала]
-[Моды, которые ставятся как есть]
+[Моды, которые ставятся как есть, либо имеют рабочий аналог]
 
 1. aai-industry -> aai-industry [0.6.14]
 2. AbandonedRuins -> Abandoned Ruins - Updated (core) [1.4.18] 
@@ -53,51 +53,40 @@
 55. Big-Monsters -> Big-Monsters [2.1.2]
 56. BottleneckLite -> Bottleneck Lite [1.3.4]
 59. Cursed-FMD -> Cursed Filter Mining Drill [0.2.0]
-62. Memory Storage -> Memory Storage SE [1.6.8]
+62. Memory Storage -> Memory Storage [1.6.8]
 65. extendedangels -> Extended Angels [0.6.6]
 66. Factorissimo2 -> Factorissimo2-Space-Age-Port [3.0.0]
 69.	Flammable Oils -> Flammable Oils_QUICKFIX [0.2.22]
 70. Flow_Control -> Flow Control [3.2.3]
-71.  ->  []
-72.  ->  []
-73.  ->  []
-74.  ->  []
-75.  ->  []
-76.  ->  []
-77.  ->  []
-78.  ->  []
-79.  ->  []
-80.  ->  []
-81.  ->  []
-82.  ->  []
-83.  ->  []
-84.  ->  []
-85.  ->  []
-86.  ->  []
-87.  ->  []
-88.  ->  []
-89.  ->  []
-90.  ->  []
-91.  ->  []
-92.  ->  []
-93.  ->  []
-94.  ->  []
-95.  ->  []
-96.  ->  []
-97.  ->  []
-98.  ->  []
-99.  ->  []
-100.  ->  []
-101.  ->  []
-102.  ->  []
-103.  ->  []
-104.  ->  []
-105.  ->  []
-106.  ->  []
-107.  ->  []
-108.  ->  []
-109.  ->  []
-110.  ->  []
+71. Fluid Memory Storage  -> Fluid Memory Storage [1.7.9]
+72. Fluid Must Flow -> Fluid Must Flow [1.4.4]
+73. FNEI -> FNEI [0.4.6]
+74. GUI Unifyer -> GUI Unifyer [2.0.1]
+75. Helmod -> Helmod [2.2.11]
+76. HeroTurrets -> HeroTurrets_Redux [1.0.32]
+78. Inlaid Lamps Extended -> Inlaid Lamps Extended [2.0.0] 
+79. JunkTrain -> Carriage Transport [0.1.1] (Не развивается на текущий момент)
+81. KS Power -> KS Power [2.0.0]
+82. Orbital Ion Cannon (SE Edition) -> Orbital Ion Cannon (Space Age Edition) [3.8.14]
+83. Custom Laser beams -> Glowing Laser beams [0.0.5]
+84. Lighted Electric Poles + -> Lighted Electric Poles + [2.0.4]
+85. LTN - Logistic Train Network -> Project Cybersyn - Logistic Train Dispatcher [2.0.48]
+87. LTN Cleanup -> -- (Вроде бы есть в Cybersyn)
+88. LTN Manager -> -- (Вроде бы есть в Cybersyn) 
+89. LTN Content Reader -> -- (Вроде бы есть в Cybersyn)
+90. Make burners GREAT again! -> -- (Есть в ваниле)
+93. Miniloader -> Miniloader(Redux) [0.12.0]
+94. Minime Temp -> miniMAXIme: character scale and selector [2.0.18]
+96. Module inserter -> Module inserter Extended [7.4.1]
+97. More Minimap Autohide -> More Minimap Autohide [2.0.0]
+98. More Petrochem Hell -> Petrochem plus Redux [1.1.0] (Добавляет новые химикаты)
+99. More Achievements -> More Achievements [0.0.2]
+101. Multiple Unit Train Control -> Multiple Unit Train Control [1.0.4]
+102. MxlChievements -> MxlChievements [3.0.1]
+103. Name Lists -> Name Lists [2.2.0]
+104. Nanobots: Early Bot -> Nanobots: Early Bot Refined [4.0.6]
+107. Night Brightness -> Dark Night [2.0.0]
+108. Noxys Trees -> Noxys Trees [0.5.2]
 111.  ->  []
 112.  ->  []
 113.  ->  []
@@ -145,9 +134,23 @@
 64. Electric Resistance -> -- (Устарело, поискать аналоги) []
 67. Remove Tiles Quickly -> --(Устарело, можно самому допилить) []
 68. Fe-C-accumulator -> -- (Нет ссылки на мод, можно самому допилить) []
+77. Infinite Technologies -> -- (Устарело, переделка тоже, может сам сделаю)
+86. Looting Spaceship Wrecks -> -- (Устарело, может сам допилю)
+91. Marathon -> -- (Устарело, там в основном твики, можно самому сделать)
+92. Miles' Bob's Expansion -> -- (Устарело)
+95. MIRV -> (Устарело)
+100. Multi-Product Recipe Details -> -- (Устарело, если нет в ваниле -- добавить) 
+105. NerArth's Intermediate Tweaks -> -- (Устарело, скорее всего есть в ваниле)
+106. New train sounds for CIS countries (SFX) -> -- (Устарело, можно будет допилить)
+109. Ober3550's BobsAngels Overhaul -> -- (Устарело, там вроде как одни твики, можно допилить)
+110. Ober Nuclear -> -- (Устарело, крутой мод, можно будет перепилить)
 
 [Новые моды, которые я нашел и они показались мне полезными]
 1. Power Grid Comb [2.0.0] -- Трансформирует паутину из медных проводов в красивую сетку
+2. Afraid of the dark [1.0.31] -- Делает ночи светлее 
+
+[Исходные моды PARANOIDAL (перемещу как есть и адаптирую под api factorio)]
+80. KaoExtender
 
 [TODO]
 1. Пропатчить мод Air filtering(см. описание исходного мода)
@@ -155,3 +158,4 @@
 3. Проверить 35
 4. Проверить 36 (не нашел прямой замены, надо проверить корректность текущей замены)
 5. Проверить 40
+6. Проверить 92 (есть ли в моде bob'а доп тиры вещей из этого мода?)
