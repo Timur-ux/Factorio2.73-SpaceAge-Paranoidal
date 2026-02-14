@@ -27,7 +27,6 @@ require("prototypes.mining-drill-bit.override")
 
 require("prototypes.recipes.UsedCoolant")
 
--- require("prototypes.angelextended.slag")
 require("prototypes.angelextended.angelsbioprocessing")
 require("prototypes.angelextended.angelssmelting")
 

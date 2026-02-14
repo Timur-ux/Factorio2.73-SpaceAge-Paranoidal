@@ -36,7 +36,7 @@ function KaoExtended.result_check(object)
 				item.amount = object.result_count
 				object.result_count = nil
 			end
-			KaoExtended.item.add_new(object.results, item)
+			KaoExtended.item.add_to_ingredients_if_new(object.results, item)
 
 			if object.ingredients then -- It's a recipe
 				if not object.main_product then
@@ -65,7 +65,7 @@ end
 function KaoExtended.item.get_type(name)
 	local item_types =
 		{ "ammo", "armor", "capsule", "fluid", "gun", "item", "mining-tool", "module", "tool", "item-with-entity-data" }
-	for i, type_name in pairs(item_types) do
+	for _, type_name in pairs(item_types) do
 		if data.raw[type_name][name] then
 			return type_name
 		end
@@ -92,35 +92,39 @@ local function get_item_name(inputs)
 	Assert(type(result) == "string", "Expected string type as item name but given: " .. type(result))
 end
 
+-- Create basic item struct
+-- @param name [string] -- item name
+-- @param amount [number | nil] -- item amount
+-- @param _type [string | nil] -- item type
+--
+-- @return {name [string], amount [number], type [string]}
+local function basic_item_impl(name, amount, _type)
+	Assert.Expected(type(name) == "string", "string", name, "item name ")
+	Assert.Expected(type(amount) == "number" or type(amount) == "nil", "number or nil", amount, "item amount")
+	Assert.Expected(type(_type) == "string" or type(_type) == "nil", "string or nil", _type, "item type")
+
+	if type(amount) ~= "number" then
+		amount = 1
+	end
+
+	if type(_type) == "nil" then
+		_type = KaoExtended.get_basic_type(name)
+	end
+
+	return {
+		name = name,
+		amount = amount,
+		type = _type,
+	}
+end
+
 function KaoExtended.item.basic_item(inputs)
-	local item = {}
+	local item = basic_item_impl(get_item_name(inputs), inputs.amount or inputs[2], inputs.type)
 
-	item.name = get_item_name(inputs)
-	Assert(type(item.name) == "string", "item data have no name field!")
-
-	if inputs.amount then
-		item.amount = inputs.amount
-	else
-		if inputs[2] then
-			item.amount = inputs[2]
-		end
-	end
-	if not item.amount then
-		item.amount = 1
-	end
-
-	if inputs.type then
-		item.type = inputs.type
-	else
-		item.type = KaoExtended.item.get_basic_type(item.name)
-	end
-
-	if item.type == "item" then
-		if item.amount > 0 and item.amount < 1 then
+	if item.type == "item" and  item.amount > 0 and item.amount < 1 then
 			item.amount = 1
 		else
 			item.amount = math.floor(item.amount)
-		end
 	end
 
 	return item
@@ -134,16 +138,17 @@ function KaoExtended.item.item(inputs)
 		item.amount_max = inputs.amount_max
 		item.amount = nil
 	else
-		item.amount = 1
+		item.amount = item.amount or 1
 	end
 	if inputs.probability then
 		item.probability = inputs.probability
 	end
 	return item
 end
-function KaoExtended.item.add_new(ingredients, item_in) --ignores if exists
+
+function KaoExtended.item.add_to_ingredients_if_new(ingredients, item_in)
 	local item = KaoExtended.item.item(item_in)
-	for i, object in pairs(ingredients) do
+	for _, object in pairs(ingredients) do
 		if item.name == get_item_name(object) then
 			return
 		end
@@ -151,23 +156,25 @@ function KaoExtended.item.add_new(ingredients, item_in) --ignores if exists
 	table.insert(ingredients, item)
 end
 
-function KaoExtended.recipe.addtorecipe(recipeName, itemInputs)
-	Assert(type(recipeName) == "string", "Expected string recipe name but given: " .. type(recipeName))
-	Assert(type(itemInputs) == "table", "Expected table item data but given: " .. type(itemInputs))
+-- Adds item to recipe
+-- @param recipeName [string] -- recipe add item to
+-- @param itemInputs [pair<string, number>] -- item name and item amount
+function KaoExtended.recipe.add_to_recipe(recipeName, itemInputs)
+	Assert.Expected(type(recipeName) == "string", "recipe name as string ", recipeName, "recipeName")
+	Assert.Expected(type(itemInputs) == "table" and #itemInputs == 2, "table with size 2", itemInputs)
+	local name = itemInputs[1]
+	local amount = itemInputs[2]
+
+	Assert.Expected(type(name) == "string", "item name as string", name, "itemInputs[1]")
+	Assert.Expected(type(amount) == "number", "item amount as number", amount, "itemInputs[2]")
+
 	local recipe = data.raw.recipe[recipeName]
 	local item = KaoExtended.item.basic_item(itemInputs)
-	Assert(recipe, "Recipe " .. recipe .. " does not exist.")
-	Assert(item, "Ingredient " .. item.name .. " does not exist.")
-	Assert(KaoExtended.item.get_type(get_item_name(item)), "Item: " .. item.name .. " have no item type")
+	Assert(recipe, "Recipe " .. recipeName .. " does not exist.")
 
-	local recipeVariants = { recipe.expensive, recipe.normal, recipe }
-	for _, recipeVariant in ipairs(recipeVariants) do
-		if recipeVariant then
-			KaoExtended.item.add_new(recipeVariant.ingredients, item)
-		end
-	end
+	KaoExtended.item.add_to_ingredients_if_new(recipe.ingredients, item)
 end
 
 KaoExtended.changeTime = function(recipe, time)
-	data.raw["recipe"][recipe].energy_required = item
+	data.raw["recipe"][recipe].energy_required = time
 end

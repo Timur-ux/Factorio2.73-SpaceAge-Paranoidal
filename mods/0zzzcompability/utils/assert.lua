@@ -1,15 +1,30 @@
 local Assert = {}
+Assert._enabled_ = true
 
 Assert.Assert = function(cond, message)
+	if not Assert._enabled_ then
+		return
+	end
 	assert(cond, message)
 end
 
-Assert.Debug = function (cond, message)
-	assert(cond, "DEBUG: " .. message)
+Assert.Debug = function(cond, message)
+	Assert.Assert(cond, "DEBUG: " .. message)
 end
 
 Assert.AssertOutdated = function(cond, message)
-	assert(cond, message .. " Maybe current fix outdated?")
+	Assert.Assert(cond, message .. " Maybe current fix outdated?")
+end
+
+Assert.Expected = function(cond, expectedType, given, prefix)
+	Assert.Assert(
+		cond,
+		(prefix and tostring(prefix) or "")
+			.. ": Expected: ["
+			.. expectedType
+			.. "] but given: "
+			.. serpent.block(given, { maxlevel = 1 })
+	)
 end
 
 setmetatable(Assert, {
