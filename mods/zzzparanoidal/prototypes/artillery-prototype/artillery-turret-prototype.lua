@@ -40,18 +40,6 @@ artillery_turret_prototype.base_picture.layers =
       direction_count = 1,
       frame_count = 1,
       shift = util.by_pixel(-0, 22),
-      hr_version =
-      {
-        filename = "__zzzparanoidal__/prototypes/artillery-prototype/hr-artillery-turret-base.png",
-        priority = "high",
-        line_length = 1,
-        width = 207,
-        height = 199,
-        frame_count = 1,
-        direction_count = 1,
-        shift = util.by_pixel(-0, 22),
-        scale = 0.5
-      }
     },
     {
       filename = "__base__/graphics/entity/artillery-turret/artillery-turret-base-shadow.png",
@@ -63,19 +51,6 @@ artillery_turret_prototype.base_picture.layers =
       direction_count = 1,
       shift = util.by_pixel(18, 38),
       draw_as_shadow = true,
-      hr_version =
-      {
-        filename = "__base__/graphics/entity/artillery-turret/hr-artillery-turret-base-shadow.png",
-        priority = "high",
-        line_length = 1,
-        width = 277,
-        height = 149,
-        frame_count = 1,
-        direction_count = 1,
-        shift = util.by_pixel(18, 38),
-        draw_as_shadow = true,
-        scale = 0.5
-      }
     }
   }
 

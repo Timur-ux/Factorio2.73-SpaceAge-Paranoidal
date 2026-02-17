@@ -21,8 +21,8 @@ data:extend({
 		energy_required = 7.5,
 		ingredients = {
 			{ "sci-component-1", 2 },
-			{ "lead-plate", 12 },
-			{ "tin-plate", 5 },
+			{ "bob-lead-plate", 12 },
+			{ "bob-tin-plate", 5 },
 			{ "simple-io", 1 },
 		},
 		result = "sci-component-2",
@@ -36,7 +36,7 @@ data:extend({
 		energy_required = 15,
 		ingredients = {
 			{ "sci-component-2", 2 },
-			{ "silver-plate", 14 },
+			{ "bob-silver-plate", 14 },
 			{ "nickel-plate", 7 },
 			{ "aluminium-plate", 5 },
 			{ "advsci-component-3", 2 },
@@ -56,9 +56,9 @@ data:extend({
 			{ "sci-component-3", 2 },
 
 			{ "cobalt-steel-alloy", 9 },
-			{ "invar-alloy", 6 },
-			{ "gold-plate", 10 },
-			{ "titanium-plate", 12 },
+			{ "bob-invar-alloy", 6 },
+			{ "bob-gold-plate", 10 },
+			{ "bob-titanium-plate", 12 },
 			{ "tungsten-plate", 8 },
 		},
 		result = "sci-component-4",
@@ -117,7 +117,7 @@ data:extend({
 		energy_required = 10,
 		ingredients = {
 			{ "bronze-alloy", 1 },
-			{ "brass-alloy", 1 },
+			{ "bob-brass-alloy", 1 },
 			{ "nickel-plate", 2 },
 			{ "glass", 2 },
 		},
@@ -131,9 +131,9 @@ data:extend({
 		category = "crafting",
 		enabled = false,
 		ingredients = {
-			{ "zinc-plate", 7 },
-			{ "silver-plate", 2 },
-			{ "gold-plate", 3 },
+			{ "bob-zinc-plate", 7 },
+			{ "bob-silver-plate", 2 },
+			{ "bob-gold-plate", 3 },
 		},
 		result = "advsci-component-4",
 		result_count = 1,
@@ -166,7 +166,7 @@ data:extend({
 			{ "condensator", 20 },
 			{ "condensator2", 6 },
 			{ "simple-io", 3 },
-			{ "tinned-copper-cable", 8 },
+			{ "bob-tinned-copper-cable", 8 },
 			{ "solder", 12 },
 		},
 		result = "standart-io",
@@ -185,7 +185,7 @@ data:extend({
 			{ "intergrated-electronics", 15 },
 			{ "simple-io", 6 },
 			{ "standart-io", 6 },
-			{ "insulated-cable", 12 },
+			{ "bob-insulated-cable", 12 },
 			{ "solder", 18 },
 		},
 		result = "advanced-io",
@@ -207,7 +207,7 @@ data:extend({
 			{ "simple-io", 12 },
 			{ "standart-io", 10 },
 			{ "advanced-io", 8 },
-			{ "gilded-copper-cable", 18 },
+			{ "bob-gilded-copper-cable", 18 },
 			{ "solder", 24 },
 		},
 		result = "predictive-io",
@@ -220,7 +220,7 @@ data:extend({
 		enabled = false,
 		energy_required = 75,
 		ingredients = {
-			{ "alien-artifact", 1 },
+			{ "bob-alien-artifact", 1 },
 			{ "basic-electronic-components", 36 },
 			{ "electronic-components", 40 },
 			{ "intergrated-electronics", 32 },
@@ -233,7 +233,7 @@ data:extend({
 			{ "standart-io", 16 },
 			{ "advanced-io", 16 },
 			{ "predictive-io", 4 },
-			{ "gilded-copper-cable", 40 },
+			{ "bob-gilded-copper-cable", 40 },
 			{ "solder", 30 },
 		},
 		result = "intelligent-io",
@@ -260,7 +260,7 @@ data:extend({
 		energy_required = 6,
 		ingredients = {
 			{ "condensator", 2 },
-			{ "tinned-copper-cable", 2 },
+			{ "bob-tinned-copper-cable", 2 },
 			{ type = "fluid", name = "liquid-sulfuric-acid", amount = 10 },
 		},
 		result = "condensator2",
@@ -296,13 +296,13 @@ data:extend({
 })
 
 if
-	data.raw.item["alien-artifact"]
-	and data.raw.item["alien-artifact-blue"]
-	and data.raw.item["alien-artifact-orange"]
-	and data.raw.item["alien-artifact-purple"]
-	and data.raw.item["alien-artifact-yellow"]
-	and data.raw.item["alien-artifact-green"]
-	and data.raw.item["alien-artifact-red"]
+	data.raw.item["bob-alien-artifact"]
+	and data.raw.item["bob-alien-artifact-blue"]
+	and data.raw.item["bob-alien-artifact-orange"]
+	and data.raw.item["bob-alien-artifact-purple"]
+	and data.raw.item["bob-alien-artifact-yellow"]
+	and data.raw.item["bob-alien-artifact-green"]
+	and data.raw.item["bob-alien-artifact-red"]
 then
 	data:extend({
 
@@ -315,13 +315,13 @@ then
 			ingredients = {
 				{ "sci-component-1", 4 },
 				{ "sci-component-2", 4 },
-				{ "alien-artifact", 5 },
-				{ "alien-artifact-blue", 2 },
-				{ "alien-artifact-orange", 2 },
-				{ "alien-artifact-purple", 2 },
-				{ "alien-artifact-yellow", 2 },
-				{ "alien-artifact-green", 2 },
-				{ "alien-artifact-red", 2 },
+				{ "bob-alien-artifact", 5 },
+				{ "bob-alien-artifact-blue", 2 },
+				{ "bob-alien-artifact-orange", 2 },
+				{ "bob-alien-artifact-purple", 2 },
+				{ "bob-alien-artifact-yellow", 2 },
+				{ "bob-alien-artifact-green", 2 },
+				{ "bob-alien-artifact-red", 2 },
 			},
 			result = "sci-component-o",
 			result_count = 2,
@@ -339,7 +339,7 @@ else
 			ingredients = {
 				{ "sci-component-1", 4 },
 				{ "sci-component-2", 4 },
-				{ "alien-artifact", 10 },
+				{ "bob-alien-artifact", 10 },
 			},
 			result = "sci-component-o",
 			result_count = 2,

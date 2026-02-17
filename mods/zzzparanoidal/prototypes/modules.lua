@@ -1,5 +1,4 @@
 --Удаляем из игры имбовые сельскохозяйственные модули, их рецепты и технологии
-
 if mods["Transport_Drones"] then  -- фикс совместимости с модом (скрываем, а не удаляем)
 
     if data.raw.module["angels-bio-yield-module"] then

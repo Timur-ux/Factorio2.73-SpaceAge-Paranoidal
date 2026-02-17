@@ -1,12 +1,4 @@
 
---debug
-local sections = {"item", "recipe", "technology"}
-for _, s in ipairs(sections) do
-	for k, _ in pairs(data.raw[s]) do
-		log(s .. " : ".. k)
-	end
-end
---debug
 --ANGELS PETROCHEM
 
 data.raw["storage-tank"]["angels-storage-tank-1"].fluid_box.base_area = 1250 --DrD 2000

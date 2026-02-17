@@ -53,7 +53,7 @@ newRecipe("mk1", 5).ingredients = {
 	{ "mining-drill-bit-mk0", 2 },
 	{ "iron-plate", 15 },
 }
-bobmods.lib.tech.add_recipe_unlock("electric-mining", "mining-drill-bit-mk1")
+bobmods.lib.tech.add_recipe_unlock("electric-mining-drill", "mining-drill-bit-mk1")
 
 newRecipe("mk2", 7).ingredients = {
 	{ "mining-drill-bit-mk1", 2 },
@@ -63,19 +63,19 @@ bobmods.lib.tech.add_recipe_unlock("steel-processing", "mining-drill-bit-mk2")
 
 newRecipe("mk3", 12).ingredients = {
 	{ "mining-drill-bit-mk2", 2 },
-	{ "cobalt-steel-alloy", 20 },
+	{ "bob-cobalt-steel-alloy", 20 },
 }
 bobmods.lib.tech.add_recipe_unlock("bob-drills-2", "mining-drill-bit-mk3")
 
 newRecipe("mk4", 15).ingredients = {
 	{ "mining-drill-bit-mk3", 2 },
-	{ "titanium-plate", 20 },
+	{ "bob-titanium-plate", 20 },
 }
 bobmods.lib.tech.add_recipe_unlock("bob-drills-3", "mining-drill-bit-mk4")
 
 newRecipe("mk5", 15).ingredients = {
 	{ "mining-drill-bit-mk4", 2 },
-	{ "nitinol-gear-wheel", 4 },
-	{ "tungsten-carbide", 20 },
+	{ "bob-nitinol-gear-wheel", 4 },
+	{ "bob-tungsten-carbide", 20 },
 }
 bobmods.lib.tech.add_recipe_unlock("bob-drills-4", "mining-drill-bit-mk5")

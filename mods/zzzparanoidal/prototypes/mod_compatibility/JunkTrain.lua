@@ -491,28 +491,18 @@ data.raw.item["train-stop-scrap"].icons = {{icon = "__base__/graphics/icons/trai
 --энтити
 data.raw["rail-signal"]["rail-signal-scrap"].icons = {{icon = "__base__/graphics/icons/rail-signal.png", icon_size = 64, icon_mipmaps = 4, tint = {r=170, g=130, b=1}}}
 data.raw["rail-signal"]["rail-signal-scrap"].animation.tint = {r=170, g=130, b=1}
-data.raw["rail-signal"]["rail-signal-scrap"].animation.hr_version.tint = {r=170, g=130, b=1}
 
 data.raw["rail-chain-signal"]["rail-chain-signal-scrap"].icons = {{icon = "__base__/graphics/icons/rail-chain-signal.png", icon_size = 64, icon_mipmaps = 4, tint = {r=170, g=130, b=1}}}
 data.raw["rail-chain-signal"]["rail-chain-signal-scrap"].animation.tint = {r=170, g=130, b=1}
-data.raw["rail-chain-signal"]["rail-chain-signal-scrap"].animation.hr_version.tint = {r=170, g=130, b=1}
 
 data.raw["train-stop"]["train-stop-scrap"].icons = {{icon = "__base__/graphics/icons/train-stop.png", icon_size = 64, icon_mipmaps = 4, tint = {r=170, g=130, b=1}}}
 
-data.raw["train-stop"]["train-stop-scrap"].animations.north.layers[1].hr_version.filename = "__zzzparanoidal__/graphics/train/hr-train-stop-bottom.png"
-data.raw["train-stop"]["train-stop-scrap"].animations.east.layers[1].hr_version.filename = "__zzzparanoidal__/graphics/train/hr-train-stop-bottom.png"
-data.raw["train-stop"]["train-stop-scrap"].animations.south.layers[1].hr_version.filename = "__zzzparanoidal__/graphics/train/hr-train-stop-bottom.png"
-data.raw["train-stop"]["train-stop-scrap"].animations.west.layers[1].hr_version.filename = "__zzzparanoidal__/graphics/train/hr-train-stop-bottom.png"
 
 data.raw["train-stop"]["train-stop-scrap"].animations.north.layers[1].filename = "__zzzparanoidal__/graphics/train/train-stop-bottom.png"
 data.raw["train-stop"]["train-stop-scrap"].animations.east.layers[1].filename = "__zzzparanoidal__/graphics/train/train-stop-bottom.png"
 data.raw["train-stop"]["train-stop-scrap"].animations.south.layers[1].filename = "__zzzparanoidal__/graphics/train/train-stop-bottom.png"
 data.raw["train-stop"]["train-stop-scrap"].animations.west.layers[1].filename = "__zzzparanoidal__/graphics/train/train-stop-bottom.png"
 
-data.raw["train-stop"]["train-stop-scrap"].rail_overlay_animations.north.hr_version.filename = "__zzzparanoidal__/graphics/train/hr-train-stop-ground.png"
-data.raw["train-stop"]["train-stop-scrap"].rail_overlay_animations.east.hr_version.filename = "__zzzparanoidal__/graphics/train/hr-train-stop-ground.png"
-data.raw["train-stop"]["train-stop-scrap"].rail_overlay_animations.south.hr_version.filename = "__zzzparanoidal__/graphics/train/hr-train-stop-ground.png"
-data.raw["train-stop"]["train-stop-scrap"].rail_overlay_animations.west.hr_version.filename = "__zzzparanoidal__/graphics/train/hr-train-stop-ground.png"
 
 data.raw["train-stop"]["train-stop-scrap"].rail_overlay_animations.north.filename = "__zzzparanoidal__/graphics/train/train-stop-ground.png"
 data.raw["train-stop"]["train-stop-scrap"].rail_overlay_animations.east.filename = "__zzzparanoidal__/graphics/train/train-stop-ground.png"

@@ -9,14 +9,9 @@ local pumps = {
 
 for pump, speed in pairs(pumps) do
   for _, direction in pairs({"north", "east", "south", "west"}) do
-    data.raw["offshore-pump"][pump].graphics_set.animation[direction].layers[1].hr_version.animation_speed = speed
     data.raw["offshore-pump"][pump].graphics_set.animation[direction].layers[1].animation_speed = speed
   end
 end
-
---фикс бага со сьемом seafloor-pump-3
-data.raw["offshore-pump"]["seafloor-pump-3"].minable = { mining_time = 1, result = "seafloor-pump-3" }
-data.raw["pump"]["seafloor-pump-3-output"].minable = { mining_time = 1, result = "seafloor-pump-3" }
 
 --------------------------------------
 --клонируем анимацию

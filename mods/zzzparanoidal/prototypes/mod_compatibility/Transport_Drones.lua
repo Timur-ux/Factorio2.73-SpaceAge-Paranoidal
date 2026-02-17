@@ -72,7 +72,7 @@ bobmods.lib.recipe.remove_ingredient("fluid-depot", "iron-stick")
 -------------------------------------------------------------------------------------------------
 --дорога
 bobmods.lib.recipe.add_ingredient("road", {"stone", 20})
-bobmods.lib.recipe.add_ingredient("road", {"coal-crushed", 10})
+bobmods.lib.recipe.add_ingredient("road", {"angels-coal-crushed", 10})
 bobmods.lib.recipe.add_ingredient("road", {"resin", 10})
 
 bobmods.lib.recipe.remove_ingredient("road", "stone-brick")

@@ -8,7 +8,7 @@ data:extend({
     energy_required = 32,
     ingredients = {
       { type = "item", name = "copper-plate", amount = 3 },
-      { type = "item", name = "tin-plate", amount = 2 },
+      { type = "item", name = "bob-tin-plate", amount = 2 },
     },
     results = {
       { type = "item", name = "bronze-alloy", amount = 1 },
@@ -23,8 +23,8 @@ data:extend({
     category = "mixing-furnace",
     energy_required = 32,
     ingredients = {
-      { type = "item", name = "tin-plate", amount = 5 },
-      { type = "item", name = "lead-plate", amount = 4 },
+      { type = "item", name = "bob-tin-plate", amount = 5 },
+      { type = "item", name = "bob-lead-plate", amount = 4 },
     },
     results = {
       { type = "item", name = "solder", amount = 1 },
@@ -40,10 +40,10 @@ data:extend({
     energy_required = 32,
     ingredients = {
       { type = "item", name = "copper-plate", amount = 3 },
-      { type = "item", name = "zinc-plate", amount = 2 },
+      { type = "item", name = "bob-zinc-plate", amount = 2 },
     },
     results = {
-      { type = "item", name = "brass-alloy", amount = 1 },
+      { type = "item", name = "bob-brass-alloy", amount = 1 },
     },
     allow_decomposition = false,
   },
@@ -104,8 +104,8 @@ data:extend({
     energy_required = 32,
     ingredients = {
       { type = "item", name = "copper-plate", amount = 8 },
-      { type = "item", name = "tin-plate", amount = 1 },
-      { type = "item", name = "zinc-plate", amount = 1 },
+      { type = "item", name = "bob-tin-plate", amount = 1 },
+      { type = "item", name = "bob-zinc-plate", amount = 1 },
     },
     results = {
       { type = "item", name = "gunmetal-alloy", amount = 1 },
@@ -125,7 +125,7 @@ data:extend({
 	  { type = "item", name = "nickel-plate", amount = 2 },
     },
     results = {
-      { type = "item", name = "invar-alloy", amount = 1 },
+      { type = "item", name = "bob-invar-alloy", amount = 1 },
     },
     allow_decomposition = false,
   },
@@ -138,10 +138,10 @@ data:extend({
     energy_required = 32,
     ingredients = {
       { type = "item", name = "nickel-plate", amount = 3 },
-      { type = "item", name = "titanium-plate", amount = 2 },
+      { type = "item", name = "bob-titanium-plate", amount = 2 },
     },
     results = {
-      { type = "item", name = "nitinol-alloy", amount = 1 },
+      { type = "item", name = "bob-nitinol-alloy", amount = 1 },
     },
     allow_decomposition = false,
   },
@@ -256,7 +256,7 @@ data:extend({
       { type = "fluid", name = "water", amount = 100 },
     },
     results = {
-      { type = "item", name = "zinc-plate", amount = 1 },
+      { type = "item", name = "bob-zinc-plate", amount = 1 },
       { type = "fluid", name = "gas-oxygen", amount = 25 },
     },
     allow_decomposition = false,
@@ -328,7 +328,7 @@ data:extend({
       { type = "fluid", name = "water-purified", amount = 100 },
     },
     results = {
-      { type = "item", name = "titanium-plate", amount = 1 },
+      { type = "item", name = "bob-titanium-plate", amount = 1 },
       { type = "fluid", name = "gas-oxygen", amount = 30 },
       { type = "fluid", name = "gas-hydrogen", amount = 40 },
       { type = "item", name = "slag", amount = 9 },
@@ -342,8 +342,8 @@ data:extend({
 bobmods.lib.tech.add_recipe_unlock("angels-bronze-smelting-1", "bronze-alloy-x")
 bobmods.lib.tech.add_recipe_unlock("angels-brass-smelting-1", "brass-alloy-x")
 bobmods.lib.tech.add_recipe_unlock("alloy-smelting", "copper-tungsten-alloy-x")
-bobmods.lib.tech.add_recipe_unlock("tungsten-alloy-processing", "tungsten-carbide-x")
-bobmods.lib.tech.add_recipe_unlock("tungsten-alloy-processing", "tungsten-carbide-2x")
+bobmods.lib.tech.add_recipe_unlock("bob-tungsten-alloy-processing", "tungsten-carbide-x")
+bobmods.lib.tech.add_recipe_unlock("bob-tungsten-alloy-processing", "tungsten-carbide-2x")
 bobmods.lib.tech.add_recipe_unlock("angels-gunmetal-smelting-1", "gunmetal-alloy-x")
 bobmods.lib.tech.add_recipe_unlock("angels-invar-smelting-1", "invar-alloy-x")
 bobmods.lib.tech.add_recipe_unlock("angels-nitinol-smelting-1", "nitinol-alloy-x")

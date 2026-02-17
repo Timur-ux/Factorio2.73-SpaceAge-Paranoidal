@@ -77,15 +77,6 @@ seafloor_pump_output.animations = {
 		frame_count = 1,
 		animation_speed = 0.5,
 		shift = { 0, -1 },
-		hr_version = {
-			filename = "__angelsrefining__/graphics/entity/seafloor-pump/seafloor-pump.png",
-			width = 160,
-			height = 160,
-			line_length = 1,
-			frame_count = 1,
-			animation_speed = 0.5,
-			shift = { 0, -1 },
-		},
 	},
 	east = {
 		filename = "__angelsrefining__/graphics/entity/seafloor-pump/seafloor-pump.png",
@@ -96,16 +87,6 @@ seafloor_pump_output.animations = {
 		frame_count = 1,
 		animation_speed = 0.5,
 		shift = { 1, 0 },
-		hr_version = {
-			filename = "__angelsrefining__/graphics/entity/seafloor-pump/seafloor-pump.png",
-			width = 160,
-			height = 160,
-			x = 160,
-			line_length = 1,
-			frame_count = 1,
-			animation_speed = 0.5,
-			shift = { 1, 0 },
-		},
 	},
 
 	south = {
@@ -117,16 +98,6 @@ seafloor_pump_output.animations = {
 		frame_count = 1,
 		animation_speed = 0.5,
 		shift = { 0, 1 },
-		hr_version = {
-			filename = "__angelsrefining__/graphics/entity/seafloor-pump/seafloor-pump.png",
-			width = 160,
-			height = 160,
-			x = 320,
-			line_length = 1,
-			frame_count = 1,
-			animation_speed = 0.5,
-			shift = { 0, 1 },
-		},
 	},
 	west = {
 		filename = "__angelsrefining__/graphics/entity/seafloor-pump/seafloor-pump.png",
@@ -137,16 +108,6 @@ seafloor_pump_output.animations = {
 		frame_count = 1,
 		animation_speed = 0.5,
 		shift = { -1, 0 },
-		hr_version = {
-			filename = "__angelsrefining__/graphics/entity/seafloor-pump/seafloor-pump.png",
-			width = 160,
-			height = 160,
-			x = 480,
-			line_length = 1,
-			frame_count = 1,
-			animation_speed = 0.5,
-			shift = { -1, 0 },
-		},
 	},
 }
 seafloor_pump_output.name = "seafloor-pump-output"
@@ -154,7 +115,7 @@ seafloor_pump_output.icon = "__angelsrefining__/graphics/icons/seafloor-pump-ico
 seafloor_pump_output.icon_size = 32
 seafloor_pump_output.localised_name = { "entity-name.seafloor-pump" }
 seafloor_pump_output.minable = seafloor_pump.minable
-seafloor_pump_output.placeable_by = { item = "seafloor-pump", count = 1 }
+seafloor_pump_output.placeable_by = { item = "angels-seafloor-pump", count = 1 }
 seafloor_pump_output.pumping_speed = seafloor_pump.pumping_speed
 seafloor_pump_output.selectable_in_game = true
 -- seafloor_pump_output.create_ghost_on_death = false --test

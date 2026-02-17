@@ -1,28 +1,20 @@
 local collision_mask_util = require("collision-mask-util")
 
-local layer = collision_mask_util.get_first_unused_layer()
-collision_mask_util.add_layer(data.raw.tile["landfill"].collision_mask, layer)
-collision_mask_util.add_layer(data.raw["offshore-pump"]["offshore-mk0-pump"].adjacent_tile_collision_test, layer)
-collision_mask_util.add_layer(data.raw["offshore-pump"]["offshore-pump"].adjacent_tile_collision_test, layer)
-collision_mask_util.add_layer(data.raw["offshore-pump"]["offshore-mk2-pump"].adjacent_tile_collision_test, layer)
-collision_mask_util.add_layer(data.raw["offshore-pump"]["offshore-mk3-pump"].adjacent_tile_collision_test, layer)
-collision_mask_util.add_layer(data.raw["offshore-pump"]["offshore-mk4-pump"].adjacent_tile_collision_test, layer)
-collision_mask_util.add_layer(data.raw["offshore-pump"]["seafloor-pump"].adjacent_tile_collision_test, layer)
-collision_mask_util.add_layer(data.raw["offshore-pump"]["seafloor-pump-2"].adjacent_tile_collision_test, layer)
-collision_mask_util.add_layer(data.raw["offshore-pump"]["seafloor-pump-3"].adjacent_tile_collision_test, layer)
+local layer = "landfill-layer"
+data.raw.tile["landfill"].collision_mask[layer] = true
+data.raw["offshore-pump"]["offshore-mk0-pump"].adjacent_tile_collision_test[layer] = true
+data.raw["offshore-pump"]["offshore-pump"].adjacent_tile_collision_test[layer] = true
+data.raw["offshore-pump"]["offshore-mk2-pump"].adjacent_tile_collision_test[layer] = true
+data.raw["offshore-pump"]["offshore-mk3-pump"].adjacent_tile_collision_test[layer] = true
+data.raw["offshore-pump"]["offshore-mk4-pump"].adjacent_tile_collision_test[layer] = true
+data.raw["offshore-pump"]["angels-seafloor-pump"].adjacent_tile_collision_test[layer] = true
 
 data.raw["offshore-pump"]["offshore-mk0-pump"].adjacent_tile_collision_mask = nil
 data.raw["offshore-pump"]["offshore-pump"].adjacent_tile_collision_mask = nil
 data.raw["offshore-pump"]["offshore-mk2-pump"].adjacent_tile_collision_mask = nil
 data.raw["offshore-pump"]["offshore-mk3-pump"].adjacent_tile_collision_mask = nil
 data.raw["offshore-pump"]["offshore-mk4-pump"].adjacent_tile_collision_mask = nil
-data.raw["offshore-pump"]["seafloor-pump"].adjacent_tile_collision_mask = nil
-data.raw["offshore-pump"]["seafloor-pump-2"].adjacent_tile_collision_mask = nil
-data.raw["offshore-pump"]["seafloor-pump-3"].adjacent_tile_collision_mask = nil
-
-
-
-
+data.raw["offshore-pump"]["angels-seafloor-pump"].adjacent_tile_collision_mask = nil
 
 -- -- -- Начало мода на помпы Pumps on Landfill
 -- -- for _,tile in pairs(data.raw.tile) do

@@ -2,7 +2,7 @@ local function AddArtifacts()
 	data:extend({
 		{
 			type = "item",
-			name = "alien-artifact",
+			name = "bob-alien-artifact",
 			icon = "__bobicons__/graphics/icons/alien/alien-artifact-128.png",
 			icon_size = 128,
 			flags = {},
@@ -16,7 +16,7 @@ local function AddArtifacts()
 	data:extend({
 		{
 			type = "item",
-			name = "alien-artifact-red",
+			name = "bob-alien-artifact-red",
 			icon = "__bobicons__/graphics/icons/alien/alien-artifact-red-128.png",
 			icon_size = 128,
 			subgroup = "raw-material",
@@ -27,7 +27,7 @@ local function AddArtifacts()
 
 		{
 			type = "item",
-			name = "alien-artifact-orange",
+			name = "bob-alien-artifact-orange",
 			icon = "__bobicons__/graphics/icons/alien/alien-artifact-orange-128.png",
 			icon_size = 128,
 			subgroup = "raw-material",
@@ -38,7 +38,7 @@ local function AddArtifacts()
 
 		{
 			type = "item",
-			name = "alien-artifact-yellow",
+			name = "bob-alien-artifact-yellow",
 			icon = "__bobicons__/graphics/icons/alien/alien-artifact-yellow-128.png",
 			icon_size = 128,
 			subgroup = "raw-material",
@@ -49,7 +49,7 @@ local function AddArtifacts()
 
 		{
 			type = "item",
-			name = "alien-artifact-green",
+			name = "bob-alien-artifact-green",
 			icon = "__bobicons__/graphics/icons/alien/alien-artifact-green-128.png",
 			icon_size = 128,
 			subgroup = "raw-material",
@@ -60,7 +60,7 @@ local function AddArtifacts()
 
 		{
 			type = "item",
-			name = "alien-artifact-blue",
+			name = "bob-alien-artifact-blue",
 			icon = "__bobicons__/graphics/icons/alien/alien-artifact-blue-128.png",
 			icon_size = 128,
 			subgroup = "raw-material",
@@ -71,7 +71,7 @@ local function AddArtifacts()
 
 		{
 			type = "item",
-			name = "alien-artifact-purple",
+			name = "bob-alien-artifact-purple",
 			icon = "__bobicons__/graphics/icons/alien/alien-artifact-purple-128.png",
 			icon_size = 128,
 			subgroup = "raw-material",

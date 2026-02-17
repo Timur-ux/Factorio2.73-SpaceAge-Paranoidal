@@ -53,7 +53,7 @@ data.raw.recipe["angelsore-chunk-mix-yi1-processing"].ingredients = {
           {type = "item", name = "angels-ore1-pure", amount = 4},
           {type = "item", name = "angels-ore3-pure", amount = 4},
           {type = "item", name = "angels-ore5-pure", amount = 4},
-          {type = "item", name = "solid-sodium", amount = 20},
+          {type = "item", name = "angels-solid-sodium", amount = 20},
         }
 		
 data.raw.recipe["angelsore-chunk-mix-yi1-processing"].results = {
@@ -127,7 +127,7 @@ data.raw.recipe["y-c22-recipe"].ingredients = {
     {
           {type="item", name="thorium-232", amount=3, catalyst_amount=2},
           {type="item", name="plutonium-239", amount=1, catalyst_amount=1},
-          {type="item", name="lead-plate", amount=5, catalyst_amount=5},
+          {type="item", name="bob-lead-plate", amount=5, catalyst_amount=5},
 
           {type="item", name="plutonium-239", amount=1, probability=0.1},
 		--{type="fluid", name = "liquid-sulfuric-acid", amount = 10},

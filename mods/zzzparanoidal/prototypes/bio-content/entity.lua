@@ -13,14 +13,6 @@ local biofarmpipepictures = {
         width = 20,
         height = 38,
         shift = util.by_pixel(-25, 1),
-        hr_version = {
-            filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/biofarm/biofarm_pipes/hr_bio_farm-pipe-E.png",
-            priority = "extra-high",
-            width = 42,
-            height = 76,
-            shift = util.by_pixel(-24.5, 1),
-            scale = 0.5
-        }
     },
     south = {
         filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/biofarm/biofarm_pipes/bio_farm-pipe-S.png",
@@ -28,14 +20,6 @@ local biofarmpipepictures = {
         width = 44,
         height = 31,
         shift = util.by_pixel(0, -31.5),
-        hr_version = {
-            filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/biofarm/biofarm_pipes/hr_bio_farm-pipe-S.png",
-            priority = "extra-high",
-            width = 88,
-            height = 61,
-            shift = util.by_pixel(0, -31.25),
-            scale = 0.5
-        }
     },
     west = {
         filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/biofarm/biofarm_pipes/bio_farm-pipe-W.png",
@@ -43,14 +27,6 @@ local biofarmpipepictures = {
         width = 19,
         height = 37,
         shift = util.by_pixel(25.5, 1.5),
-        hr_version = {
-            filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/biofarm/biofarm_pipes/hr_bio_farm-pipe-W.png",
-            priority = "extra-high",
-            width = 39,
-            height = 73,
-            shift = util.by_pixel(25.75, 1.25),
-            scale = 0.5
-        }
     }
 }
 
@@ -61,14 +37,6 @@ local assembler2pipepicturesBioreactor = {
         width = 1,
         height = 1,
         shift = util.by_pixel(2.5, 14),
-        hr_version = {
-            filename = "__Bio_Industries__/graphics/icons/empty.png",
-            priority = "extra-high",
-            width = 1,
-            height = 1,
-            shift = util.by_pixel(2.25, 13.5),
-            scale = 0.5
-        }
     },
     east = {
         filename = "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-E.png",
@@ -76,14 +44,6 @@ local assembler2pipepicturesBioreactor = {
         width = 20,
         height = 38,
         shift = util.by_pixel(-25, 1),
-        hr_version = {
-            filename = "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2-pipe-E.png",
-            priority = "extra-high",
-            width = 42,
-            height = 76,
-            shift = util.by_pixel(-24.5, 1),
-            scale = 0.5
-        }
     },
     south = {
         filename = "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-S.png",
@@ -91,14 +51,6 @@ local assembler2pipepicturesBioreactor = {
         width = 44,
         height = 31,
         shift = util.by_pixel(0, -31.5),
-        hr_version = {
-            filename = "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2-pipe-S.png",
-            priority = "extra-high",
-            width = 88,
-            height = 61,
-            shift = util.by_pixel(0, -31.25),
-            scale = 0.5
-        }
     },
     west = {
         filename = "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-W.png",
@@ -106,14 +58,6 @@ local assembler2pipepicturesBioreactor = {
         width = 19,
         height = 37,
         shift = util.by_pixel(25.5, 1.5),
-        hr_version = {
-            filename = "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2-pipe-W.png",
-            priority = "extra-high",
-            width = 39,
-            height = 73,
-            shift = util.by_pixel(25.75, 1.25),
-            scale = 0.5
-        }
     }
 }
 
@@ -159,14 +103,6 @@ data:extend({ -- ###############################################################
                 width = 35,
                 height = 18,
                 shift = util.by_pixel(2.5, 14),
-                hr_version = {
-                    filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_greenhouse/pipe/hr-assembling-machine-3-pipe-N-exp.png",
-                    priority = "extra-high",
-                    width = 171,
-                    height = 152,
-                    shift = util.by_pixel(2.25, 13.5),
-                    scale = 0.5
-                }
             },
             east = {
                 filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_greenhouse/pipe/assembling-machine-3-pipe-E.png",
@@ -174,14 +110,6 @@ data:extend({ -- ###############################################################
                 width = 20,
                 height = 38,
                 shift = util.by_pixel(-25, 1),
-                hr_version = {
-                    filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_greenhouse/pipe/hr-assembling-machine-3-pipe-E.png",
-                    priority = "extra-high",
-                    width = 42,
-                    height = 76,
-                    shift = util.by_pixel(-24.5, 1),
-                    scale = 0.5
-                }
             },
             south = {
                 filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_greenhouse/pipe/assembling-machine-3-pipe-S.png",
@@ -189,14 +117,6 @@ data:extend({ -- ###############################################################
                 width = 44,
                 height = 31,
                 shift = util.by_pixel(0, -31.5),
-                hr_version = {
-                    filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_greenhouse/pipe/hr-assembling-machine-3-pipe-S.png",
-                    priority = "extra-high",
-                    width = 88,
-                    height = 61,
-                    shift = util.by_pixel(0, -31.25),
-                    scale = 0.5
-                }
             },
             west = {
                 filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_greenhouse/pipe/assembling-machine-3-pipe-W.png",
@@ -204,14 +124,6 @@ data:extend({ -- ###############################################################
                 width = 19,
                 height = 37,
                 shift = util.by_pixel(25.5, 1.5),
-                hr_version = {
-                    filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_greenhouse/pipe/hr-assembling-machine-3-pipe-W.png",
-                    priority = "extra-high",
-                    width = 39,
-                    height = 73,
-                    shift = util.by_pixel(25.75, 1.25),
-                    scale = 0.5
-                }
             }
         },
         pipe_covers = pipecoverspictures(),
@@ -237,17 +149,6 @@ data:extend({ -- ###############################################################
             animation_speed = 0.05,
             scale = 1,
             shift = {0, -0.5},
-            hr_version = {
-                filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_greenhouse/hr_bio_greenhouse-2.png",
-                width = 192,
-                height = 256,
-                frame_count = 1,
-                line_length = 1,
-                repeat_count = 10,
-                animation_speed = 0.05,
-                scale = 0.5,
-                shift = {0, -0.5}
-            }
         }, {
             filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_greenhouse/bio_greenhouse_shadow.png",
             width = 128,
@@ -259,18 +160,6 @@ data:extend({ -- ###############################################################
             scale = 1,
             shift = {0.5, 0.5},
             draw_as_shadow = true,
-            hr_version = {
-                filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_greenhouse/hr_bio_greenhouse_shadow.png",
-                width = 256,
-                height = 128,
-                frame_count = 1,
-                line_length = 1,
-                repeat_count = 10,
-                animation_speed = 0.05,
-                scale = 0.5,
-                shift = {0.5, 0.5},
-                draw_as_shadow = true
-            }
         }}
     },
     working_visualisations = {{
@@ -288,17 +177,6 @@ data:extend({ -- ###############################################################
                 animation_speed = 0.08,
                 scale = 1,
                 shift = {0, -0.5},
-                hr_version = {
-                    filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_greenhouse/hr_bio_greenhouse_light_anim-test.png",
-                    width = 192,
-                    height = 256,
-                    frame_count = 10,
-                    line_length = 10,
-                    repeat_count = 1,
-                    animation_speed = 0.08,
-                    scale = 0.5,
-                    shift = {0, -0.5}
-                }
             }}
         }
     }},
@@ -367,14 +245,6 @@ data:extend({ -- ###############################################################
                 width = 35,
                 height = 18,
                 shift = util.by_pixel(2.5, 14),
-                hr_version = {
-                    filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_greenhouse/pipe/hr-assembling-machine-3-pipe-N-exp.png",
-                    priority = "extra-high",
-                    width = 171,
-                    height = 152,
-                    shift = util.by_pixel(2.25, 13.5),
-                    scale = 0.5
-                }
             },
             east = {
                 filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_greenhouse/pipe/assembling-machine-3-pipe-E.png",
@@ -382,14 +252,6 @@ data:extend({ -- ###############################################################
                 width = 20,
                 height = 38,
                 shift = util.by_pixel(-25, 1),
-                hr_version = {
-                    filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_greenhouse/pipe/hr-assembling-machine-3-pipe-E.png",
-                    priority = "extra-high",
-                    width = 42,
-                    height = 76,
-                    shift = util.by_pixel(-24.5, 1),
-                    scale = 0.5
-                }
             },
             south = {
                 filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_greenhouse/pipe/assembling-machine-3-pipe-S.png",
@@ -397,14 +259,6 @@ data:extend({ -- ###############################################################
                 width = 44,
                 height = 31,
                 shift = util.by_pixel(0, -31.5),
-                hr_version = {
-                    filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_greenhouse/pipe/hr-assembling-machine-3-pipe-S.png",
-                    priority = "extra-high",
-                    width = 88,
-                    height = 61,
-                    shift = util.by_pixel(0, -31.25),
-                    scale = 0.5
-                }
             },
             west = {
                 filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_greenhouse/pipe/assembling-machine-3-pipe-W.png",
@@ -412,14 +266,6 @@ data:extend({ -- ###############################################################
                 width = 19,
                 height = 37,
                 shift = util.by_pixel(25.5, 1.5),
-                hr_version = {
-                    filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_greenhouse/pipe/hr-assembling-machine-3-pipe-W.png",
-                    priority = "extra-high",
-                    width = 39,
-                    height = 73,
-                    shift = util.by_pixel(25.75, 1.25),
-                    scale = 0.5
-                }
             }
         },
         pipe_covers = pipecoverspictures(),
@@ -445,17 +291,6 @@ data:extend({ -- ###############################################################
             animation_speed = 0.05,
             scale = 1,
             shift = {0, -0.5},
-            hr_version = {
-                filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_greenhouse/hr_bio_greenhouse-3.png",
-                width = 192,
-                height = 256,
-                frame_count = 1,
-                line_length = 1,
-                repeat_count = 10,
-                animation_speed = 0.05,
-                scale = 0.5,
-                shift = {0, -0.5}
-            }
         }, {
             filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_greenhouse/bio_greenhouse_shadow.png",
             width = 128,
@@ -467,18 +302,6 @@ data:extend({ -- ###############################################################
             scale = 1,
             shift = {0.5, 0.5},
             draw_as_shadow = true,
-            hr_version = {
-                filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_greenhouse/hr_bio_greenhouse_shadow.png",
-                width = 256,
-                height = 128,
-                frame_count = 1,
-                line_length = 1,
-                repeat_count = 10,
-                animation_speed = 0.05,
-                scale = 0.5,
-                shift = {0.5, 0.5},
-                draw_as_shadow = true
-            }
         }}
     },
     working_visualisations = {{
@@ -496,17 +319,6 @@ data:extend({ -- ###############################################################
                 animation_speed = 0.08,
                 scale = 1,
                 shift = {0, -0.5},
-                hr_version = {
-                    filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_greenhouse/hr_bio_greenhouse_light_anim-test.png",
-                    width = 192,
-                    height = 256,
-                    frame_count = 10,
-                    line_length = 10,
-                    repeat_count = 1,
-                    animation_speed = 0.08,
-                    scale = 0.5,
-                    shift = {0, -0.5}
-                }
             }}
         }
     }},
@@ -591,14 +403,6 @@ data:extend({ -- ###############################################################
             height = 400,
             shift = {0, -1.5},
             scale = 1,
-            hr_version = {
-                filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/biofarm/hr_bio_farm-2.png",
-                priority = "high",
-                width = 608,
-                height = 800,
-                shift = {0, -1.5},
-                scale = 0.5
-            }
         }, {
             filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/biofarm/bio_farm_shadow.png",
             priority = "high",
@@ -607,15 +411,6 @@ data:extend({ -- ###############################################################
             shift = {1.5, -1.5},
             scale = 1,
             draw_as_shadow = true,
-            hr_version = {
-                filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/biofarm/hr_bio_farm_shadow.png",
-                priority = "high",
-                width = 800,
-                height = 800,
-                shift = {1.5, -1.5},
-                scale = 0.5,
-                draw_as_shadow = true
-            }
         }}
     },
     working_visualisations = {{
@@ -630,14 +425,6 @@ data:extend({ -- ###############################################################
                 scale = 1,
                 shift = {0, -1.5},
                 blend_mode = "additive",
-                hr_version = {
-                    filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/biofarm/hr_bio_farm_light.png",
-                    width = 800,
-                    height = 800,
-                    scale = 0.5,
-                    shift = {0, -1.5},
-                    blend_mode = "additive"
-                }
             }}
         }
     }},
@@ -736,14 +523,6 @@ data:extend({ -- ###############################################################
             height = 400,
             shift = {0, -1.5},
             scale = 1,
-            hr_version = {
-                filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/biofarm/hr_bio_farm-3.png",
-                priority = "high",
-                width = 608,
-                height = 800,
-                shift = {0, -1.5},
-                scale = 0.5
-            }
         }, {
             filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/biofarm/bio_farm_shadow.png",
             priority = "high",
@@ -752,15 +531,6 @@ data:extend({ -- ###############################################################
             shift = {1.5, -1.5},
             scale = 1,
             draw_as_shadow = true,
-            hr_version = {
-                filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/biofarm/hr_bio_farm_shadow.png",
-                priority = "high",
-                width = 800,
-                height = 800,
-                shift = {1.5, -1.5},
-                scale = 0.5,
-                draw_as_shadow = true
-            }
         }}
     },
     working_visualisations = {{
@@ -775,14 +545,6 @@ data:extend({ -- ###############################################################
                 scale = 1,
                 shift = {0, -1.5},
                 blend_mode = "additive",
-                hr_version = {
-                    filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/biofarm/hr_bio_farm_light.png",
-                    width = 800,
-                    height = 800,
-                    scale = 0.5,
-                    shift = {0, -1.5},
-                    blend_mode = "additive"
-                }
             }}
         }
     }},
@@ -918,18 +680,6 @@ data:extend({ -- ###############################################################
             animation_speed = 0.2,
             scale = 1,
             shift = {0, -0.5},
-            hr_version = {
-                filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_reactor/hr_bioreactor_idle-2.png",
-                priority = "high",
-                width = 182,
-                height = 256,
-                frame_count = 1,
-                line_length = 1,
-                repeat_count = 18,
-                animation_speed = 0.2,
-                scale = 0.5,
-                shift = {0, -0.5}
-            }
 
         }, {
             filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_reactor/bioreactor_shadow.png",
@@ -943,19 +693,6 @@ data:extend({ -- ###############################################################
             scale = 1,
             shift = {0.5, -0.5},
             draw_as_shadow = true,
-            hr_version = {
-                filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_reactor/hr_bioreactor_shadow.png",
-                priority = "low",
-                width = 270,
-                height = 256,
-                frame_count = 1,
-                line_length = 1,
-                repeat_count = 18,
-                animation_speed = 0.2,
-                scale = 0.5,
-                shift = {0.5, -0.5},
-                draw_as_shadow = true
-            }
         }}
     },
     working_visualisations = {{
@@ -973,18 +710,6 @@ data:extend({ -- ###############################################################
                 animation_speed = 0.2,
                 scale = 1,
                 shift = {0, -0.5},
-                hr_version = {
-                    filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_reactor/hr_bioreactor_anim-2.png",
-                    priority = "high",
-                    width = 182,
-                    height = 256,
-                    frame_count = 18,
-                    line_length = 6,
-                    repeat_count = 1,
-                    animation_speed = 0.2,
-                    scale = 0.5,
-                    shift = {0, -0.5}
-                }
             }}
         }
     }},
@@ -1094,18 +819,6 @@ data:extend({ -- ###############################################################
             animation_speed = 0.2,
             scale = 1,
             shift = {0, -0.5},
-            hr_version = {
-                filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_reactor/hr_bioreactor_idle-3.png",
-                priority = "high",
-                width = 182,
-                height = 256,
-                frame_count = 1,
-                line_length = 1,
-                repeat_count = 18,
-                animation_speed = 0.2,
-                scale = 0.5,
-                shift = {0, -0.5}
-            }
 
         }, {
             filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_reactor/bioreactor_shadow.png",
@@ -1119,19 +832,6 @@ data:extend({ -- ###############################################################
             scale = 1,
             shift = {0.5, -0.5},
             draw_as_shadow = true,
-            hr_version = {
-                filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_reactor/hr_bioreactor_shadow.png",
-                priority = "low",
-                width = 270,
-                height = 256,
-                frame_count = 1,
-                line_length = 1,
-                repeat_count = 18,
-                animation_speed = 0.2,
-                scale = 0.5,
-                shift = {0.5, -0.5},
-                draw_as_shadow = true
-            }
         }}
     },
     working_visualisations = {{
@@ -1149,18 +849,6 @@ data:extend({ -- ###############################################################
                 animation_speed = 0.2,
                 scale = 1,
                 shift = {0, -0.5},
-                hr_version = {
-                    filename = "__zzzparanoidal__/graphics/Bio_Industries_graphics/graphics/entities/bio_reactor/hr_bioreactor_anim-3.png",
-                    priority = "high",
-                    width = 182,
-                    height = 256,
-                    frame_count = 18,
-                    line_length = 6,
-                    repeat_count = 1,
-                    animation_speed = 0.2,
-                    scale = 0.5,
-                    shift = {0, -0.5}
-                }
             }}
         }
     }},

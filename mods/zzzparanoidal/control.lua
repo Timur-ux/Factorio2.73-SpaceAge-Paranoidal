@@ -2,7 +2,7 @@ require("prototypes.mod_compatibility.heroturrets_script") -- скрипт ра�
 require("__PMRPGsystem__/prototypes/test")
 -- ##############################
 -- код для работы новых насосов
-local offshore_pump_types = {"offshore-mk0-pump", "offshore-pump", "offshore-mk2-pump", "offshore-mk3-pump", "offshore-mk4-pump", "seafloor-pump", "seafloor-pump-2", "seafloor-pump-3"}
+local offshore_pump_types = {"offshore-mk0-pump", "offshore-pump", "offshore-mk2-pump", "offshore-mk3-pump", "offshore-mk4-pump", "angels-seafloor-pump", "seafloor-pump-2", "seafloor-pump-3"}
 
 local function offshore_pump_setup(entity)
     local direction = entity.direction

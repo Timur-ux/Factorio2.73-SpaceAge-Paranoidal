@@ -83,7 +83,7 @@ local function replacePower()
 	KaoExtended.recipe.add_to_recipe("bob-steam-engine-3", { "intermediate-structure-components", 1 })
 
 	if data.raw["item"]["petroleum-generator"] then
-		KaoExtended.recipe.add_to_recipe("petroleum-generator", { "steam-engine-3", 1 })
+		KaoExtended.recipe.add_to_recipe("petroleum-generator", { "bob-steam-engine-3", 1 })
 		KaoExtended.recipe.add_to_recipe("petroleum-generator", { "advanced-structure-components", 1 })
 	end
 	if data.raw["item"]["steam-turbine"] then
