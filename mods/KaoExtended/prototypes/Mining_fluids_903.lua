@@ -17,19 +17,19 @@ local function extendVanilla()
 end
 
 local function extendBobs()
-	if data.raw["resource"]["zinc-ore"] then
-		data.raw["resource"]["zinc-ore"].minable.required_fluid = "water"
-		data.raw["resource"]["zinc-ore"].minable.fluid_amount = 20
+	if data.raw["resource"]["bob-zinc-ore"] then
+		data.raw["resource"]["bob-zinc-ore"].minable.required_fluid = "water"
+		data.raw["resource"]["bob-zinc-ore"].minable.fluid_amount = 20
 	end
 
-	if data.raw["resource"]["tungsten-ore"] then
-		data.raw["resource"]["tungsten-ore"].minable.required_fluid = "water"
-		data.raw["resource"]["tungsten-ore"].minable.fluid_amount = 20
+	if data.raw["resource"]["bob-tungsten-ore"] then
+		data.raw["resource"]["bob-tungsten-ore"].minable.required_fluid = "water"
+		data.raw["resource"]["bob-tungsten-ore"].minable.fluid_amount = 20
 	end
 
-	if data.raw["resource"]["tin-ore"] then
-		data.raw["resource"]["tin-ore"].minable.required_fluid = "water"
-		data.raw["resource"]["tin-ore"].minable.fluid_amount = 20
+	if data.raw["resource"]["bob-tin-ore"] then
+		data.raw["resource"]["bob-tin-ore"].minable.required_fluid = "water"
+		data.raw["resource"]["bob-tin-ore"].minable.fluid_amount = 20
 	end
 
 	if data.raw["resource"]["sulfur"] then
@@ -42,9 +42,9 @@ local function extendBobs()
 		data.raw["resource"]["sort-gem-ore"].minable.fluid_amount = 20
 	end
 
-	if data.raw["resource"]["silver-ore"] then
-		data.raw["resource"]["silver-ore"].minable.required_fluid = "steam"
-		data.raw["resource"]["silver-ore"].minable.fluid_amount = 20
+	if data.raw["resource"]["bob-silver-ore"] then
+		data.raw["resource"]["bob-silver-ore"].minable.required_fluid = "steam"
+		data.raw["resource"]["bob-silver-ore"].minable.fluid_amount = 20
 	end
 
 	if data.raw["resource"]["rutile"] then
@@ -57,19 +57,19 @@ local function extendBobs()
 		data.raw["resource"]["quartz"].minable.fluid_amount = 20
 	end
 
-	if data.raw["resource"]["nickel-ore"] then
-		data.raw["resource"]["nickel-ore"].minable.required_fluid = "steam"
-		data.raw["resource"]["nickel-ore"].minable.fluid_amount = 20
+	if data.raw["resource"]["bob-nickel-ore"] then
+		data.raw["resource"]["bob-nickel-ore"].minable.required_fluid = "steam"
+		data.raw["resource"]["bob-nickel-ore"].minable.fluid_amount = 20
 	end
 
-	if data.raw["resource"]["lead-ore"] then
-		data.raw["resource"]["lead-ore"].minable.required_fluid = "water"
-		data.raw["resource"]["lead-ore"].minable.fluid_amount = 20
+	if data.raw["resource"]["bob-lead-ore"] then
+		data.raw["resource"]["bob-lead-ore"].minable.required_fluid = "water"
+		data.raw["resource"]["bob-lead-ore"].minable.fluid_amount = 20
 	end
 
-	if data.raw["resource"]["gold-ore"] then
-		data.raw["resource"]["gold-ore"].minable.required_fluid = "steam"
-		data.raw["resource"]["gold-ore"].minable.fluid_amount = 20
+	if data.raw["resource"]["bob-gold-ore"] then
+		data.raw["resource"]["bob-gold-ore"].minable.required_fluid = "steam"
+		data.raw["resource"]["bob-gold-ore"].minable.fluid_amount = 20
 	end
 
 	if data.raw["resource"]["gem-ore"] then
@@ -77,9 +77,9 @@ local function extendBobs()
 		data.raw["resource"]["gem-ore"].minable.fluid_amount = 20
 	end
 
-	if data.raw["resource"]["cobalt-ore"] then
-		data.raw["resource"]["cobalt-ore"].minable.required_fluid = "water"
-		data.raw["resource"]["cobalt-ore"].minable.fluid_amount = 20
+	if data.raw["resource"]["bob-cobalt-ore"] then
+		data.raw["resource"]["bob-cobalt-ore"].minable.required_fluid = "water"
+		data.raw["resource"]["bob-cobalt-ore"].minable.fluid_amount = 20
 	end
 
 	if data.raw["resource"]["bauxite"] then

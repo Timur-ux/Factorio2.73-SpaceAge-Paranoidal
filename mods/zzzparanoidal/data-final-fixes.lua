@@ -61,3 +61,4 @@ end
 require("recipes.fix-ingredients-style")
 --должно быть последним. После всех рецептов.
 require("recipes.flowfix")
+log(serpent.block(data.raw.technology["steam-power"]))

@@ -21,7 +21,7 @@ if kaoextended.settingsoveride == true then
 		{ type = "item", name = "inserter", amount = 2 },
 		{ type = "item", name = "transport-belt", amount = 7 },
 		{ type = "item", name = "sci-component-2", amount = 3 },
-		{ type = "item", name = "bronze-alloy", amount = 7 },
+		{ type = "item", name = "bob-bronze-alloy", amount = 7 },
 	}
 	data.raw["recipe"]["chemical-science-pack"].ingredients = {
 		{ type = "item", name = "advanced-circuit", amount = 1 },
@@ -132,27 +132,27 @@ if kaoextended.settingsoveride == true then
 	)
 
 	KaoExtended.recipe.add_to_recipe("bob-speed-processor", { type = "item", name = "condensator", amount = 8 })
-	KaoExtended.recipe.add_to_recipe("bob-speed-processor-2", { type = "item", name = "condensator-2", amount = 8 })
-	KaoExtended.recipe.add_to_recipe("bob-speed-processor-3", { type = "item", name = "condensator-3", amount = 8 })
+	KaoExtended.recipe.add_to_recipe("bob-speed-processor-2", { type = "item", name = "condensator2", amount = 8 })
+	KaoExtended.recipe.add_to_recipe("bob-speed-processor-3", { type = "item", name = "condensator3", amount = 8 })
 
 	KaoExtended.recipe.add_to_recipe("bob-efficiency-processor", { type = "item", name = "condensator", amount = 8 })
 	KaoExtended.recipe.add_to_recipe(
 		"bob-efficiency-processor-2",
-		{ type = "item", name = "condensator-2", amount = 8 }
+		{ type = "item", name = "condensator2", amount = 8 }
 	)
 	KaoExtended.recipe.add_to_recipe(
 		"bob-efficiency-processor-3",
-		{ type = "item", name = "condensator-3", amount = 8 }
+		{ type = "item", name = "condensator3", amount = 8 }
 	)
 
 	KaoExtended.recipe.add_to_recipe("bob-productivity-processor", { type = "item", name = "condensator", amount = 8 })
 	KaoExtended.recipe.add_to_recipe(
 		"bob-productivity-processor-2",
-		{ type = "item", name = "condensator-2", amount = 8 }
+		{ type = "item", name = "condensator2", amount = 8 }
 	)
 	KaoExtended.recipe.add_to_recipe(
 		"bob-productivity-processor-3",
-		{ type = "item", name = "condensator-3", amount = 8 }
+		{ type = "item", name = "condensator3", amount = 8 }
 	)
 
 	KaoExtended.recipe.add_to_recipe("transport-belt", { type = "item", name = "bob-basic-transport-belt", amount = 2 })

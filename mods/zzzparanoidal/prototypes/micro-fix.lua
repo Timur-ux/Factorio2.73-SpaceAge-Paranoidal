@@ -521,7 +521,7 @@ if mods["BatteryElectricTrain"] then
 				{ type = "acid", decrease = 50, percent = 90 },
 			},
 			burner = {
-				fuel_category = "bet-fuel-battery",
+				fuel_categories = {"bet-fuel-battery"},
 				effectivity = 2,
 				fuel_inventory_size = 2,
 				burnt_inventory_size = 2,

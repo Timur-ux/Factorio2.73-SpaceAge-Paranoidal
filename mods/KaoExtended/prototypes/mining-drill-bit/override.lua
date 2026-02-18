@@ -14,7 +14,7 @@ local function addingMiningdrillbits()
 	bobmods.lib.recipe.remove_ingredient("bob-mining-drill-3", "bob-titanium-plate")
 
 	KaoExtended.recipe.add_to_recipe("bob-mining-drill-4", { type = "item", name = "mining-drill-bit-mk5", amount = 1})
-	bobmods.lib.recipe.remove_ingredient("bob-mining-drill-4", "tungsten-carbide")
+	bobmods.lib.recipe.remove_ingredient("bob-mining-drill-4", "bob-tungsten-carbide")
 
 	KaoExtended.recipe.add_to_recipe("bob-area-mining-drill-1", { type = "item", name = "mining-drill-bit-mk2", amount = 1})
 	KaoExtended.recipe.add_to_recipe("bob-area-mining-drill-2", { type = "item", name = "mining-drill-bit-mk3", amount = 1})

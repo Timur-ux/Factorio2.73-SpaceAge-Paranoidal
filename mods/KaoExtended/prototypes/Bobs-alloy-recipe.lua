@@ -11,7 +11,7 @@ data:extend({
       { type = "item", name = "bob-tin-plate", amount = 2 },
     },
     results = {
-      { type = "item", name = "bronze-alloy", amount = 1 },
+      { type = "item", name = "bob-bronze-alloy", amount = 1 },
     },
     allow_decomposition = false,
   },
@@ -33,7 +33,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "brass-alloy-x",
+    name = "bob-brass-alloy-x",
     enabled = false,
 	hidden = false,
     category = "mixing-furnace",
@@ -65,23 +65,23 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "tungsten-carbide-x",
+    name = "bob-tungsten-carbide-x",
     enabled = false,
 	hidden = false,
     category = "mixing-furnace",
     energy_required = 25.6,
     ingredients = {
       { type = "item", name = "carbon", amount = 1 },
-      { type = "item", name = "tungsten-oxide", amount = 1 },
+      { type = "item", name = "bob-tungsten-oxide", amount = 1 },
     },
     results = {
-      { type = "item", name = "tungsten-carbide", amount = 1 },
+      { type = "item", name = "bob-tungsten-carbide", amount = 1 },
     },
     allow_decomposition = false,
   },
   {
     type = "recipe",
-    name = "tungsten-carbide-2x",
+    name = "bob-tungsten-carbide-2x",
     enabled = false,
 	hidden = false,
     category = "mixing-furnace",
@@ -91,7 +91,7 @@ data:extend({
       { type = "item", name = "powdered-tungsten", amount = 1 },
     },
     results = {
-      { type = "item", name = "tungsten-carbide", amount = 1 },
+      { type = "item", name = "bob-tungsten-carbide", amount = 1 },
     },
     allow_decomposition = false,
   },
@@ -115,14 +115,14 @@ data:extend({
 
   {
     type = "recipe",
-    name = "invar-alloy-x",
+    name = "bob-invar-alloy-x",
     enabled = false,
 	hidden = false,
     category = "mixing-furnace",
     energy_required = 32,
     ingredients = {
        { type = "item", name = "steel-plate", amount = 4 },
-	  { type = "item", name = "nickel-plate", amount = 2 },
+	  { type = "item", name = "bob-nickel-plate", amount = 2 },
     },
     results = {
       { type = "item", name = "bob-invar-alloy", amount = 1 },
@@ -137,7 +137,7 @@ data:extend({
     category = "mixing-furnace",
     energy_required = 32,
     ingredients = {
-      { type = "item", name = "nickel-plate", amount = 3 },
+      { type = "item", name = "bob-nickel-plate", amount = 3 },
       { type = "item", name = "bob-titanium-plate", amount = 2 },
     },
     results = {
@@ -148,31 +148,31 @@ data:extend({
 
   {
     type = "recipe",
-    name = "cobalt-steel-alloy-x",
+    name = "bob-cobalt-steel-alloy-x",
     enabled = false,
 	hidden = false,
     category = "mixing-furnace",
     energy_required = 32,
     ingredients = {
       { type = "item", name = "iron-plate", amount = 14 },
-      { type = "item", name = "cobalt-plate", amount = 1 },
+      { type = "item", name = "bob-cobalt-plate", amount = 1 },
     },
-    results ={{type="item", name= "cobalt-steel-alloy", amount = 1}},
+    results ={{type="item", name= "bob-cobalt-steel-alloy", amount = 1}},
     allow_decomposition = false,
   },
   
   {
     type = "recipe",
-    name = "cobalt-steel-alloy-x",
+    name = "bob-cobalt-steel-alloy-x",
     enabled = false,
 	hidden = false,
     category = "mixing-furnace",
     energy_required = 32,
     ingredients = {
       { type = "item", name = "iron-plate", amount = 14 },
-      { type = "item", name = "cobalt-plate", amount = 1 },
+      { type = "item", name = "bob-cobalt-plate", amount = 1 },
     },
-    results ={{type="item", name= "cobalt-steel-alloy", amount = 1}},
+    results ={{type="item", name= "bob-cobalt-steel-alloy", amount = 1}},
     allow_decomposition = false,
   },
   --[[
@@ -194,7 +194,7 @@ data:extend({
   
   {
     type = "recipe",
-    name = "nickel-electrolysis-x",
+    name = "bob-nickel-electrolysis-x",
 	icons = {
 				{
 					icon = "__bobicons__/graphics/icons/plate/nickel-plate-128.png",
@@ -215,11 +215,11 @@ data:extend({
     enabled = false,
     energy_required = 12,
     ingredients = {
-      { type = "item", name = "nickel-ore", amount = 10 },
+      { type = "item", name = "bob-nickel-ore", amount = 10 },
       { type = "fluid", name = "water", amount = 100 },
     },
     results = {
-      { type = "item", name = "nickel-plate", amount = 1 },
+      { type = "item", name = "bob-nickel-plate", amount = 1 },
       { type = "fluid", name = "gas-oxygen", amount = 20 },
     },
     allow_decomposition = false,
@@ -228,7 +228,7 @@ data:extend({
      
   {
     type = "recipe",
-    name = "zinc-electrolysis-x",
+    name = "bob-zinc-electrolysis-x",
 	icons = {
 				{
 					icon = "__bobicons__/graphics/icons/plate/zinc-plate-128.png",
@@ -249,7 +249,7 @@ data:extend({
     enabled = false,
     energy_required = 14,
     ingredients = {
-      { type = "item", name = "zinc-ore", amount = 10 },
+      { type = "item", name = "bob-zinc-ore", amount = 10 },
       { type = "fluid", name = "water", amount = 100 },
     },
     results = {
@@ -282,13 +282,13 @@ data:extend({
     enabled = false,
     energy_required = 17,
     ingredients = {
-      { type = "item", name = "cobalt-ore", amount = 14 },
+      { type = "item", name = "bob-cobalt-ore", amount = 14 },
 	  { type = "item", name = "angels-electrode", amount = 1 },
       { type = "fluid", name = "water-purified", amount = 100 },
 	  
     },
     results = {
-      { type = "item", name = "cobalt-plate", amount = 1 },
+      { type = "item", name = "bob-cobalt-plate", amount = 1 },
       { type = "fluid", name = "gas-oxygen", amount = 25 },
       { type = "fluid", name = "gas-hydrogen", amount = 35 },
       { type = "item", name = "slag", amount = 8 },
@@ -299,7 +299,7 @@ data:extend({
   
    {
     type = "recipe",
-    name = "titanium-electrolysis-x",
+    name = "bob-titanium-electrolysis-x",
 	icons = {
 				{
 					icon = "__bobicons__/graphics/icons/plate/titanium-plate-128.png", 
@@ -337,16 +337,16 @@ data:extend({
 })
 
 bobmods.lib.tech.add_recipe_unlock("angels-bronze-smelting-1", "bronze-alloy-x")
-bobmods.lib.tech.add_recipe_unlock("angels-brass-smelting-1", "brass-alloy-x")
+bobmods.lib.tech.add_recipe_unlock("angels-brass-smelting-1", "bob-brass-alloy-x")
 bobmods.lib.tech.add_recipe_unlock("alloy-smelting", "copper-tungsten-alloy-x")
-bobmods.lib.tech.add_recipe_unlock("bob-tungsten-alloy-processing", "tungsten-carbide-x")
-bobmods.lib.tech.add_recipe_unlock("bob-tungsten-alloy-processing", "tungsten-carbide-2x")
+bobmods.lib.tech.add_recipe_unlock("bob-tungsten-alloy-processing", "bob-tungsten-carbide-x")
+bobmods.lib.tech.add_recipe_unlock("bob-tungsten-alloy-processing", "bob-tungsten-carbide-2x")
 bobmods.lib.tech.add_recipe_unlock("angels-gunmetal-smelting-1", "gunmetal-alloy-x")
-bobmods.lib.tech.add_recipe_unlock("angels-invar-smelting-1", "invar-alloy-x")
+bobmods.lib.tech.add_recipe_unlock("angels-invar-smelting-1", "bob-invar-alloy-x")
 bobmods.lib.tech.add_recipe_unlock("angels-nitinol-smelting-1", "nitinol-alloy-x")
-bobmods.lib.tech.add_recipe_unlock("angels-cobalt-steel-smelting-1", "cobalt-steel-alloy-x")
-bobmods.lib.tech.add_recipe_unlock("angels-nickel-smelting-1", "nickel-electrolysis-x")
-bobmods.lib.tech.add_recipe_unlock("angels-zinc-smelting-1", "zinc-electrolysis-x")
+bobmods.lib.tech.add_recipe_unlock("angels-cobalt-steel-smelting-1", "bob-cobalt-steel-alloy-x")
+bobmods.lib.tech.add_recipe_unlock("angels-nickel-smelting-1", "bob-nickel-electrolysis-x")
+bobmods.lib.tech.add_recipe_unlock("angels-zinc-smelting-1", "bob-zinc-electrolysis-x")
 bobmods.lib.tech.add_recipe_unlock("angels-cobalt-smelting-1", "cobalat-electrolysis-x")
-bobmods.lib.tech.add_recipe_unlock("angels-titanium-smelting-1", "titanium-electrolysis-x")
+bobmods.lib.tech.add_recipe_unlock("angels-titanium-smelting-1", "bob-titanium-electrolysis-x")
 bobmods.lib.tech.add_recipe_unlock("angels-solder-smelting-1", "angel-solder-alloy-x")

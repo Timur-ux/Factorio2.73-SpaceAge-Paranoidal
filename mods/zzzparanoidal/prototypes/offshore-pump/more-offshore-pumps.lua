@@ -41,6 +41,7 @@ local ofshore_pump_template = {
 	circuit_connector_sprites = offshore_pump.circuit_connector_sprites,
 	circuit_wire_max_distance = offshore_pump.circuit_wire_max_distance,
 	water_reflection = offshore_pump.water_reflection,
+	fluid_source_offset = {1, 0} -- don't know how set it correctly it is dump value, fix me!
 }
 
 local ofshore_mk0_template = table.deepcopy(ofshore_pump_template)

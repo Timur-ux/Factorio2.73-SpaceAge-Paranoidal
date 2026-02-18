@@ -11,11 +11,11 @@ local offshore_pump_output_template = {
 	collision_box = { { -0.9, -0 }, { 0.9, 0.65 } },
 	collision_mask = { layers = { ["not-colliding-with-itself"] = true } },
 	fluid_box = {
+		volume = 1000,
 		base_area = 1,
 		height = 2,
 		pipe_covers = pipecoverspictures(),
 		pipe_connections = {
-
 			{
 				direction = 8,
 				flow_direction = "output",
@@ -30,7 +30,7 @@ local offshore_pump_output_template = {
 				flow_direction = "input",
 				position = {
 					0,
-					-0.1,
+					0.1,
 				},
 			},
 		},
@@ -137,6 +137,6 @@ seafloor_pump_output.selectable_in_game = true
 -- seafloor_pump_output.create_ghost_on_death = false --test
 seafloor_pump_output.selection_box = seafloor_pump.selection_box
 seafloor_pump_output.energy_source =
-	{ type = "electric", usage_priority = "secondary-input", emissions_per_minute = 10 }
+	{ type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 10 } }
 seafloor_pump_output.energy_usage = "500kW"
 data:extend({ seafloor_pump_output })

@@ -14,6 +14,7 @@ local offshore_pump_output_template = {
 	collision_box = { { -0.9, -0 }, { 0.9, 0.65 } },
 	collision_mask = { layers = { ["not-colliding-with-itself"] = true } },
 	fluid_box = {
+		volume = 1000,
 		base_area = 1,
 		height = 2,
 		pipe_covers = pipecoverspictures(),
@@ -31,7 +32,7 @@ local offshore_pump_output_template = {
 				flow_direction = "input",
 				position = {
 					0,
-					-0.1,
+					0.1,
 				},
 			},
 		},
@@ -154,11 +155,12 @@ offshore_mk0_pump.selection_box = { { -0.95, -1.45 }, { 0.95, 0.45 } }
 offshore_mk0_pump.selectable_in_game = false
 offshore_mk0_pump.energy_source = {
 	type = "burner",
-	fuel_category = { "chemical" },
+	fuel_categories = { "chemical" },
 	effectivity = 1,
 	fuel_inventory_size = 1,
-	emissions_per_minute = 9,
+	emissions_per_minute = { pollution = 9 },
 }
+offshore_mk0_pump.energy_usage = "900kW"
 
 local offshore_mk0_pump_output = table.deepcopy(offshore_pump_output_template)
 offshore_mk0_pump_output.animations = blank
@@ -177,10 +179,10 @@ offshore_mk0_pump_output.selection_box = offshore_mk0_pump.selection_box
 
 offshore_mk0_pump_output.energy_source = {
 	type = "burner",
-	fuel_category = { "chemical" },
+	fuel_categories = { "chemical" },
 	effectivity = 1,
 	fuel_inventory_size = 1,
-	emissions_per_minute = 9,
+	emissions_per_minute = { pollution = 9 },
 }
 offshore_mk0_pump_output.energy_usage = "900kW"
 
@@ -207,8 +209,9 @@ offshore_pump.selectable_in_game = false
 offshore_pump.energy_source = {
 	type = "electric",
 	usage_priority = "secondary-input",
-	emissions_per_minute = 1,
+	emissions_per_minute = { pollution = 1 },
 }
+offshore_pump.energy_usage = "1200kW"
 
 local offshore_pump_output = table.deepcopy(offshore_pump_output_template)
 
@@ -228,7 +231,7 @@ offshore_pump_output.selection_box = offshore_pump.selection_box
 offshore_pump_output.energy_source = {
 	type = "electric",
 	usage_priority = "secondary-input",
-	emissions_per_minute = 1,
+	emissions_per_minute = { pollution = 1 },
 }
 offshore_pump_output.energy_usage = "1200kW"
 
@@ -256,8 +259,9 @@ offshore_pump_mk2.selectable_in_game = false
 offshore_pump_mk2.energy_source = {
 	type = "electric",
 	usage_priority = "secondary-input",
-	emissions_per_minute = 1,
+	emissions_per_minute = { pollution = 1 },
 }
+offshore_pump_mk2.energy_usage = "2000kW"
 
 local offshore_pump_mk2_output = table.deepcopy(offshore_pump_output_template)
 offshore_pump_mk2_output.animations = blank
@@ -276,7 +280,7 @@ offshore_pump_mk2_output.selection_box = offshore_pump_mk2.selection_box
 offshore_pump_mk2_output.energy_source = {
 	type = "electric",
 	usage_priority = "secondary-input",
-	emissions_per_minute = 1,
+	emissions_per_minute = { pollution = 1 },
 }
 offshore_pump_mk2_output.energy_usage = "2000kW"
 
@@ -304,8 +308,9 @@ offshore_pump_mk3.selectable_in_game = false
 offshore_pump_mk3.energy_source = {
 	type = "electric",
 	usage_priority = "secondary-input",
-	emissions_per_minute = 1,
+	emissions_per_minute = { pollution = 1 },
 }
+offshore_pump_mk3.energy_usage = "2000kW"
 
 local offshore_pump_mk3_output = table.deepcopy(offshore_pump_output_template)
 offshore_pump_mk3_output.animations = blank
@@ -324,7 +329,7 @@ offshore_pump_mk3_output.selection_box = offshore_pump_mk3.selection_box
 offshore_pump_mk3_output.energy_source = {
 	type = "electric",
 	usage_priority = "secondary-input",
-	emissions_per_minute = 1,
+	emissions_per_minute = { pollution = 1 },
 }
 offshore_pump_mk3_output.energy_usage = "2000kW"
 
@@ -352,8 +357,9 @@ offshore_pump_mk4.selectable_in_game = false
 offshore_pump_mk4.energy_source = {
 	type = "electric",
 	usage_priority = "secondary-input",
-	emissions_per_minute = 1,
+	emissions_per_minute = { pollution = 1 },
 }
+offshore_pump_mk4.energy_usage = "2000kW"
 
 local offshore_pump_mk4_output = table.deepcopy(offshore_pump_output_template)
 offshore_pump_mk4_output.animations = blank
@@ -372,7 +378,7 @@ offshore_pump_mk4_output.selection_box = offshore_pump_mk4.selection_box
 offshore_pump_mk4_output.energy_source = {
 	type = "electric",
 	usage_priority = "secondary-input",
-	emissions_per_minute = 1,
+	emissions_per_minute = { pollution = 1 },
 }
 offshore_pump_mk4_output.energy_usage = "2000kW"
 

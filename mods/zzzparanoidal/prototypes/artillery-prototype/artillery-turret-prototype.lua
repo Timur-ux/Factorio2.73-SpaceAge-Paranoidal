@@ -4,11 +4,7 @@
 if mods["Bio_Industries"] then
 data.raw["technology"]["bi-tech-bio-cannon"].hidden = true
 
-data.raw["item"]["bi-bio-cannon-area"].flags = {"hidden"}
 
-data.raw["ammo"]["bi-bio-cannon-proto-ammo"].flags = {"hidden"}
-data.raw["ammo"]["bi-bio-cannon-basic-ammo"].flags = {"hidden"}
-data.raw["ammo"]["bi-bio-cannon-poison-ammo"].flags = {"hidden"}
 
 data.raw["recipe"]["bi-bio-cannon"].hidden = true
 data.raw["recipe"]["bi-bio-cannon-proto-ammo"].hidden = true
@@ -24,12 +20,12 @@ artillery_turret_prototype.name = "artillery-turret-prototype"
 artillery_turret_prototype.minable = {mining_time = 0.1, result = "artillery-turret-prototype"}
 artillery_turret_prototype.icon = "__zzzparanoidal__/prototypes/artillery-prototype/artillery-turret.png"
 artillery_turret_prototype.gun = "artillery-gun-prototype"
-artillery_turret_prototype.ammo_stack_limit = "5"
+artillery_turret_prototype.ammo_stack_limit = 5
 artillery_turret_prototype.max_health = 1000
-artillery_turret_prototype.turret_rotation_speed = "0.0003"
-artillery_turret_prototype.turn_after_shooting_cooldown = "100"
-artillery_turret_prototype.manual_range_modifier = "1"
-artillery_turret_prototype.cannon_parking_speed = "0.125"
+artillery_turret_prototype.turret_rotation_speed = 0.0003
+artillery_turret_prototype.turn_after_shooting_cooldown = 100
+artillery_turret_prototype.manual_range_modifier = 1
+artillery_turret_prototype.cannon_parking_speed = 0.125
 artillery_turret_prototype.base_picture.layers = 
 {
     {
@@ -64,7 +60,6 @@ data:extend({
         name = "artillery-gun-prototype",
         icon = "__base__/graphics/icons/tank-cannon.png",
         icon_size = 64, icon_mipmaps = 4,
-        flags = {"hidden"},
         subgroup = "gun",
         order = "z[artillery]-a[cannon]",
         attack_parameters =
@@ -117,6 +112,7 @@ data:extend({
         name = "artillery-shell-prototype",
         icon = "__zzzparanoidal__/prototypes/artillery-prototype/artillery-shell.png",
         icon_size = 64, icon_mipmaps = 4,
+				ammo_category="artillery-shell-prototype",
         ammo_type =
         {
           category = "artillery-shell-prototype",
@@ -152,7 +148,7 @@ data:extend({
     ingredients =
     {
       { type = "item", name = "steel-plate", amount = 5},
-      { type = "item", name = "bronze-alloy", amount = 2},
+      { type = "item", name = "bob-bronze-alloy", amount = 2},
       { type = "item", name = "explosives", amount = 3}
     },
     results ={{type="item", name= "artillery-shell-prototype", amount=1}}
