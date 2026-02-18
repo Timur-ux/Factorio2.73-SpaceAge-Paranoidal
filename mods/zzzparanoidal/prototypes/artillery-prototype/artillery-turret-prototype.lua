@@ -151,9 +151,9 @@ data:extend({
     energy_required = 20,
     ingredients =
     {
-      {"steel-plate", 5},
-      {"bronze-alloy", 2},
-      {"explosives", 3}
+      { type = "item", name = "steel-plate", amount = 5},
+      { type = "item", name = "bronze-alloy", amount = 2},
+      { type = "item", name = "explosives", amount = 3}
     },
     results ={{type="item", name= "artillery-shell-prototype", amount=1}}
 },
@@ -295,10 +295,10 @@ data:extend({
         energy_required = 20,
         ingredients =
         {
-          {"electronic-circuit", 10},
-          {"engine-unit", 15},
-          {"steel-plate", 120},
-          {"concrete", 100},
+          { type = "item", name = "electronic-circuit", amount = 10},
+          { type = "item", name = "engine-unit", amount = 15},
+          { type = "item", name = "steel-plate", amount = 120},
+          { type = "item", name = "concrete", amount = 100},
         },
         results ={{type="item", name= "artillery-turret-prototype", amount=1}}
       },
@@ -319,9 +319,9 @@ data:extend({
           count = 300,
           ingredients = 
           {
-            {"automation-science-pack", 1},
-            {"logistic-science-pack", 1},
-            {"military-science-pack", 1},
+            { "automation-science-pack", 1},
+            { "logistic-science-pack", 1},
+            { "military-science-pack", 1},
           },
           time = 30,
         }

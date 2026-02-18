@@ -6,8 +6,8 @@ data:extend({
 			energy_required = 5,
 			enabled = false,
 			ingredients = {
-				{ "bob-silver-plate", 1 },
-				{ "bob-gold-plate", 1 },
+				{ type = "item", name = "bob-silver-plate", amount = 1},
+				{ type = "item", name = "bob-gold-plate", amount = 1},
 			},
 			results = { { type = "item", name = "bob-module-contact", amount = 2 } },
 		},
@@ -15,8 +15,8 @@ data:extend({
 			energy_required = 6,
 			enabled = false,
 			ingredients = {
-				{ "bob-silver-plate", 1 },
-				{ "bob-gold-plate", 1 },
+				{ type = "item", name = "bob-silver-plate", amount = 1},
+				{ type = "item", name = "bob-gold-plate", amount = 1},
 			},
 			results = { { type = "item", name = "bob-module-contact", amount = 2 } },
 		},

@@ -33,7 +33,7 @@ data.raw.technology["yi-inserters"].hidden = true
 -- bobmods.lib.recipe.remove_result("Recipename", "Itemname")
 -- bobmods.lib.recipe.remove_ingredient ("Recipename", "itemname")
 -- bobmods.lib.recipe.add_new_ingredient ("Recipename", {type="item", name="Itemname", amount=2})
--- table.insert( data.raw["recipe"]["Recipename"].ingredients, {"Itemname", 14})
+-- table.insert( data.raw["recipe"]["Recipename"].ingredients, { type = "item", name = "Itemname", amount = 14})
 
 bobmods.lib.recipe.remove_result ("angels-ore1-chunk", "y-res1")
 bobmods.lib.recipe.remove_result ("angels-ore3-chunk", "y-res2")
@@ -134,8 +134,8 @@ data.raw.recipe["y-c22-recipe"].ingredients = {
     },
     results =
     {
-      {"plutonium-239", 41},
-      {"uranium-238", 2}
+      { type = "item", name = "plutonium-239", amount = 41},
+      { type = "item", name = "uranium-238", amount = 2}
     },
 	result_count = 1
   },

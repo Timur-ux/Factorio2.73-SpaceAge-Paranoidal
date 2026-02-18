@@ -470,7 +470,7 @@ data.raw["rail-chain-signal"]["rail-chain-signal"].collision_mask = {layers={["i
 data.raw["train-stop"]["train-stop"].collision_mask = {layers={["item-layer"] = true,[ "object-layer"] = true,[ "player-layer"] = true,[ "water-tile"] = true,[ "layer-14"] = true}}
 -------------------------------------------------------------------------------------------------
 --подкручиваем рецепт стандартных рельс
-bobmods.lib.recipe.set_ingredient("rail", {"stone-crushed", 10})
+bobmods.lib.recipe.set_ingredient("rail", { type = "item", name = "stone-crushed", amount = 10})
 -------------------------------------------------------------------------------------------------
 --переставляем рецепты рельс в технологиях
 --bobmods.lib.tech.remove_recipe_unlock("railway", "bi-rail-wood")

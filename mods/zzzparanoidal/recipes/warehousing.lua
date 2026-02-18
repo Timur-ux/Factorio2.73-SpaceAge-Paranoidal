@@ -4,10 +4,10 @@ data:extend({
 		name = "warehouse-basic",
 		enabled = "false",
 		ingredients = {
-			{ "storehouse-basic", 2 }, --added drd
-			{ "steel-plate", 200 },
-			{ "stone-brick", 40 },
-			{ "iron-stick", 85 },
+			{ type = "item", name = "storehouse-basic", amount = 2}, --added drd
+			{ type = "item", name = "steel-plate", amount = 200},
+			{ type = "item", name = "stone-brick", amount = 40},
+			{ type = "item", name = "iron-stick", amount = 85},
 		},
 		energy_required = 30,
 		results = { { type = "item", name = "warehouse-basic", amount = 1 } },
@@ -17,10 +17,10 @@ data:extend({
 		name = "angels-warehouse-passive-provider",
 		enabled = "false",
 		ingredients = {
-			{ "warehouse-basic", 1 },
-			{ "angels-logistic-chest-passive-provider", 1 },
-			{ "steel-plate", 10 },
-			{ "iron-stick", 15 },
+			{ type = "item", name = "warehouse-basic", amount = 1},
+			{ type = "item", name = "angels-logistic-chest-passive-provider", amount = 1},
+			{ type = "item", name = "steel-plate", amount = 10},
+			{ type = "item", name = "iron-stick", amount = 15},
 		},
 		energy_required = 5,
 		results = { { type = "item", name = "angels-warehouse-passive-provider", amount = 1 } },
@@ -30,10 +30,10 @@ data:extend({
 		name = "angels-warehouse-storage",
 		enabled = "false",
 		ingredients = {
-			{ "warehouse-basic", 1 },
-			{ "angels-logistic-chest-storage", 1 },
-			{ "steel-plate", 10 },
-			{ "iron-stick", 15 },
+			{ type = "item", name = "warehouse-basic", amount = 1},
+			{ type = "item", name = "angels-logistic-chest-storage", amount = 1},
+			{ type = "item", name = "steel-plate", amount = 10},
+			{ type = "item", name = "iron-stick", amount = 15},
 		},
 		energy_required = 5,
 		results = { { type = "item", name = "angels-warehouse-storage", amount = 1 } },
@@ -43,10 +43,10 @@ data:extend({
 		name = "angels-warehouse-active-provider",
 		enabled = "false",
 		ingredients = {
-			{ "warehouse-basic", 1 },
-			{ "angels-logistic-chest-active-provider", 1 },
-			{ "steel-plate", 10 },
-			{ "iron-stick", 15 },
+			{ type = "item", name = "warehouse-basic", amount = 1},
+			{ type = "item", name = "angels-logistic-chest-active-provider", amount = 1},
+			{ type = "item", name = "steel-plate", amount = 10},
+			{ type = "item", name = "iron-stick", amount = 15},
 		},
 		energy_required = 5,
 		results = { { type = "item", name = "angels-warehouse-active-provider", amount = 1 } },
@@ -56,10 +56,10 @@ data:extend({
 		name = "angels-warehouse-requester",
 		enabled = "false",
 		ingredients = {
-			{ "warehouse-basic", 1 },
-			{ "angels-logistic-chest-requester", 1 },
-			{ "steel-plate", 10 },
-			{ "iron-stick", 15 },
+			{ type = "item", name = "warehouse-basic", amount = 1},
+			{ type = "item", name = "angels-logistic-chest-requester", amount = 1},
+			{ type = "item", name = "steel-plate", amount = 10},
+			{ type = "item", name = "iron-stick", amount = 15},
 		},
 		energy_required = 5,
 		results = { { type = "item", name = "angels-warehouse-requester", amount = 1 } },
@@ -69,10 +69,10 @@ data:extend({
 		name = "angels-warehouse-buffer",
 		enabled = "false",
 		ingredients = {
-			{ "warehouse-basic", 1 },
-			{ "angels-logistic-chest-buffer", 1 },
-			{ "steel-plate", 10 },
-			{ "iron-stick", 15 },
+			{ type = "item", name = "warehouse-basic", amount = 1},
+			{ type = "item", name = "angels-logistic-chest-buffer", amount = 1},
+			{ type = "item", name = "steel-plate", amount = 10},
+			{ type = "item", name = "iron-stick", amount = 15},
 		},
 		energy_required = 5,
 		results = { { type = "item", name = "angels-warehouse-buffer", amount = 1 } },
@@ -82,10 +82,10 @@ data:extend({
 		name = "storehouse-basic",
 		enabled = "false",
 		ingredients = {
-			{ "steel-chest", 10 }, --drd
-			{ "steel-plate", 50 },
-			{ "stone-brick", 10 },
-			{ "iron-stick", 16 },
+			{ type = "item", name = "steel-chest", amount = 10}, --drd
+			{ type = "item", name = "steel-plate", amount = 50},
+			{ type = "item", name = "stone-brick", amount = 10},
+			{ type = "item", name = "iron-stick", amount = 16},
 		},
 		energy_required = 30,
 		results = { { type = "item", name = "storehouse-basic", amount = 1 } },
@@ -95,9 +95,9 @@ data:extend({
 		name = "storehouse-passive-provider",
 		enabled = "false",
 		ingredients = {
-			{ "storehouse-basic", 1 },
-			{ "angels-logistic-chest-passive-provider", 1 },
-			{ "iron-stick", 16 }, --drd
+			{ type = "item", name = "storehouse-basic", amount = 1},
+			{ type = "item", name = "angels-logistic-chest-passive-provider", amount = 1},
+			{ type = "item", name = "iron-stick", amount = 16}, --drd
 		},
 		energy_required = 5,
 		results = { { type = "item", name = "storehouse-passive-provider", amount = 1 } },
@@ -107,9 +107,9 @@ data:extend({
 		name = "storehouse-storage",
 		enabled = "false",
 		ingredients = {
-			{ "storehouse-basic", 1 },
-			{ "angels-logistic-chest-storage", 1 },
-			{ "iron-stick", 16 }, --drd
+			{ type = "item", name = "storehouse-basic", amount = 1},
+			{ type = "item", name = "angels-logistic-chest-storage", amount = 1},
+			{ type = "item", name = "iron-stick", amount = 16}, --drd
 		},
 		energy_required = 5,
 		results = { { type = "item", name = "storehouse-storage", amount = 1 } },
@@ -119,9 +119,9 @@ data:extend({
 		name = "storehouse-active-provider",
 		enabled = "false",
 		ingredients = {
-			{ "storehouse-basic", 1 },
-			{ "angels-logistic-chest-active-provider", 1 },
-			{ "iron-stick", 16 }, --drd
+			{ type = "item", name = "storehouse-basic", amount = 1},
+			{ type = "item", name = "angels-logistic-chest-active-provider", amount = 1},
+			{ type = "item", name = "iron-stick", amount = 16}, --drd
 		},
 		energy_required = 5,
 		results = { { type = "item", name = "storehouse-active-provider", amount = 1 } },
@@ -131,9 +131,9 @@ data:extend({
 		name = "storehouse-requester",
 		enabled = "false",
 		ingredients = {
-			{ "storehouse-basic", 1 },
-			{ "angels-logistic-chest-requester", 1 },
-			{ "iron-stick", 16 }, --drd
+			{ type = "item", name = "storehouse-basic", amount = 1},
+			{ type = "item", name = "angels-logistic-chest-requester", amount = 1},
+			{ type = "item", name = "iron-stick", amount = 16}, --drd
 		},
 		energy_required = 5,
 		results = { { type = "item", name = "storehouse-requester", amount = 1 } },
@@ -143,9 +143,9 @@ data:extend({
 		name = "storehouse-buffer",
 		enabled = "false",
 		ingredients = {
-			{ "storehouse-basic", 1 },
-			{ "angels-logistic-chest-buffer", 1 },
-			{ "iron-stick", 16 }, --drd
+			{ type = "item", name = "storehouse-basic", amount = 1},
+			{ type = "item", name = "angels-logistic-chest-buffer", amount = 1},
+			{ type = "item", name = "iron-stick", amount = 16}, --drd
 		},
 		energy_required = 5,
 		results = { { type = "item", name = "storehouse-buffer", amount = 1 } },

@@ -12,51 +12,51 @@ data.raw["recipe"]["electronic-circuit"].enabled = false
 
 if kaoextended.settingsoveride == true then
 	data.raw["recipe"]["automation-science-pack"].ingredients = {
-		{ "iron-gear-wheel", 3 },
-		{ "copper-plate", 10 },
-		{ "sci-component-1", 3 },
+		{ type = "item", name = "iron-gear-wheel", amount = 3},
+		{ type = "item", name = "copper-plate", amount = 10},
+		{ type = "item", name = "sci-component-1", amount = 3},
 	}
 	data.raw["recipe"]["logistic-science-pack"].enabled = false
 	data.raw["recipe"]["logistic-science-pack"].ingredients = {
-		{ "inserter", 2 },
-		{ "transport-belt", 7 },
-		{ "sci-component-2", 3 },
-		{ "bronze-alloy", 7 },
+		{ type = "item", name = "inserter", amount = 2},
+		{ type = "item", name = "transport-belt", amount = 7},
+		{ type = "item", name = "sci-component-2", amount = 3},
+		{ type = "item", name = "bronze-alloy", amount = 7},
 	}
 	data.raw["recipe"]["chemical-science-pack"].ingredients = {
-		{ "advanced-circuit", 1 },
-		{ "engine-unit", 1 },
-		{ "electric-mining-drill", 1 },
-		{ "steel-plate", 7 },
-		{ "sci-component-3", 3 },
+		{ type = "item", name = "advanced-circuit", amount = 1},
+		{ type = "item", name = "engine-unit", amount = 1},
+		{ type = "item", name = "electric-mining-drill", amount = 1},
+		{ type = "item", name = "steel-plate", amount = 7},
+		{ type = "item", name = "sci-component-3", amount = 3},
 	}
 	data.raw["recipe"]["military-science-pack"].ingredients = {
-		{ "piercing-rounds-magazine", 1 },
-		{ "grenade", 1 },
-		{ "gun-turret", 1 },
-		{ "sci-component-m", 3 },
+		{ type = "item", name = "piercing-rounds-magazine", amount = 1},
+		{ type = "item", name = "grenade", amount = 1},
+		{ type = "item", name = "gun-turret", amount = 1},
+		{ type = "item", name = "sci-component-m", amount = 3},
 	}
 	data.raw["recipe"]["bob-advanced-logistic-science-pack"].ingredients = {
-		{ "fast-inserter", 1 },
-		{ "flying-robot-frame", 1 },
-		{ "bob-brass-chest", 1 },
-		{ "sci-component-l", 3 },
+		{ type = "item", name = "fast-inserter", amount = 1},
+		{ type = "item", name = "flying-robot-frame", amount = 1},
+		{ type = "item", name = "bob-brass-chest", amount = 1},
+		{ type = "item", name = "sci-component-l", amount = 3},
 	}
 	data.raw["recipe"]["production-science-pack"].ingredients = {
-		{ "assembling-machine-1", 1 },
-		{ "electric-furnace", 1 },
-		{ "basic-structure-components", 1 },
-		{ "sci-component-5", 3 },
+		{ type = "item", name = "assembling-machine-1", amount = 1},
+		{ type = "item", name = "electric-furnace", amount = 1},
+		{ type = "item", name = "basic-structure-components", amount = 1},
+		{ type = "item", name = "sci-component-5", amount = 3},
 	}
 
 	data.raw["recipe"]["utility-science-pack"].ingredients = {
-		{ "processing-unit", 5 },
-		{ "express-transport-belt", 10 },
-		{ "bob-lithium-ion-battery", 10 },
-		{ "uranium-238", 5 },
-		{ "sci-component-4", 3 },
-		{ "bob-rubber", 10 },
-		{ "advsci-component-4", 3 },
+		{ type = "item", name = "processing-unit", amount = 5},
+		{ type = "item", name = "express-transport-belt", amount = 10},
+		{ type = "item", name = "bob-lithium-ion-battery", amount = 10},
+		{ type = "item", name = "uranium-238", amount = 5},
+		{ type = "item", name = "sci-component-4", amount = 3},
+		{ type = "item", name = "bob-rubber", amount = 10},
+		{ type = "item", name = "advsci-component-4", amount = 3},
 	}
 	data.raw["recipe"]["utility-science-pack"].energy_required = 28
 	data.raw["recipe"]["utility-science-pack"].results[1].amount = 4
@@ -68,82 +68,82 @@ if kaoextended.settingsoveride == true then
 			enabled = "false",
 			energy_required = 30,
 			ingredients = {
-				{ "automation-science-pack", 1 },
-				{ "logistic-science-pack", 1 },
-				{ "chemical-science-pack", 1 },
-				{ "military-science-pack", 1 },
-				{ "sci-component-o", 3 },
+				{ type = "item", name = "automation-science-pack", amount = 1},
+				{ type = "item", name = "logistic-science-pack", amount = 1},
+				{ type = "item", name = "chemical-science-pack", amount = 1},
+				{ type = "item", name = "military-science-pack", amount = 1},
+				{ type = "item", name = "sci-component-o", amount = 3},
 			},
 			result = "bob-science-pack-gold",
 		},
 	})
 
-	KaoExtended.recipe.add_to_recipe("bob-oil-boiler", { "oil-steam-boiler", 2 })
+	KaoExtended.recipe.add_to_recipe("bob-oil-boiler", { type = "item", name = "oil-steam-boiler", amount = 2})
 
-	KaoExtended.recipe.add_to_recipe("bob-basic-circuit-board", { "condensator", 2 })
+	KaoExtended.recipe.add_to_recipe("bob-basic-circuit-board", { type = "item", name = "condensator", amount = 2})
 
-	KaoExtended.recipe.add_to_recipe("advanced-circuit", { "standart-io", 2 })
-	KaoExtended.recipe.add_to_recipe("advanced-circuit", { "condensator2", 8 })
+	KaoExtended.recipe.add_to_recipe("advanced-circuit", { type = "item", name = "standart-io", amount = 2})
+	KaoExtended.recipe.add_to_recipe("advanced-circuit", { type = "item", name = "condensator2", amount = 8})
 
-	KaoExtended.recipe.add_to_recipe("processing-unit", { "advanced-io", 2 })
-	KaoExtended.recipe.add_to_recipe("processing-unit", { "condensator", 75 })
-	KaoExtended.recipe.add_to_recipe("processing-unit", { "condensator2", 25 })
-	KaoExtended.recipe.add_to_recipe("processing-unit", { "condensator3", 15 })
+	KaoExtended.recipe.add_to_recipe("processing-unit", { type = "item", name = "advanced-io", amount = 2})
+	KaoExtended.recipe.add_to_recipe("processing-unit", { type = "item", name = "condensator", amount = 75})
+	KaoExtended.recipe.add_to_recipe("processing-unit", { type = "item", name = "condensator2", amount = 25})
+	KaoExtended.recipe.add_to_recipe("processing-unit", { type = "item", name = "condensator3", amount = 15})
 
-	KaoExtended.recipe.add_to_recipe("bob-advanced-processing-unit", { "advanced-io", 2 })
-	KaoExtended.recipe.add_to_recipe("bob-advanced-processing-unit", { "predictive-io", 2 })
-	KaoExtended.recipe.add_to_recipe("bob-advanced-processing-unit", { "condensator", 92 })
-	KaoExtended.recipe.add_to_recipe("bob-advanced-processing-unit", { "condensator2", 40 })
-	KaoExtended.recipe.add_to_recipe("bob-advanced-processing-unit", { "condensator3", 28 })
+	KaoExtended.recipe.add_to_recipe("bob-advanced-processing-unit", { type = "item", name = "advanced-io", amount = 2})
+	KaoExtended.recipe.add_to_recipe("bob-advanced-processing-unit", { type = "item", name = "predictive-io", amount = 2})
+	KaoExtended.recipe.add_to_recipe("bob-advanced-processing-unit", { type = "item", name = "condensator", amount = 92})
+	KaoExtended.recipe.add_to_recipe("bob-advanced-processing-unit", { type = "item", name = "condensator2", amount = 40})
+	KaoExtended.recipe.add_to_recipe("bob-advanced-processing-unit", { type = "item", name = "condensator3", amount = 28})
 
-	KaoExtended.recipe.add_to_recipe("bob-module-processor-board", { "condensator", 12 })
+	KaoExtended.recipe.add_to_recipe("bob-module-processor-board", { type = "item", name = "condensator", amount = 12})
 
-	KaoExtended.recipe.add_to_recipe("bob-module-processor-board-2", { "condensator", 8 })
-	KaoExtended.recipe.add_to_recipe("bob-module-processor-board-2", { "condensator2", 10 })
+	KaoExtended.recipe.add_to_recipe("bob-module-processor-board-2", { type = "item", name = "condensator", amount = 8})
+	KaoExtended.recipe.add_to_recipe("bob-module-processor-board-2", { type = "item", name = "condensator2", amount = 10})
 
-	KaoExtended.recipe.add_to_recipe("bob-module-processor-board-3", { "condensator2", 10 })
-	KaoExtended.recipe.add_to_recipe("bob-module-processor-board-3", { "condensator3", 16 })
+	KaoExtended.recipe.add_to_recipe("bob-module-processor-board-3", { type = "item", name = "condensator2", amount = 10})
+	KaoExtended.recipe.add_to_recipe("bob-module-processor-board-3", { type = "item", name = "condensator3", amount = 16})
 
-	KaoExtended.recipe.add_to_recipe("bob-speed-processor", { "condensator", 8 })
-	KaoExtended.recipe.add_to_recipe("bob-speed-processor-2", { "condensator-2", 8 })
-	KaoExtended.recipe.add_to_recipe("bob-speed-processor-3", { "condensator-3", 8 })
+	KaoExtended.recipe.add_to_recipe("bob-speed-processor", { type = "item", name = "condensator", amount = 8})
+	KaoExtended.recipe.add_to_recipe("bob-speed-processor-2", { type = "item", name = "condensator-2", amount = 8})
+	KaoExtended.recipe.add_to_recipe("bob-speed-processor-3", { type = "item", name = "condensator-3", amount = 8})
 
-	KaoExtended.recipe.add_to_recipe("bob-efficiency-processor", { "condensator", 8 })
-	KaoExtended.recipe.add_to_recipe("bob-efficiency-processor-2", { "condensator-2", 8 })
-	KaoExtended.recipe.add_to_recipe("bob-efficiency-processor-3", { "condensator-3", 8 })
+	KaoExtended.recipe.add_to_recipe("bob-efficiency-processor", { type = "item", name = "condensator", amount = 8})
+	KaoExtended.recipe.add_to_recipe("bob-efficiency-processor-2", { type = "item", name = "condensator-2", amount = 8})
+	KaoExtended.recipe.add_to_recipe("bob-efficiency-processor-3", { type = "item", name = "condensator-3", amount = 8})
 
-	KaoExtended.recipe.add_to_recipe("bob-productivity-processor", { "condensator", 8 })
-	KaoExtended.recipe.add_to_recipe("bob-productivity-processor-2", { "condensator-2", 8 })
-	KaoExtended.recipe.add_to_recipe("bob-productivity-processor-3", { "condensator-3", 8 })
+	KaoExtended.recipe.add_to_recipe("bob-productivity-processor", { type = "item", name = "condensator", amount = 8})
+	KaoExtended.recipe.add_to_recipe("bob-productivity-processor-2", { type = "item", name = "condensator-2", amount = 8})
+	KaoExtended.recipe.add_to_recipe("bob-productivity-processor-3", { type = "item", name = "condensator-3", amount = 8})
 
-	KaoExtended.recipe.add_to_recipe("transport-belt", { "bob-basic-transport-belt", 2 })
+	KaoExtended.recipe.add_to_recipe("transport-belt", { type = "item", name = "bob-basic-transport-belt", amount = 2})
 
 else
-	KaoExtended.recipe.add_to_recipe("automation-science-pack", { "sci-component-1", 3 })
-	KaoExtended.recipe.add_to_recipe("logistic-science-pack", { "sci-component-2", 3 })
-	KaoExtended.recipe.add_to_recipe("chemical-science-pack", { "sci-component-3", 3 })
+	KaoExtended.recipe.add_to_recipe("automation-science-pack", { type = "item", name = "sci-component-1", amount = 3})
+	KaoExtended.recipe.add_to_recipe("logistic-science-pack", { type = "item", name = "sci-component-2", amount = 3})
+	KaoExtended.recipe.add_to_recipe("chemical-science-pack", { type = "item", name = "sci-component-3", amount = 3})
 
-	KaoExtended.recipe.add_to_recipe("military-science-pack", { "sci-component-m", 3 })
-	KaoExtended.recipe.add_to_recipe("logistic-science-pack", { "sci-component-l", 3 })
-	KaoExtended.recipe.add_to_recipe("production-science-pack", { "sci-component-5", 3 })
-	KaoExtended.recipe.add_to_recipe("utility-science-pack", { "sci-component-4", 3 })
-	KaoExtended.recipe.add_to_recipe("utility-science-pack", { "advsci-component-4", 3 })
+	KaoExtended.recipe.add_to_recipe("military-science-pack", { type = "item", name = "sci-component-m", amount = 3})
+	KaoExtended.recipe.add_to_recipe("logistic-science-pack", { type = "item", name = "sci-component-l", amount = 3})
+	KaoExtended.recipe.add_to_recipe("production-science-pack", { type = "item", name = "sci-component-5", amount = 3})
+	KaoExtended.recipe.add_to_recipe("utility-science-pack", { type = "item", name = "sci-component-4", amount = 3})
+	KaoExtended.recipe.add_to_recipe("utility-science-pack", { type = "item", name = "advsci-component-4", amount = 3})
 
-	KaoExtended.recipe.add_to_recipe("bob-module-processor-board", { "advsci-component-4", 1 })
+	KaoExtended.recipe.add_to_recipe("bob-module-processor-board", { type = "item", name = "advsci-component-4", amount = 1})
 
-	KaoExtended.recipe.add_to_recipe("bob-basic-circuit-board", { "condensator", 4 })
-	KaoExtended.recipe.add_to_recipe("bob-module-processor-board", { "advsci-component-4", 1 })
+	KaoExtended.recipe.add_to_recipe("bob-basic-circuit-board", { type = "item", name = "condensator", amount = 4})
+	KaoExtended.recipe.add_to_recipe("bob-module-processor-board", { type = "item", name = "advsci-component-4", amount = 1})
 
-	KaoExtended.recipe.add_to_recipe("advanced-circuit", { "standart-io", 2 })
-	KaoExtended.recipe.add_to_recipe("advanced-circuit", { "condensator", 25 })
-	KaoExtended.recipe.add_to_recipe("advanced-circuit", { "condensator2", 5 })
+	KaoExtended.recipe.add_to_recipe("advanced-circuit", { type = "item", name = "standart-io", amount = 2})
+	KaoExtended.recipe.add_to_recipe("advanced-circuit", { type = "item", name = "condensator", amount = 25})
+	KaoExtended.recipe.add_to_recipe("advanced-circuit", { type = "item", name = "condensator2", amount = 5})
 
-	KaoExtended.recipe.add_to_recipe("processing-unit", { "advanced-io", 3 })
-	KaoExtended.recipe.add_to_recipe("processing-unit", { "condensator2", 15 })
-	KaoExtended.recipe.add_to_recipe("processing-unit", { "condensator3", 25 })
+	KaoExtended.recipe.add_to_recipe("processing-unit", { type = "item", name = "advanced-io", amount = 3})
+	KaoExtended.recipe.add_to_recipe("processing-unit", { type = "item", name = "condensator2", amount = 15})
+	KaoExtended.recipe.add_to_recipe("processing-unit", { type = "item", name = "condensator3", amount = 25})
 
-	KaoExtended.recipe.add_to_recipe("bob-advanced-processing-unit", { "predictive-io", 3 })
-	KaoExtended.recipe.add_to_recipe("bob-advanced-processing-unit", { "condensator3", 32 })
+	KaoExtended.recipe.add_to_recipe("bob-advanced-processing-unit", { type = "item", name = "predictive-io", amount = 3})
+	KaoExtended.recipe.add_to_recipe("bob-advanced-processing-unit", { type = "item", name = "condensator3", amount = 32})
 
-	KaoExtended.recipe.add_to_recipe("bob-module-processor-board", { "condensator", 12 })
+	KaoExtended.recipe.add_to_recipe("bob-module-processor-board", { type = "item", name = "condensator", amount = 12})
 end

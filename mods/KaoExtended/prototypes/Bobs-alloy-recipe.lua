@@ -186,8 +186,8 @@ data:extend({
       enabled = false,
 	  hidden = false,
       ingredients = {
-        { "solder-alloy", 4 },
-        { "resin", 2 },
+        { type = "item", name = "solder-alloy", amount = 4},
+        { type = "item", name = "resin", amount = 2},
       },
       result = "solder",
       result_count = 1,

@@ -154,15 +154,10 @@ end
 
 -- Adds item to recipe
 -- @param recipeName [string] -- recipe add item to
--- @param itemInputs [pair<string, number>] -- item name and item amount
+-- @param itemInputs [{type = string, name = string, amount = number}] -- item name and item amount
 function KaoExtended.recipe.add_to_recipe(recipeName, itemInputs)
 	Assert.Expected(type(recipeName) == "string", "recipe name as string ", recipeName, "recipeName")
-	Assert.Expected(type(itemInputs) == "table" and #itemInputs == 2, "table with size 2", itemInputs)
-	local name = itemInputs[1]
-	local amount = itemInputs[2]
-
-	Assert.Expected(type(name) == "string", "item name as string", name, "itemInputs[1]")
-	Assert.Expected(type(amount) == "number", "item amount as number", amount, "itemInputs[2]")
+	Assert.Expected(type(itemInputs) == "table" and itemInputs.name and itemInputs.amount and itemInputs.type, "correct recipe ingredient", itemInputs)
 
 	local recipe = data.raw.recipe[recipeName]
 	local item = KaoExtended.item.basic_item(itemInputs)
