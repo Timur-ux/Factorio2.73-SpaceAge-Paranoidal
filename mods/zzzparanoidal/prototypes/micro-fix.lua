@@ -117,7 +117,7 @@ data:extend({
 		energy_required = 20,
 		ingredients = { { type = "item", name = "angels-ore4-crushed", amount = 7 } },
 		results = {
-			{ type = "item", name = "glass", amount = 4 },
+			{ type = "item", name = "bob-glass", amount = 4 },
 			{ name = "slag", type = "item", amount = 1 },
 		},
 	},
@@ -299,8 +299,8 @@ if not mods["angelsindustries"] then
 		{ type = "item-subgroup", name = "spider", group = "transport", order = "x" },
 		{ type = "item-subgroup", name = "aircraft", group = "transport", order = "y" },
 		-------------------------------------------------------------------------------------------------
-		{ type = "item-subgroup", name = "FluidMustFlow", group = "bob-logistics", order = "d-a-3" },
-		{ type = "item-subgroup", name = "FlowControl", group = "bob-logistics", order = "d-a-4" },
+		{ type = "item-subgroup", name = "FluidMustFlow", group = "logistics", order = "d-a-3" },
+		{ type = "item-subgroup", name = "FlowControl", group = "logistics", order = "d-a-4" },
 		{ type = "item-subgroup", name = "wooden-pole", group = "logistics", order = "d-1" },
 		{ type = "item-subgroup", name = "medium-electric-pole", group = "logistics", order = "d-2" },
 		{ type = "item-subgroup", name = "big-electric-pole", group = "logistics", order = "d-3" },
@@ -406,10 +406,10 @@ if mods["BatteryElectricTrain"] then
 			enabled = false,
 			ingredients = {
 				{ type = "item", name = "bet-charger-3", amount = 2},
-				{ type = "item", name = "advanced-processing-unit", amount = 50},
+				{ type = "item", name = "bob-advanced-processing-unit", amount = 50},
 				{ type = "item", name = "bob-insulated-cable", amount = 30},
 				{ type = "item", name = "bob-gilded-copper-cable", amount = 20},
-				{ type = "item", name = "nitinol-gear-wheel", amount = 5},
+				{ type = "item", name = "bob-nitinol-gear-wheel", amount = 5},
 				{ type = "item", name = "bob-nitinol-alloy", amount = 30},
 				{ type = "item", name = "raw-speed-module-6", amount = 2},
 			},
@@ -457,7 +457,7 @@ if mods["BatteryElectricTrain"] then
 			name = "hiend_loco",
 			icon = "__zzzparanoidal__/graphics/train/hiend/ht-locomotive.png",
 			icon_size = 64,
-			subgroup = "bob-locomotive",
+			subgroup = "locomotive",
 			order = "z",
 			place_result = "hiend_loco",
 			stack_size = 10,
@@ -470,9 +470,9 @@ if mods["BatteryElectricTrain"] then
 			enabled = false,
 			ingredients = {
 				{ type = "item", name = "bet-locomotive", amount = 1},
-				{ type = "item", name = "advanced-processing-unit", amount = 20},
-				{ type = "item", name = "nitinol-bearing", amount = 20},
-				{ type = "item", name = "nitinol-gear-wheel", amount = 15},
+				{ type = "item", name = "bob-advanced-processing-unit", amount = 20},
+				{ type = "item", name = "bob-nitinol-bearing", amount = 20},
+				{ type = "item", name = "bob-nitinol-gear-wheel", amount = 15},
 				{ type = "item", name = "bob-nitinol-alloy", amount = 10},
 				{ type = "item", name = "raw-speed-module-6", amount = 5},
 			},
@@ -712,7 +712,7 @@ if mods["BatteryElectricTrain"] then
 			},
 			sound_minimum_speed = 0.5,
 			sound_scaling_ratio = 0.35,
-			equipment_grid = "bob-locomotive",
+			equipment_grid = "locomotive",
 			water_reflection = locomotive_reflection(),
 		},
 		-------------------------------------------------------------------------------------------------
@@ -721,7 +721,7 @@ if mods["BatteryElectricTrain"] then
 			name = "hiend_wagon",
 			icon = "__zzzparanoidal__/graphics/train/hiend/ht-generic-wagon.png",
 			icon_size = 64,
-			subgroup = "bob-cargo-wagon",
+			subgroup = "cargo-wagon",
 			order = "z",
 			place_result = "hiend_wagon",
 			stack_size = 10,
@@ -734,9 +734,9 @@ if mods["BatteryElectricTrain"] then
 			enabled = false,
 			ingredients = {
 				{ type = "item", name = "bob-cargo-wagon-3", amount = 1},
-				{ type = "item", name = "advanced-processing-unit", amount = 20},
-				{ type = "item", name = "nitinol-bearing", amount = 15},
-				{ type = "item", name = "nitinol-gear-wheel", amount = 10},
+				{ type = "item", name = "bob-advanced-processing-unit", amount = 20},
+				{ type = "item", name = "bob-nitinol-bearing", amount = 15},
+				{ type = "item", name = "bob-nitinol-gear-wheel", amount = 10},
 				{ type = "item", name = "bob-nitinol-alloy", amount = 10},
 			},
 			results = { { type = "item", name = "hiend_wagon", amount = 1} },
@@ -847,7 +847,7 @@ if mods["BatteryElectricTrain"] then
 			close_sound = sounds.cargo_wagon_close,
 			sound_minimum_speed = 1,
 			vehicle_impact_sound = sounds.generic_impact,
-			equipment_grid = "bob-cargo-wagon",
+			equipment_grid = "cargo-wagon",
 			water_reflection = locomotive_reflection(),
 		},
 
@@ -858,7 +858,7 @@ if mods["BatteryElectricTrain"] then
 			name = "hiend_fluid_wagon",
 			icon = "__zzzparanoidal__/graphics/train/hiend/ht-generic-fluid-wagon.png",
 			icon_size = 64,
-			subgroup = "bob-fluid-wagon",
+			subgroup = "fluid-wagon",
 			order = "z",
 			place_result = "hiend_fluid_wagon",
 			stack_size = 10,
@@ -871,9 +871,9 @@ if mods["BatteryElectricTrain"] then
 			enabled = false,
 			ingredients = {
 				{ type = "item", name = "bob-fluid-wagon-3", amount = 1},
-				{ type = "item", name = "advanced-processing-unit", amount = 20},
-				{ type = "item", name = "nitinol-bearing", amount = 15},
-				{ type = "item", name = "nitinol-gear-wheel", amount = 10},
+				{ type = "item", name = "bob-advanced-processing-unit", amount = 20},
+				{ type = "item", name = "bob-nitinol-bearing", amount = 15},
+				{ type = "item", name = "bob-nitinol-gear-wheel", amount = 10},
 				{ type = "item", name = "bob-nitinol-alloy", amount = 10},
 				{ type = "item", name = "bob-storage-tank-4", amount = 1},
 			},
@@ -1001,7 +1001,7 @@ if mods["BatteryElectricTrain"] then
 			sound_minimum_speed = 1,
 			vehicle_impact_sound = sounds.generic_impact,
 			water_reflection = locomotive_reflection(),
-			equipment_grid = "bob-cargo-wagon",
+			equipment_grid = "cargo-wagon",
 		},
 		-------------------------------------------------------------------------------------------------
 		{
@@ -1044,7 +1044,7 @@ flame_car.resistances = {
 	{ type = "acid", percent = 20 },
 }
 flame_car.guns = { "tank-flamethrower" }
-flame_car.equipment_grid = "bob-car"
+flame_car.equipment_grid = "car"
 
 data:extend({ flame_car })
 -------------------------------------------------------------------------------------------------

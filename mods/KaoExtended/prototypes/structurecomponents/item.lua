@@ -25,7 +25,7 @@ local function newRecipe(item, time)
 	local rec = {
 		type = "recipe",
 		name = item .. "-structure-components",
-		category = "crafting-machine",
+		category = "crafting",
 		enabled = false,
 		energy_required = time,
 		ingredients = {},
@@ -41,7 +41,7 @@ createSC("anotherworld")
 newRecipe("basic", 15).ingredients = {
 	{ type = "item", name = "bob-lead-plate", amount = 33 },
 	{ type = "item", name = "bob-glass", amount = 15 },
-	{ type = "item", name = "bob-stone-brick", amount = 22 },
+	{ type = "item", name = "stone-brick", amount = 22 },
 }
 newRecipe("intermediate", 30).ingredients = {
 	{ type = "item", name = "basic-structure-components", amount = 2 },
@@ -57,7 +57,7 @@ newRecipe("advanced", 60).ingredients = {
 	{ type = "item", name = "bob-cobalt-steel-alloy", amount = 20 },
 	{ type = "item", name = "plastic-bar", amount = 40 },
 }
-if data.raw.item["alien-science-pack"] then
+if data.raw.item["bob-alien-science-pack"] then
 	newRecipe("anotherworld", 120).ingredients = {
 		{ type = "item", name = "advanced-structure-components", amount = 10 },
 		{ type = "item", name = "plastic-bar", amount = 200 },

@@ -82,7 +82,7 @@ local function FixMxlChievements()
 		FixAcheveItemNameMismatch("stack-inserter-" .. tostring(lvl), "stack-inserter", "bulk-inserter")
 		FixAcheveItemNameMismatch(
 			"turbo-transport-belt-" .. tostring(lvl),
-			"turbo-transport-belt",
+			"bob-turbo-transport-belt",
 			"bob-turbo-transport-belt"
 		)
 	end

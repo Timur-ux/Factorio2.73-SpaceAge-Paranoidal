@@ -374,14 +374,14 @@ if mods["JunkTrain3"] then
 	}
 	-------------------------------------------------------------------------------------------------
 	--переносим итемы и рецепты
-	data.raw["recipe"]["JunkTrain"].subgroup = "bob-locomotive"
+	data.raw["recipe"]["JunkTrain"].subgroup = "locomotive"
 	data.raw["recipe"]["JunkTrain"].order = "a1"
-	data.raw.item["JunkTrain"].subgroup = "bob-locomotive"
+	data.raw.item["JunkTrain"].subgroup = "locomotive"
 	data.raw.item["JunkTrain"].order = "a1"
 
-	data.raw["recipe"]["ScrapTrailer"].subgroup = "bob-cargo-wagon"
+	data.raw["recipe"]["ScrapTrailer"].subgroup = "cargo-wagon"
 	data.raw["recipe"]["ScrapTrailer"].order = "a1"
-	data.raw.item["ScrapTrailer"].subgroup = "bob-cargo-wagon"
+	data.raw.item["ScrapTrailer"].subgroup = "cargo-wagon"
 	data.raw.item["ScrapTrailer"].order = "a1"
 
 	data.raw["recipe"]["rail-signal-scrap"].subgroup = "transport-rail-other"
@@ -428,39 +428,39 @@ if mods["JunkTrain3"] then
 
 	data.raw["straight-rail"]["straight-scrap-rail"].collision_mask = {
 		layers = {
-			["item-layer"] = true,
-			["object-layer"] = true,
-			["rail-layer"] = true,
-			["floor-layer"] = true,
-			["water-tile"] = true,
+			item = true,
+			object = true,
+			rail = true,
+			floor = true,
+			water_tile = true,
 		},
 	}
 	data.raw["curved-rail"]["curved-scrap-rail"].collision_mask = {
 		layers = {
-			["item-layer"] = true,
-			["object-layer"] = true,
-			["rail-layer"] = true,
-			["floor-layer"] = true,
-			["water-tile"] = true,
+			item = true,
+			object = true,
+			rail = true,
+			floor = true,
+			water_tile = true,
 		},
 	}
 
 	data.raw["straight-rail"]["straight-rail"].collision_mask = {
 		layers = {
-			["item-layer"] = true,
-			["object-layer"] = true,
-			["rail-layer"] = true,
-			["floor-layer"] = true,
-			["water-tile"] = true,
+			item = true,
+			object = true,
+			rail = true,
+			floor = true,
+			water_tile = true,
 		},
 	}
 	data.raw["curved-rail"]["curved-rail"].collision_mask = {
 		layers = {
-			["item-layer"] = true,
-			["object-layer"] = true,
-			["rail-layer"] = true,
-			["floor-layer"] = true,
-			["water-tile"] = true,
+			item = true,
+			object = true,
+			rail = true,
+			floor = true,
+			water_tile = true,
 		},
 	}
 
@@ -478,57 +478,56 @@ if mods["JunkTrain3"] then
 
 	data.raw["rail-signal"]["rail-signal-scrap"].collision_mask = {
 		layers = {
-			["item-layer"] = true,
-			["object-layer"] = true,
-			["rail-layer"] = true,
-			["floor-layer"] = true,
-			["water-tile"] = true,
+			item = true,
+			object = true,
+			rail = true,
+			floor = true,
+			water_tile = true,
 		},
 	}
 	data.raw["rail-chain-signal"]["rail-chain-signal-scrap"].collision_mask = {
 		layers = {
-			["item-layer"] = true,
-			["object-layer"] = true,
-			["rail-layer"] = true,
-			["floor-layer"] = true,
-			["water-tile"] = true,
+			item = true,
+			object = true,
+			rail = true,
+			floor = true,
+			water_tile = true,
 		},
 	}
 	data.raw["train-stop"]["train-stop-scrap"].collision_mask = {
 		layers = {
-			["item-layer"] = true,
-			["object-layer"] = true,
-			["player-layer"] = true,
-			["water-tile"] = true,
-			["layer-14"] = true,
+			item = true,
+			object = true,
+			player = true,
+			water_tile = true,
+			layer = true,
 		},
 	}
 
 	data.raw["rail-signal"]["rail-signal"].collision_mask = {
 		layers = {
-			["item-layer"] = true,
-			["object-layer"] = true,
-			["rail-layer"] = true,
-			["floor-layer"] = true,
-			["water-tile"] = true,
+			item = true,
+			object = true,
+			rail = true,
+			floor = true,
+			water_tile = true,
 		},
 	}
 	data.raw["rail-chain-signal"]["rail-chain-signal"].collision_mask = {
 		layers = {
-			["item-layer"] = true,
-			["object-layer"] = true,
-			["rail-layer"] = true,
-			["floor-layer"] = true,
-			["water-tile"] = true,
+			item = true,
+			object = true,
+			rail = true,
+			floor = true,
+			water_tile = true,
 		},
 	}
 	data.raw["train-stop"]["train-stop"].collision_mask = {
 		layers = {
-			["item-layer"] = true,
-			["object-layer"] = true,
-			["player-layer"] = true,
-			["water-tile"] = true,
-			["layer-14"] = true,
+			item = true,
+			object = true,
+			player = true,
+			water_tile = true,
 		},
 	}
 	-------------------------------------------------------------------------------------------------

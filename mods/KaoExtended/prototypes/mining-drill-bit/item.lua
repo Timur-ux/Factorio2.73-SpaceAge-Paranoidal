@@ -26,7 +26,7 @@ local function newRecipe(item, time)
 	local rec = {
 		type = "recipe",
 		name = "mining-drill-bit-" .. item,
-		category = "crafting-machine",
+		category = "crafting",
 		enabled = false,
 		energy_required = time,
 		ingredients = {},

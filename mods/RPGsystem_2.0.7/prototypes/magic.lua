@@ -132,7 +132,7 @@ data:extend({
 					},
 					{
 						type = "create-particle",
-						particle_name = "bob-tintable-water-particle",
+						particle_name = "tintable-water-particle",
 						repeat_count = 50,
 						initial_height = 1,
 						initial_vertical_speed = 0.1,
@@ -155,7 +155,7 @@ data:extend({
 									},
 									{
 										type = "create-particle",
-										particle_name = "bob-tintable-water-particle",
+										particle_name = "tintable-water-particle",
 										repeat_count = 30,
 										initial_height = 1,
 										initial_vertical_speed = 0.1,

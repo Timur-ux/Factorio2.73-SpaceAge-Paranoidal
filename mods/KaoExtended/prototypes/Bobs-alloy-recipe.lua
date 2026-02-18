@@ -4,7 +4,7 @@ data:extend({
     name = "bronze-alloy-x",
     enabled = false,
     hidden = false,
-    category = "mixing-furnace",
+    category = "bob-mixing-furnace",
     energy_required = 32,
     ingredients = {
       { type = "item", name = "copper-plate", amount = 3 },
@@ -20,14 +20,14 @@ data:extend({
     name = "angel-solder-alloy-x",
     enabled = false,
 	hidden = false,
-    category = "mixing-furnace",
+    category = "bob-mixing-furnace",
     energy_required = 32,
     ingredients = {
       { type = "item", name = "bob-tin-plate", amount = 5 },
       { type = "item", name = "bob-lead-plate", amount = 4 },
     },
     results = {
-      { type = "item", name = "solder", amount = 1 },
+      { type = "item", name = "bob-solder", amount = 1 },
     },
     allow_decomposition = false,
   },
@@ -36,7 +36,7 @@ data:extend({
     name = "bob-brass-alloy-x",
     enabled = false,
 	hidden = false,
-    category = "mixing-furnace",
+    category = "bob-mixing-furnace",
     energy_required = 32,
     ingredients = {
       { type = "item", name = "copper-plate", amount = 3 },
@@ -52,14 +52,14 @@ data:extend({
     name = "copper-tungsten-alloy-x",
     enabled = false,
 	hidden = false,
-    category = "mixing-furnace",
+    category = "bob-mixing-furnace",
     energy_required = 32,
     ingredients = {
       { type = "item", name = "copper-plate", amount = 2 },
-      { type = "item", name = "powdered-tungsten", amount = 3 },
+      { type = "item", name = "bob-powdered-tungsten", amount = 3 },
     },
     results = {
-      { type = "item", name = "copper-tungsten-alloy", amount = 1 },
+      { type = "item", name = "bob-copper-tungsten-alloy", amount = 1 },
     },
     allow_decomposition = false,
   },
@@ -68,7 +68,7 @@ data:extend({
     name = "bob-tungsten-carbide-x",
     enabled = false,
 	hidden = false,
-    category = "mixing-furnace",
+    category = "bob-mixing-furnace",
     energy_required = 25.6,
     ingredients = {
       { type = "item", name = "carbon", amount = 1 },
@@ -84,11 +84,11 @@ data:extend({
     name = "bob-tungsten-carbide-2x",
     enabled = false,
 	hidden = false,
-    category = "mixing-furnace",
+    category = "bob-mixing-furnace",
     energy_required = 25.6,
     ingredients = {
       { type = "item", name = "carbon", amount = 1 },
-      { type = "item", name = "powdered-tungsten", amount = 1 },
+      { type = "item", name = "bob-powdered-tungsten", amount = 1 },
     },
     results = {
       { type = "item", name = "bob-tungsten-carbide", amount = 1 },
@@ -100,7 +100,7 @@ data:extend({
     name = "gunmetal-alloy-x",
     enabled = false,
 	hidden = false,
-    category = "mixing-furnace",
+    category = "bob-mixing-furnace",
     energy_required = 32,
     ingredients = {
       { type = "item", name = "copper-plate", amount = 8 },
@@ -108,7 +108,7 @@ data:extend({
       { type = "item", name = "bob-zinc-plate", amount = 1 },
     },
     results = {
-      { type = "item", name = "gunmetal-alloy", amount = 1 },
+      { type = "item", name = "bob-gunmetal-alloy", amount = 1 },
     },
     allow_decomposition = false,
   },
@@ -118,7 +118,7 @@ data:extend({
     name = "bob-invar-alloy-x",
     enabled = false,
 	hidden = false,
-    category = "mixing-furnace",
+    category = "bob-mixing-furnace",
     energy_required = 32,
     ingredients = {
        { type = "item", name = "steel-plate", amount = 4 },
@@ -134,7 +134,7 @@ data:extend({
     name = "nitinol-alloy-x",
     enabled = false,
 	hidden = false,
-    category = "mixing-furnace",
+    category = "bob-mixing-furnace",
     energy_required = 32,
     ingredients = {
       { type = "item", name = "bob-nickel-plate", amount = 3 },
@@ -151,7 +151,7 @@ data:extend({
     name = "bob-cobalt-steel-alloy-x",
     enabled = false,
 	hidden = false,
-    category = "mixing-furnace",
+    category = "bob-mixing-furnace",
     energy_required = 32,
     ingredients = {
       { type = "item", name = "iron-plate", amount = 14 },
@@ -166,7 +166,7 @@ data:extend({
     name = "bob-cobalt-steel-alloy-x",
     enabled = false,
 	hidden = false,
-    category = "mixing-furnace",
+    category = "bob-mixing-furnace",
     energy_required = 32,
     ingredients = {
       { type = "item", name = "iron-plate", amount = 14 },
@@ -179,15 +179,15 @@ data:extend({
 	{
       type = "recipe",
       name = "solder-x",
-      category = "mixing-furnace",
+      category = "bob-mixing-furnace",
       energy_required = 10,
       enabled = false,
 	  hidden = false,
       ingredients = {
-        { type = "item", name = "solder-alloy", amount = 4},
-        { type = "item", name = "resin", amount = 2},
+        { type = "item", name = "bob-solder-alloy", amount = 4},
+        { type = "item", name = "bob-resin", amount = 2},
       },
-      results ={{type="item", name= "solder", amount = 1}},
+      results ={{type="item", name= "bob-solder", amount = 1}},
       allow_decomposition = false,
     },
   ]]--
@@ -320,7 +320,7 @@ data:extend({
     enabled = false,
     energy_required = 22,
     ingredients = {
-      { type = "item", name = "rutile-ore", amount = 14 },
+      { type = "item", name = "bob-rutile-ore", amount = 14 },
       { type = "item", name = "angels-electrode", amount = 1 },
       { type = "fluid", name = "water-purified", amount = 100 },
     },

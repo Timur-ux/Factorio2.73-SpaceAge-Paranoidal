@@ -37,9 +37,9 @@ local function extendBobs()
 		data.raw["resource"]["sulfur"].minable.fluid_amount = 20
 	end
 
-	if data.raw["resource"]["sort-gem-ore"] then
-		data.raw["resource"]["sort-gem-ore"].minable.required_fluid = "water"
-		data.raw["resource"]["sort-gem-ore"].minable.fluid_amount = 20
+	if data.raw["resource"]["bob-sort-gem-ore"] then
+		data.raw["resource"]["bob-sort-gem-ore"].minable.required_fluid = "water"
+		data.raw["resource"]["bob-sort-gem-ore"].minable.fluid_amount = 20
 	end
 
 	if data.raw["resource"]["bob-silver-ore"] then
@@ -52,9 +52,9 @@ local function extendBobs()
 		data.raw["resource"]["rutile"].minable.fluid_amount = 20
 	end
 
-	if data.raw["resource"]["quartz"] then
-		data.raw["resource"]["quartz"].minable.required_fluid = "water"
-		data.raw["resource"]["quartz"].minable.fluid_amount = 20
+	if data.raw["resource"]["bob-quartz"] then
+		data.raw["resource"]["bob-quartz"].minable.required_fluid = "water"
+		data.raw["resource"]["bob-quartz"].minable.fluid_amount = 20
 	end
 
 	if data.raw["resource"]["bob-nickel-ore"] then
@@ -72,9 +72,9 @@ local function extendBobs()
 		data.raw["resource"]["bob-gold-ore"].minable.fluid_amount = 20
 	end
 
-	if data.raw["resource"]["gem-ore"] then
-		data.raw["resource"]["gem-ore"].minable.required_fluid = "steam"
-		data.raw["resource"]["gem-ore"].minable.fluid_amount = 20
+	if data.raw["resource"]["bob-gem-ore"] then
+		data.raw["resource"]["bob-gem-ore"].minable.required_fluid = "steam"
+		data.raw["resource"]["bob-gem-ore"].minable.fluid_amount = 20
 	end
 
 	if data.raw["resource"]["bob-cobalt-ore"] then
@@ -114,17 +114,17 @@ local function extendAngles()
 		data.raw["resource"]["angels-ore6"].minable.fluid_amount = 100
 	end
 
-	data.raw.resource["infinite-angels-ore1"].minable.required_fluid = "liquid-sulfuric-acid"
+	data.raw.resource["infinite-angels-ore1"].minable.required_fluid = "angels-liquid-sulfuric-acid"
 	data.raw.resource["infinite-angels-ore1"].mining_time = 7
-	data.raw.resource["infinite-angels-ore2"].minable.required_fluid = "liquid-hydrofluoric-acid"
+	data.raw.resource["infinite-angels-ore2"].minable.required_fluid = "angels-liquid-hydrofluoric-acid"
 	data.raw.resource["infinite-angels-ore2"].mining_time = 14
-	data.raw.resource["infinite-angels-ore3"].minable.required_fluid = "liquid-sulfuric-acid"
+	data.raw.resource["infinite-angels-ore3"].minable.required_fluid = "angels-liquid-sulfuric-acid"
 	data.raw.resource["infinite-angels-ore3"].mining_time = 7
-	data.raw.resource["infinite-angels-ore4"].minable.required_fluid = "liquid-hydrochloric-acid"
+	data.raw.resource["infinite-angels-ore4"].minable.required_fluid = "angels-liquid-hydrochloric-acid"
 	data.raw.resource["infinite-angels-ore4"].mining_time = 12
-	data.raw.resource["infinite-angels-ore5"].minable.required_fluid = "liquid-nitric-acid"
+	data.raw.resource["infinite-angels-ore5"].minable.required_fluid = "angels-liquid-nitric-acid"
 	data.raw.resource["infinite-angels-ore5"].mining_time = 10
-	data.raw.resource["infinite-angels-ore6"].minable.required_fluid = "liquid-nitric-acid"
+	data.raw.resource["infinite-angels-ore6"].minable.required_fluid = "angels-liquid-nitric-acid"
 	data.raw.resource["infinite-angels-ore6"].mining_time = 10
 
 	data.raw.resource["infinite-angels-ore1"].minable.fluid_amount = 100

@@ -9,7 +9,6 @@ local blank = {
 local offshore_pump_output_template = {
 	type = "pump",
 	collision_box = { { -0.9, -0 }, { 0.9, 0.65 } },
-	collision_mask = { layers = { ["not-colliding-with-itself"] = true } },
 	fluid_box = {
 		volume = 1000,
 		base_area = 1,

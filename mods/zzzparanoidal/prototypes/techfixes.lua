@@ -1,6 +1,6 @@
 -- био пакет в гиг-лабу и гипер-лабу
-table.insert(data.raw["lab"]["big-lab"].inputs, "token-bio")
--- table.insert(data.raw["lab"]["hyper-lab"].inputs, "token-bio")
+table.insert(data.raw["lab"]["big-lab"].inputs, "angels-token-bio")
+-- table.insert(data.raw["lab"]["hyper-lab"].inputs, "angels-token-bio")
 
 --включим пластик без электролизиров
 bobmods.lib.tech.remove_prerequisite("plastics", "bob-electrolysis-2")
@@ -11,10 +11,10 @@ bobmods.lib.tech.remove_prerequisite("atomic-bomb", "kovarex-enrichment-process"
 --фикс атомной артилерии
 bobmods.lib.tech.add_prerequisite("bob-atomic-artillery-shell", "atomic-bomb")
 bobmods.lib.tech.remove_prerequisite("bob-atomic-artillery-shell", "kovarex-enrichment-process")
-bobmods.lib.tech.remove_recipe_unlock("atomic-bomb", "atomic-artillery-shell")
+bobmods.lib.tech.remove_recipe_unlock("atomic-bomb", "bob-atomic-artillery-shell")
 
 --фикс плазменных ракет
-bobmods.lib.tech.remove_prerequisite("bob-plasma-rocket", "bob-rocket" )
+bobmods.lib.tech.remove_prerequisite("bob-plasma-rocket", "rocket" )
 bobmods.lib.tech.add_prerequisite("bob-plasma-rocket", "rocketry")
 
 --убираем лишние рецепты

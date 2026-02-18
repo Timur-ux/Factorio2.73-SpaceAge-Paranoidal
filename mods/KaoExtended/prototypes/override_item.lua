@@ -55,7 +55,7 @@ bobmods.lib.recipe.add_new_ingredient(
 	{ type = "item", name = "copper-plate", amount = 10 }
 )
 
---bobmods.lib.recipe.replace_ingredient ("fast-underground-belt", "iron-gear-wheel", "steel-gear-wheel")
+--bobmods.lib.recipe.replace_ingredient ("fast-underground-belt", "iron-gear-wheel", "bob-steel-gear-wheel")
 
 -- MODULES
 --[[
@@ -64,11 +64,11 @@ bobmods.lib.recipe.add_new_ingredient(
   bobmods.lib.recipe.replace_ingredient("effectivity-module-3", "processing-unit", "standart-io")
 
   bobmods.lib.recipe.replace_ingredient("speed-module-4", "processing-unit", "advanced-io")
-  bobmods.lib.recipe.replace_ingredient("productivity-module-4", "processing-unit", "advanced-io")
+  bobmods.lib.recipe.replace_ingredient("bob-productivity-module-4", "processing-unit", "advanced-io")
   bobmods.lib.recipe.replace_ingredient("effectivity-module-4", "processing-unit", "advanced-io")
 
   bobmods.lib.recipe.replace_ingredient("speed-module-5", "processing-unit", "advanced-io")
-  bobmods.lib.recipe.replace_ingredient("productivity-module-5", "processing-unit", "advanced-io")
+  bobmods.lib.recipe.replace_ingredient("bob-productivity-module-5", "processing-unit", "advanced-io")
   bobmods.lib.recipe.replace_ingredient("effectivity-module-5", "processing-unit", "advanced-io")
 
   bobmods.lib.recipe.replace_ingredient("speed-module-6", "processing-unit", "predictive-io")

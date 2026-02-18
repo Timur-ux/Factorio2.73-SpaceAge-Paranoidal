@@ -73,7 +73,7 @@ bobmods.lib.recipe.remove_ingredient("fluid-depot", "iron-stick")
 --дорога
 bobmods.lib.recipe.add_ingredient("road", { type = "item", name = "stone", amount = 20})
 bobmods.lib.recipe.add_ingredient("road", { type = "item", name = "angels-coal-crushed", amount = 10})
-bobmods.lib.recipe.add_ingredient("road", { type = "item", name = "resin", amount = 10})
+bobmods.lib.recipe.add_ingredient("road", { type = "item", name = "bob-resin", amount = 10})
 
 bobmods.lib.recipe.remove_ingredient("road", "stone-brick")
 bobmods.lib.recipe.remove_ingredient("road", "coal")
@@ -121,7 +121,7 @@ data.raw.tile["transport-drone-road"].layer = 250
 bobmods.lib.recipe.replace_ingredient("fast-road", "concrete", "refined-concrete")
 -------------------------------------------------------------------------------------------------
 --машинка
-bobmods.lib.recipe.add_ingredient("transport-drone", { type = "item", name = "steel-bearing", amount = 4})
+bobmods.lib.recipe.add_ingredient("transport-drone", { type = "item", name = "bob-steel-bearing", amount = 4})
 bobmods.lib.recipe.add_ingredient("transport-drone", { type = "item", name = "electronic-circuit", amount = 3})
 bobmods.lib.recipe.add_ingredient("transport-drone", { type = "item", name = "simple-io", amount = 1})
 bobmods.lib.recipe.add_ingredient("transport-drone", { type = "item", name = "motor", amount = 3})

@@ -48,7 +48,7 @@ bobmods.lib.recipe.remove_result ("angels-ore3-pure", "y-res2")
 
 -- заменяем ингриды и результат у рецептов
 --Уникомпозит
-data.raw.recipe["angelsore-chunk-mix-yi1-processing"].category = "ore-sorting-4"
+data.raw.recipe["angelsore-chunk-mix-yi1-processing"].category = "angels-ore-sorting-4"
 data.raw.recipe["angelsore-chunk-mix-yi1-processing"].ingredients = {
           {type = "item", name = "angels-ore1-pure", amount = 4},
           {type = "item", name = "angels-ore3-pure", amount = 4},
@@ -60,7 +60,7 @@ data.raw.recipe["angelsore-chunk-mix-yi1-processing"].results = {
           {type = "item", name = "y-res1", amount = 1}
         }
 --Энергоминерал
-data.raw.recipe["angelsore-chunk-mix-yi2-processing"].category = "ore-sorting-4"
+data.raw.recipe["angelsore-chunk-mix-yi2-processing"].category = "angels-ore-sorting-4"
 data.raw.recipe["angelsore-chunk-mix-yi2-processing"].ingredients = {
           {type = "item", name = "angels-ore2-pure", amount = 4},
           {type = "item", name = "angels-ore4-pure", amount = 4},
@@ -125,16 +125,16 @@ data.raw.recipe["y-c22-recipe"].ingredients = {
 	energy_required = 10,
     ingredients =
     {
-          {type="item", name="thorium-232", amount=3, catalyst_amount=2},
-          {type="item", name="plutonium-239", amount=1, catalyst_amount=1},
+          {type="item", name="bob-thorium-232", amount=3, catalyst_amount=2},
+          {type="item", name="bob-plutonium-239", amount=1, catalyst_amount=1},
           {type="item", name="bob-lead-plate", amount=5, catalyst_amount=5},
 
-          {type="item", name="plutonium-239", amount=1, probability=0.1},
-		--{type="fluid", name = "liquid-sulfuric-acid", amount = 10},
+          {type="item", name="bob-plutonium-239", amount=1, probability=0.1},
+		--{type="fluid", name = "angels-liquid-sulfuric-acid", amount = 10},
     },
     results =
     {
-      { type = "item", name = "plutonium-239", amount = 41},
+      { type = "item", name = "bob-plutonium-239", amount = 41},
       { type = "item", name = "uranium-238", amount = 2}
     },
   },

@@ -64,7 +64,7 @@ if kaoextended.settingsoveride == true then
 	data:extend({
 		{
 			type = "recipe",
-			name = "science-pack-gold",
+			name = "bob-science-pack-gold",
 			enabled = false,
 			energy_required = 30,
 			ingredients = {

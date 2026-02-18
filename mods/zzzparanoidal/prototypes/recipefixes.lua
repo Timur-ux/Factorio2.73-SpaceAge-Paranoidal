@@ -20,9 +20,9 @@ data.raw.recipe["bob-brass-alloy"].hidden = false
 data.raw.recipe["angelsore-crushed-manganese-processing"].results[1].amount = 4
 data.raw.recipe["angelsore-pure-chrome-processing"].results[1].amount = 3
 data.raw.recipe["angelsore-pure-platinum-processing"].results[1].amount = 2
-data.raw.recipe["angelsore-crushed-manganese-processing"].category = "ore-sorting-2"
-data.raw.recipe["angelsore-pure-chrome-processing"].category = "ore-sorting-3"
-data.raw.recipe["angelsore-pure-platinum-processing"].category = "ore-sorting-3"
+data.raw.recipe["angelsore-crushed-manganese-processing"].category = "angels-ore-sorting-2"
+data.raw.recipe["angelsore-pure-chrome-processing"].category = "angels-ore-sorting-3"
+data.raw.recipe["angelsore-pure-platinum-processing"].category = "angels-ore-sorting-3"
 angelsmods.functions.allow_productivity("angelsore-crushed-manganese-processing")
 angelsmods.functions.allow_productivity("angelsore-pure-chrome-processing")
 angelsmods.functions.allow_productivity("angelsore-pure-platinum-processing")

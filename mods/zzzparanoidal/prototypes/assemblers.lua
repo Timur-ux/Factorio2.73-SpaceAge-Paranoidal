@@ -1,24 +1,24 @@
 
 
 --фикс рецептов
-bobmods.lib.recipe.add_ingredient("assembling-machine-7", { type = "item", name = "copper-tungsten-alloy", amount = 2500})
-bobmods.lib.recipe.add_ingredient("assembling-machine-7", { type = "item", name = "advanced-processing-unit", amount = 25})
+bobmods.lib.recipe.add_ingredient("assembling-machine-7", { type = "item", name = "bob-copper-tungsten-alloy", amount = 2500})
+bobmods.lib.recipe.add_ingredient("assembling-machine-7", { type = "item", name = "bob-advanced-processing-unit", amount = 25})
 bobmods.lib.recipe.add_ingredient("assembling-machine-7", { type = "item", name = "anotherworld-structure-components", amount = 2})
 
-bobmods.lib.recipe.add_ingredient("electronics-machine-4", { type = "item", name = "advanced-processing-unit", amount = 5})
-bobmods.lib.recipe.add_ingredient("electronics-machine-4", { type = "item", name = "copper-tungsten-alloy", amount = 1000})
+bobmods.lib.recipe.add_ingredient("electronics-machine-4", { type = "item", name = "bob-advanced-processing-unit", amount = 5})
+bobmods.lib.recipe.add_ingredient("electronics-machine-4", { type = "item", name = "bob-copper-tungsten-alloy", amount = 1000})
 bobmods.lib.recipe.add_ingredient("electronics-machine-4", { type = "item", name = "anotherworld-structure-components", amount = 5})
 
 bobmods.lib.recipe.add_ingredient("assembling-machine-8", { type = "item", name = "clowns-plate-magnesium", amount = 2500})
-bobmods.lib.recipe.add_ingredient("assembling-machine-8", { type = "item", name = "advanced-processing-unit", amount = 50})
+bobmods.lib.recipe.add_ingredient("assembling-machine-8", { type = "item", name = "bob-advanced-processing-unit", amount = 50})
 bobmods.lib.recipe.add_ingredient("assembling-machine-8", { type = "item", name = "anotherworld-structure-components", amount = 5})
 
 bobmods.lib.recipe.add_ingredient("electronics-machine-5", { type = "item", name = "clowns-plate-magnesium", amount = 1000})
-bobmods.lib.recipe.add_ingredient("electronics-machine-5", { type = "item", name = "advanced-processing-unit", amount = 50})
+bobmods.lib.recipe.add_ingredient("electronics-machine-5", { type = "item", name = "bob-advanced-processing-unit", amount = 50})
 bobmods.lib.recipe.add_ingredient("electronics-machine-5", { type = "item", name = "anotherworld-structure-components", amount = 10})
 
 bobmods.lib.recipe.add_ingredient("assembling-machine-9", { type = "item", name = "clowns-plate-depleted-uranium", amount = 2500})
-bobmods.lib.recipe.add_ingredient("assembling-machine-9", { type = "item", name = "advanced-processing-unit", amount = 100})
+bobmods.lib.recipe.add_ingredient("assembling-machine-9", { type = "item", name = "bob-advanced-processing-unit", amount = 100})
 bobmods.lib.recipe.add_ingredient("assembling-machine-9", { type = "item", name = "anotherworld-structure-components", amount = 10})
 
 --фикс загрязнений
