@@ -1,0 +1,9 @@
+{
+	"completion.callSnippet" : "Both",
+	"completion.keywordSnippet" : "Both",
+	"diagnostics.globals" : [
+		"data",
+		"storage"
+	],
+	"workspace.library" : ["./"]
+}
