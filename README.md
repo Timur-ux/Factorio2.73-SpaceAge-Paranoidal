@@ -1,45 +1,71 @@
-# ORIGINAL MODPACK
+# Оригинальный модпак
 
 https://github.com/FactorioParanoidal/ParanoidalModpack/
 
-# Goal
+## Цель
 
-Restore PARANOIDAL modpack under Factorio 2.73 + Space age
+Восстановить PARANOIDAL модпак для Factorio 2.0.73 + Space age
 
-All changes must be in zzzcompability and 0zzzcompability in order to simplify updates of mods in modpack
+## Установка
 
-## Fixes structure
+1. Скачать ванильную факторию (например [https://rutracker.org/forum/viewtopic.php?t=6155699|отсюда])
 
-Fixes must use asserts instead of common if -- else statements. Purpose for this is to hold only fixes that are really needed. If fixed mod publish his own update that refix the bug, asserts must fails that signals that the current fix don't need anymore and must be removed
+2. В папке %AppData%/Roaming/Factorio создать папку mods(если её нет) и скопировать туда содержимое папок mods/ и custom-mods/ этого репозитория
 
-NO LEGACY CODE THAT DO NOTHING!
+3. Играть
 
-# Structure
-Fixes divided into 2 parts -- pre fix and post fix
+## Структура изменений
 
-1. 0zzzcompability -- prefixes
+Моды расположены в двух местах mods/ и custom-mods/
 
-There usually stored fixes in name resolution
+В папке mods/ должны быть поддерживаемые моды. Изменения в них напрямую вносить не надо. В идеале их надо регулярно обновлять на последние версии
 
-For example since 2.0.0 bob/angels mod add prefixes bob-/angels- to their's items names but not all mods now know it, so i add hook to search items with bob-/angels- prefixes when common search fails
+В папке custom-mods/ должны быть расположены неподдерживаемые моды, которые полностью переработаны под модпак и оригинальные моды PARANOIDAL: zzzparanoidal, KaoExtended
 
-2. zzzcompability -- postfixes
+### Расширение модпака
 
-Fixes broken factorio entities
+На текущий момент в модпаке есть порядка 200 модов, в текущей доработке только 150. При добавлении нового мода следует учитывать следующее:
+
+1. Если мод поддерживаемый он должен работать "из коробки". Надо разместить его в папке mods/ и (опционально) модифицировать фиксами в моде zzzparanoidal
+
+2. Если мод устаревший, то надо разместить его в папке custom-mods/ и пофиксить его(см. ниже)
+
+3. Если мод устаревший и был в старом модпаке(для версии 1.1.100), то надо разместить его в папке custom-mods/ и, если для него есть фиксы в zzzparanoidal, то расширить их там, иначе пофиксить сам мод
 
 
-3. KaoExtended -- core legacy PARANOIDAL -- may be fixed in ./mods/KaoExtended
-4. zzzparanoidal -- core legacy PARANOIDAL -- may be fixed in ./mods/zzzparanoidal
+### Наиболее частые места фикса
 
-# Detail to know
-For angels mods i use dev2.0 branch from github. Master branch stuggles for 2 years already
+1. Префиксы. 
+	С версии 2.0.0 у всех сущностей крупных модпаков появились приставки у модов Боба это bob-, у Ангела это angels- и т.д.
+	Старые моды не содержат префиксов и их надо фиксить в первую очередь
 
-## Disabled things while i dont understand why they need
+2. Старое api.
+	С версии 1.1.100 само api Factorio незначительно изменилось. Места, где используется старое api надо найти и переписать на современный лад
 
-1. 	KaoExtended/data.lua -- Re-enabling bob's alloys
-2.	KaoExtended/data-final-fixes.lua -- Re-enabling bob's alloys
-3.	zzzparanoidal/settings-final-fixes.lua -- reskins-library custom colors tiers
-	They in the library settings but it seems like other mod remove it
-4. zzzparanoidal/prototypes/offshore-pump/entity-offshore-pump.lua -- seafloor-pump moved to angels-seafloor-pump, where going seafloor-pumps with higher tier i don't know so i remove it's settings for a while
-5. zzzparanoidal/prototypes/beltentities.lua  -- remove miniloader setting fixes. miniloader-redux change miniloader creation strongly so it is outdated and needs reworks(if any)
-6. zzzparanoidal/prototypes/micro-fix.lua -- there used undefined global 'rolling_stock_stand_by_light' i remove options with it so it's optional
+3. Иконки и звуки.
+	Пути к файлам внутри мода, скорее всего, будут работать, но обращение к файлам базовых модов factorio или других модов скорее всего изменились, такие места тоже надо поправить.
+	Отдельно про иконки: С какой-то версии 2.0+ все изображения стали хранится в высоком разрешении, так что если в моде есть картинки для обычного и высокого разрешения, нужно оставить только высокое разрешение и записать его как обычное
+
+4. Рецепты.
+	В рецептах ингредиенты и результаты теперь хранятся только в расширенном виде (т.е. в виде таблицы {type = "...", name = "...", amount = ...}), хранения в виде массива из имени и количества больше недопустимы
+
+### Полезные скрипты
+
+Для анализа и изменения модов я часто пользовался скриптами, которые расположены в папке scripts/.
+
+Они позволяют быстро искать иконки/звуки, ставить префиксы к именам, делать замены и т.д.
+
+Они написаны на bash'e, который используется в терминалах(это консоль по виндусятски).
+
+Если вы пользуетесь ОС Linux, то и сами разберетесь
+
+Если вы на винде, то можете поставить wsl -- получите полноценный терминал Linux
+
+В скриптах, помимо встроенных утилит используются:
+
+1. ripgrep -- быстрый поиск паттернов в файлах по регулярным выражениям
+2. jqlang -- вытаскивание данных из json-текста
+
+Их надо устанавливать отдельно.
+
+Дополнительно в папке factorio-apis расположены полная документация по прототипам для версий 1.1.110 и 2.0.73, которой можно пользоваться, когда у вас нет интернета или когда вы преисполнитесь в управлении терминалом
