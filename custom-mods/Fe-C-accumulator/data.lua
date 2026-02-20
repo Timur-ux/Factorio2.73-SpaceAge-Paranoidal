@@ -46,13 +46,15 @@ data:extend({
 			input_flow_limit = "50kW",
 			output_flow_limit = "50kW",
 		},
-		picture = {
-			filename = "__Fe-C-accumulator__/graphics/accumulator.png",
-			priority = "high",
-			width = 130,
-			height = 189,
-			shift = util.by_pixel(0, -11),
-			scale = 0.5,
+		chargable_graphics = {
+			picture = {
+				filename = "__Fe-C-accumulator__/graphics/accumulator.png",
+				priority = "high",
+				width = 130,
+				height = 189,
+				shift = util.by_pixel(0, -11),
+				scale = 0.5,
+			},
 		},
 		charge_cooldown = 3,
 		discharge_cooldown = 6,
@@ -102,6 +104,6 @@ data:extend({
 			{ "copper-plate", 5 },
 			{ "coal", 75 },
 		},
-		results = {{ type = "item", name = "fe-c-accumulator", amount = 1 }},
+		results = { { type = "item", name = "fe-c-accumulator", amount = 1 } },
 	},
 })

@@ -25,21 +25,6 @@ require("prototypes.BetterAlertArrows_100") --мод BetterAlertArrows
 require("prototypes.mod_compatibility.heroturrets")
 -------------------------------------------------------------------------------------------------
 require("prototypes.bio-content.bio-content-list") --Новый Биоконтент
--------------------------------------------------------------------------------------------------
---перенаправляем функцию ангела на функцию боба
-if not mods["angelsindustries"] then
-	function angelsmods.functions.OV.add_unlock(technology, recipe)
-		if
-			type(technology) == "string"
-			and type(recipe) == "string"
-			and data.raw.technology[technology]
-			and data.raw.recipe[recipe]
-		then
-			bobmods.lib.tech.add_recipe_unlock(technology, recipe)
-		end
-	end
-end
-
 -- Uniform recipe mod
 for _, r in pairs(data.raw["recipe"]) do
 	r.always_show_products = true
