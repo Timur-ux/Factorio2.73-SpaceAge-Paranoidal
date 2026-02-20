@@ -1,15 +1,13 @@
 -- add input fluid box for default burner drill
 
-
-
 ---Creates sprite
 ---@param filename string
 ---@param icon_size number | number[] must be 2^n
 ---@return SpritePrototype
 local function CreateSprite(filename, icon_size)
 	return {
-		filename=filename,
-		size=icon_size
+		filename = filename,
+		size = icon_size,
 	}
 end
 
@@ -18,20 +16,24 @@ end
 ---@param direction "input" | "output"
 ---@return FluidBox
 local function CreateFluidBoxTemplate(volume, pipe_connections)
-	local directions = {"north", "east", "west", "south"}
+	local directions = { north = "N", east = "E", west = "W", south = "S" }
 	local pipe_covers = {}
-	for _, d in ipairs(directions) do
-		pipe_covers[d] =
-				CreateSprite("__base__/graphics/entity/pipe-covers/pipe-cover-".. d..".png", 32)
+	local pipe_picture = {}
+	for dir, shorted in pairs(directions) do
+		pipe_covers[dir] = CreateSprite("__base__/graphics/entity/pipe-covers/pipe-cover-" .. dir .. ".png", 32)
+		pipe_picture[dir] = CreateSprite(
+			"__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-" .. shorted .. ".png",
+			32
+		)
 	end
 	return {
 		volume = volume,
 		pipe_connections = pipe_connections,
-		production_type="input",
-		pipe_covers = pipe_covers
+		production_type = "input",
+		pipe_covers = pipe_covers,
+		pipe_picture = pipe_picture
 	}
 end
-
 
 ---@param bbox BoundingBox
 ---@param flow_direction FlowDirection
@@ -45,8 +47,7 @@ local function CreatePipeConnectionToCollisionBox(bbox, flow_direction, directio
 	if not anchor then
 		error("No map position found in BoundingBox: " .. serpent.block(bbox))
 	end
-	-- anchor = { (anchor[1] or anchor.x), (anchor[2] or anchor.y) }
-	anchor = {0.3, 0.3} -- debug
+	anchor = { (anchor[1] or anchor.x), (anchor[2] or anchor.y) }
 	return {
 		flow_direction = flow_direction,
 		direction = direction or defines.direction.south,
@@ -61,7 +62,6 @@ local function AddInputFluidBox(drill, volume)
 	local bbox = drill.collision_box
 	local pipe_connection = CreatePipeConnectionToCollisionBox(bbox, "input-output", defines.direction.south)
 
-
 	drill.input_fluid_box = CreateFluidBoxTemplate(volume or 1000, { pipe_connection })
 end
 
@@ -74,11 +74,10 @@ local function UnlockMiningWithFluidWithTech(techName)
 	tech.unit = nil
 	tech.research_trigger = {
 		type = "mine-entity",
-		entity="coal"
+		entity = "coal",
 	}
-	table.insert(tech.effects, {type="mining-with-fluid", modifier=true})
+	table.insert(tech.effects, { type = "mining-with-fluid", modifier = true })
 end
 
 AddInputFluidBox(data.raw["mining-drill"]["burner-mining-drill"])
 UnlockMiningWithFluidWithTech("burner-mechanics")
-
