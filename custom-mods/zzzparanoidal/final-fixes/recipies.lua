@@ -1,33 +1,33 @@
 --скрываем рецепты шариков. технология в prototypes/recipe/alien-artifact.lua
-data.raw["recipe"]["alien-artifact-red-from-basic"].enabled = false
-data.raw["recipe"]["alien-artifact-orange-from-basic"].enabled = false
-data.raw["recipe"]["alien-artifact-yellow-from-basic"].enabled = false
-data.raw["recipe"]["alien-artifact-green-from-basic"].enabled = false
-data.raw["recipe"]["alien-artifact-blue-from-basic"].enabled = false
-data.raw["recipe"]["alien-artifact-purple-from-basic"].enabled = false
+data.raw["recipe"]["bob-alien-artifact-red"].enabled = false
+data.raw["recipe"]["bob-alien-artifact-orange"].enabled = false
+data.raw["recipe"]["bob-alien-artifact-yellow"].enabled = false
+data.raw["recipe"]["bob-alien-artifact-green"].enabled = false
+data.raw["recipe"]["bob-alien-artifact-blue"].enabled = false
+data.raw["recipe"]["bob-alien-artifact-purple"].enabled = false
 
-data.raw["recipe"]["alien-artifact-from-small"].enabled = false
-data.raw["recipe"]["alien-artifact-red-from-small"].enabled = false
-data.raw["recipe"]["alien-artifact-orange-from-small"].enabled = false
-data.raw["recipe"]["alien-artifact-yellow-from-small"].enabled = false
-data.raw["recipe"]["alien-artifact-green-from-small"].enabled = false
-data.raw["recipe"]["alien-artifact-blue-from-small"].enabled = false
-data.raw["recipe"]["alien-artifact-purple-from-small"].enabled = false
+data.raw["recipe"]["bob-alien-artifact"].enabled = false
+data.raw["recipe"]["bob-alien-artifact-red-from-small"].enabled = false
+data.raw["recipe"]["bob-alien-artifact-orange-from-small"].enabled = false
+data.raw["recipe"]["bob-alien-artifact-yellow-from-small"].enabled = false
+data.raw["recipe"]["bob-alien-artifact-green-from-small"].enabled = false
+data.raw["recipe"]["bob-alien-artifact-blue-from-small"].enabled = false
+data.raw["recipe"]["bob-alien-artifact-purple-from-small"].enabled = false
 -------------------------------------------------------------------------------------------------
 --перемещаем рецепты и предметы больших шариков куда следует
-data.raw["recipe"]["alien-artifact-red-from-basic"].group = "bio-processing-alien"
-data.raw["recipe"]["alien-artifact-orange-from-basic"].group = "bio-processing-alien"
-data.raw["recipe"]["alien-artifact-yellow-from-basic"].group = "bio-processing-alien"
-data.raw["recipe"]["alien-artifact-green-from-basic"].group = "bio-processing-alien"
-data.raw["recipe"]["alien-artifact-blue-from-basic"].group = "bio-processing-alien"
-data.raw["recipe"]["alien-artifact-purple-from-basic"].group = "bio-processing-alien"
+data.raw["recipe"]["bob-alien-artifact-red"].group = "bio-processing-alien"
+data.raw["recipe"]["bob-alien-artifact-orange"].group = "bio-processing-alien"
+data.raw["recipe"]["bob-alien-artifact-yellow"].group = "bio-processing-alien"
+data.raw["recipe"]["bob-alien-artifact-green"].group = "bio-processing-alien"
+data.raw["recipe"]["bob-alien-artifact-blue"].group = "bio-processing-alien"
+data.raw["recipe"]["bob-alien-artifact-purple"].group = "bio-processing-alien"
 
-data.raw["recipe"]["alien-artifact-red-from-basic"].subgroup = "bio-processing-alien-large"
-data.raw["recipe"]["alien-artifact-orange-from-basic"].subgroup = "bio-processing-alien-large"
-data.raw["recipe"]["alien-artifact-yellow-from-basic"].subgroup = "bio-processing-alien-large"
-data.raw["recipe"]["alien-artifact-green-from-basic"].subgroup = "bio-processing-alien-large"
-data.raw["recipe"]["alien-artifact-blue-from-basic"].subgroup = "bio-processing-alien-large"
-data.raw["recipe"]["alien-artifact-purple-from-basic"].subgroup = "bio-processing-alien-large"
+data.raw["recipe"]["bob-alien-artifact-red"].subgroup = "bio-processing-alien-large"
+data.raw["recipe"]["bob-alien-artifact-orange"].subgroup = "bio-processing-alien-large"
+data.raw["recipe"]["bob-alien-artifact-yellow"].subgroup = "bio-processing-alien-large"
+data.raw["recipe"]["bob-alien-artifact-green"].subgroup = "bio-processing-alien-large"
+data.raw["recipe"]["bob-alien-artifact-blue"].subgroup = "bio-processing-alien-large"
+data.raw["recipe"]["bob-alien-artifact-purple"].subgroup = "bio-processing-alien-large"
 
 data.raw["item"]["bob-alien-artifact"].group = "bio-processing-alien"
 data.raw["item"]["bob-alien-artifact-red"].group = "bio-processing-alien"
@@ -100,7 +100,7 @@ bobmods.lib.recipe.set_ingredients("angels-liquifier-4", {
 	{ type = "item", name = "angels-liquifier-3", amount = 2 },
 })
 -- --Термальный экстрактор
-bobmods.lib.recipe.set_ingredients("thermal-extractor", {
+bobmods.lib.recipe.set_ingredients("angels-thermal-extractor", {
 	{ type = "item", name = "bob-aluminium-plate", amount = 24 },
 	{ type = "item", name = "advanced-circuit", amount = 5 },
 	{ type = "item", name = "bob-brass-pipe", amount = 12 },
@@ -109,7 +109,7 @@ bobmods.lib.recipe.set_ingredients("thermal-extractor", {
 	{ type = "item", name = "intermediate-structure-components", amount = 5 },
 })
 -- --Хим заводы
-bobmods.lib.recipe.set_ingredients("angels-chemical-plant", {
+bobmods.lib.recipe.set_ingredients("chemical-plant", {
 	{ type = "item", name = "iron-plate", amount = 40 },
 	{ type = "item", name = "bob-basic-circuit-board", amount = 3 },
 	{ type = "item", name = "pipe", amount = 40 },
@@ -120,7 +120,7 @@ bobmods.lib.recipe.set_ingredients("angels-chemical-plant-2", {
 	{ type = "item", name = "electronic-circuit", amount = 3 },
 	{ type = "item", name = "bob-bronze-pipe", amount = 40 },
 	{ type = "item", name = "bob-steel-gear-wheel", amount = 25 },
-	{ type = "item", name = "angels-chemical-plant", amount = 2 },
+	{ type = "item", name = "chemical-plant", amount = 2 },
 })
 bobmods.lib.recipe.set_ingredients("angels-chemical-plant-3", {
 	{ type = "item", name = "bob-aluminium-plate", amount = 40 },
@@ -149,27 +149,27 @@ bobmods.lib.recipe.set_ingredients("bob-boiler-3", {
 	{ type = "item", name = "bob-invar-alloy", amount = 20 },
 })
 bobmods.lib.recipe.set_ingredients("bob-boiler-4", {
-	{ type = "item", name = "ceramic-pipe", amount = 15 },
+	{ type = "item", name = "bob-ceramic-pipe", amount = 15 },
 	{ type = "item", name = "bob-boiler-3", amount = 2 },
 	{ type = "item", name = "bob-tungsten-plate", amount = 20 },
 })
 bobmods.lib.recipe.set_ingredients("bob-boiler-5", {
-	{ type = "item", name = "copper-tungsten-pipe", amount = 15 },
+	{ type = "item", name = "bob-copper-tungsten-pipe", amount = 15 },
 	{ type = "item", name = "bob-boiler-4", amount = 2 },
 	{ type = "item", name = "bob-copper-tungsten-alloy", amount = 20 },
 })
 
-bobmods.lib.recipe.set_ingredients("yellow-filter-inserter", {
+bobmods.lib.recipe.set_ingredients("inserter", {
 	{ type = "item", name = "electric-motor", amount = 2 },
 	{ type = "item", name = "burner-filter-inserter", amount = 1 },
 	{ type = "item", name = "electronic-circuit", amount = 4 },
 }) --в рецепт к фильтрующему добавляем фитльтрующий твердотопливный
 --13.08 починка рецепта кристаллического раствора
 bobmods.lib.recipe.set_ingredients(
-	"crystal-powder-slurry",
-	{ { type = "item", name = "crystal-powder", amount = 10 }, { type = "item", name = "water-purified", amount = 10 } }
+	"angels-crystal-powder-slurry",
+	{ { type = "item", name = "angels-crystal-powder", amount = 10 }, { type = "item", name = "angels-water-purified", amount = 10 } }
 )
-bobmods.lib.recipe.set_result("crystal-powder-slurry", { name = "crystal-slurry", type = "fluid", amount = 10 })
+bobmods.lib.recipe.set_result("angels-crystal-powder-slurry", { name = "angels-crystal-slurry", type = "fluid", amount = 10 })
 --19.08 починка рецепта взрывчатки 3
 data.raw["recipe"]["angels-solid-trinitrotoluene"].category = "advanced-chemistry"
 

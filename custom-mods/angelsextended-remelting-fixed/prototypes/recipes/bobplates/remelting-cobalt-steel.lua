@@ -9,7 +9,7 @@ data:extend({
 		subgroup = "angels-alloys-casting",
 		enabled = "false",
 		energy_required = 6,
-		ingredients = { { type = "item", name = "cobalt-steel-alloy", amount = 4 } },
+		ingredients = { { type = "item", name = "bob-cobalt-steel-alloy", amount = 4 } },
 		results = { { type = "fluid", name = "angels-liquid-molten-cobalt-steel", amount = 35 } },
 
 		icons = {

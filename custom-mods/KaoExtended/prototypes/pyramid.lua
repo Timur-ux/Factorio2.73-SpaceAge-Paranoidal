@@ -555,10 +555,10 @@ bobmods.lib.recipe.add_new_ingredient(
 	{ type = "item", name = "angels-advanced-chemical-plant", amount = 2 }
 )
 
-bobmods.lib.recipe.remove_ingredient("angels-chemical-plant-2", "angels-chemical-plant")
+bobmods.lib.recipe.remove_ingredient("angels-chemical-plant-2", "chemical-plant")
 bobmods.lib.recipe.add_new_ingredient(
 	"angels-chemical-plant-2",
-	{ type = "item", name = "angels-chemical-plant", amount = 2 }
+	{ type = "item", name = "chemical-plant", amount = 2 }
 )
 bobmods.lib.recipe.remove_ingredient("angels-chemical-plant-3", "angels-chemical-plant-2")
 bobmods.lib.recipe.add_new_ingredient(

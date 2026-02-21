@@ -24,7 +24,7 @@ if mods["beautiful_straight_bridge_railway"] then
 	bobmods.lib.recipe.add_ingredient("bbr-rail-brick", { type = "item", name = "iron-stick", amount = 2})
 	bobmods.lib.recipe.add_ingredient("bbr-rail-brick", { type = "item", name = "concrete", amount = 20})
 	bobmods.lib.recipe.add_ingredient("bbr-rail-brick", { type = "item", name = "steel-plate", amount = 2})
-	bobmods.lib.recipe.add_ingredient("bbr-rail-brick", { type = "item", name = "stone-crushed", amount = 10})
+	bobmods.lib.recipe.add_ingredient("bbr-rail-brick", { type = "item", name = "angels-stone-crushed", amount = 10})
 	bobmods.lib.recipe.set_energy_required("bbr-rail-brick", 2)
 end
 --###############################################################################################
@@ -68,7 +68,7 @@ data.raw["assembling-machine"]["dpa"].energy_usage = "1000kW"
 
 --Синие фильтрующие манипуляторы встают на место
 data.raw.technology["filter-inserters"].hidden = true
-bobmods.lib.tech.add_recipe_unlock("express-inserters", "filter-inserter")
+bobmods.lib.tech.add_recipe_unlock("bob-express-inserter", "fast-inserter")
 
 bobmods.lib.recipe.set_ingredient("landfill", { type = "item", name = "stone", amount = 50}) --Отсыпка по 50
 
@@ -93,11 +93,11 @@ data.raw["rocket-silo"]["rocket-silo"].energy_usage = "250000kW" --увелич�
 data.raw["rocket-silo"]["rocket-silo"].module_specification.module_slots = 6 --но добавляем ей больше слотов модулей
 bobmods.lib.tech.add_prerequisite("advanced-osmium-smelting", "angels-ore-processing-5") --фикс дерева осмия
 bobmods.lib.tech.add_prerequisite("advanced-osmium-smelting", "angels-powder-metallurgy-5") --фикс дерева осмия
-bobmods.lib.tech.remove_prerequisite("spidertron", "radars-1") --фикс паукатрона
+bobmods.lib.tech.remove_prerequisite("spidertron", "radar") --фикс паукатрона
 --###############################################################################################
 --Баланс телепортера под параноидал
 bobmods.lib.recipe.set_ingredients("teleporter", {
-	{ type = "item", name = "raw-speed-module-8", amount = 2},
+	{ type = "item", name = "bob-speed-module-5", amount = 2},
 	{ type = "item", name = "space-science-pack", amount = 50},
 	{ type = "item", name = "bob-advanced-processing-unit", amount = 50},
 	{ type = "item", name = "low-density-structure", amount = 150},

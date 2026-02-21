@@ -37,7 +37,7 @@ local function replaceMachine()
 	KaoExtended.recipe.add_to_recipe("angels-oil-refinery-3", { type = "item", name = "intermediate-structure-components", amount = 8})
 	KaoExtended.recipe.add_to_recipe("angels-oil-refinery-4", { type = "item", name = "advanced-structure-components", amount = 2})
 
-	KaoExtended.recipe.add_to_recipe("chemical-plant", { type = "item", name = "basic-structure-components", amount = 1})
+	KaoExtended.recipe.add_to_recipe("bob-chemical-plant", { type = "item", name = "basic-structure-components", amount = 1})
 	KaoExtended.recipe.add_to_recipe("angels-chemical-plant-2", { type = "item", name = "intermediate-structure-components", amount = 2})
 	KaoExtended.recipe.add_to_recipe("angels-chemical-plant-3", { type = "item", name = "intermediate-structure-components", amount = 8})
 	KaoExtended.recipe.add_to_recipe("angels-chemical-plant-4", { type = "item", name = "advanced-structure-components", amount = 2})

@@ -76,7 +76,7 @@ data:extend({
 		category = "bob-mixing-furnace",
 		energy_required = 25.6,
 		ingredients = {
-			{ type = "item", name = "carbon", amount = 1 },
+			{ type = "item", name = "bob-carbon", amount = 1 },
 			{ type = "item", name = "bob-tungsten-oxide", amount = 1 },
 		},
 		results = {
@@ -93,7 +93,7 @@ data:extend({
 		category = "bob-mixing-furnace",
 		energy_required = 25.6,
 		ingredients = {
-			{ type = "item", name = "carbon", amount = 1 },
+			{ type = "item", name = "bob-carbon", amount = 1 },
 			{ type = "item", name = "bob-powdered-tungsten", amount = 1 },
 		},
 		results = {
@@ -230,7 +230,7 @@ data:extend({
 		},
 		results = {
 			{ type = "item", name = "bob-nickel-plate", amount = 1 },
-			{ type = "fluid", name = "gas-oxygen", amount = 20 },
+			{ type = "fluid", name = "angels-gas-oxygen", amount = 20 },
 		},
 		allow_decomposition = false,
 	},
@@ -263,7 +263,7 @@ data:extend({
 		},
 		results = {
 			{ type = "item", name = "bob-zinc-plate", amount = 1 },
-			{ type = "fluid", name = "gas-oxygen", amount = 25 },
+			{ type = "fluid", name = "angels-gas-oxygen", amount = 25 },
 		},
 		allow_decomposition = false,
 	},
@@ -293,13 +293,13 @@ data:extend({
 		ingredients = {
 			{ type = "item", name = "bob-cobalt-ore", amount = 14 },
 			{ type = "item", name = "angels-electrode", amount = 1 },
-			{ type = "fluid", name = "water-purified", amount = 100 },
+			{ type = "fluid", name = "angels-water-purified", amount = 100 },
 		},
 		results = {
 			{ type = "item", name = "bob-cobalt-plate", amount = 1 },
-			{ type = "fluid", name = "gas-oxygen", amount = 25 },
-			{ type = "fluid", name = "gas-hydrogen", amount = 35 },
-			{ type = "item", name = "slag", amount = 8 },
+			{ type = "fluid", name = "angels-gas-oxygen", amount = 25 },
+			{ type = "fluid", name = "angels-gas-hydrogen", amount = 35 },
+			{ type = "item", name = "angels-slag", amount = 8 },
 			{ type = "item", name = "angels-electrode-used", amount = 1, catalyst_amount = 1 },
 		},
 		allow_decomposition = false,
@@ -330,13 +330,13 @@ data:extend({
 		ingredients = {
 			{ type = "item", name = "bob-rutile-ore", amount = 14 },
 			{ type = "item", name = "angels-electrode", amount = 1 },
-			{ type = "fluid", name = "water-purified", amount = 100 },
+			{ type = "fluid", name = "angels-water-purified", amount = 100 },
 		},
 		results = {
 			{ type = "item", name = "bob-titanium-plate", amount = 1 },
-			{ type = "fluid", name = "gas-oxygen", amount = 30 },
-			{ type = "fluid", name = "gas-hydrogen", amount = 40 },
-			{ type = "item", name = "slag", amount = 9 },
+			{ type = "fluid", name = "angels-gas-oxygen", amount = 30 },
+			{ type = "fluid", name = "angels-gas-hydrogen", amount = 40 },
+			{ type = "item", name = "angels-slag", amount = 9 },
 			{ type = "item", name = "angels-electrode-used", amount = 1, catalyst_amount = 1 },
 		},
 		allow_decomposition = false,

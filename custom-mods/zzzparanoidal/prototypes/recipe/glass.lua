@@ -27,7 +27,7 @@ data:extend({
 		ingredients = { { type = "item", name = "angels-ore4-crushed", amount = 7 } },
 		results = {
 			{ type = "item", name = "bob-glass", amount = 4 },
-			{ name = "slag", type = "item", amount = 1 },
+			{ name = "angels-slag", type = "item", amount = 1 },
 		},
 	},
 })

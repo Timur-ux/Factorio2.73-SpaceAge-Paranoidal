@@ -367,7 +367,7 @@ if mods["JunkTrain3"] then
 	-------------------------------------------------------------------------------------------------
 	--меняем рецепт примитивных рельс
 	data.raw.recipe["scrap-rail"].ingredients = {
-		{ name = "stone-crushed", type = "item", amount = 10 },
+		{ name = "angels-stone-crushed", type = "item", amount = 10 },
 		{ name = "iron-stick", type = "item", amount = 2 },
 		{ name = "wood", type = "item", amount = 10 },
 		{ name = "steel-plate", type = "item", amount = 2 },
@@ -532,7 +532,7 @@ if mods["JunkTrain3"] then
 	}
 	-------------------------------------------------------------------------------------------------
 	--подкручиваем рецепт стандартных рельс
-	bobmods.lib.recipe.set_ingredient("rail", { type = "item", name = "stone-crushed", amount = 10 })
+	bobmods.lib.recipe.set_ingredient("rail", { type = "item", name = "angels-stone-crushed", amount = 10 })
 	-------------------------------------------------------------------------------------------------
 	--переставляем рецепты рельс в технологиях
 	--bobmods.lib.tech.remove_recipe_unlock("railway", "bi-rail-wood")

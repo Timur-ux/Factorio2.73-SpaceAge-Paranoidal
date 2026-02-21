@@ -87,23 +87,23 @@ data.raw.recipe["y-c22-recipe"].ingredients = {
       {
         type = "recipe",
         name = "yellow-waste-water-purification-yi",
-        category = "water-treatment",
-        subgroup = "water-treatment",
+        category = "angels-water-treatment",
+        subgroup = "angels-water-treatment",
         energy_required = 1,
         enabled = false,
         ingredients = {
-          {type = "fluid", name = "water-yellow-waste", amount = 100}
+          {type = "fluid", name = "angels-water-yellow-waste", amount = 100}
         },
         results = {
           {type = "fluid", name = "y-con_water", amount = 20},
-          {type = "fluid", name = "water-purified", amount = 70},
-          {type = "item", name = "sulfur", amount = 1}
+          {type = "fluid", name = "angels-water-purified", amount = 70},
+          {type = "item", name = "bob-sulfur", amount = 1}
         },
         icons = angelsmods.functions.create_liquid_recipe_icon(
           {
             "y-con_water",
-            "water-purified",
-            mods["angelspetrochem"] and {"__angelspetrochem__/graphics/icons/solid-sulfur.png", 32} or "sulfur"
+            "angels-water-purified",
+            mods["angelspetrochem"] and {"__angelspetrochem__/graphics/icons/solid-sulfur.png", 32} or "bob-sulfur"
           },
           "wss"
         ),--

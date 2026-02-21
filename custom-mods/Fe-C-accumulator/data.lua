@@ -13,7 +13,7 @@ data:extend({
 				recipe = "fe-c-accumulator",
 			},
 		},
-		prerequisites = { "electricity" },
+		prerequisites = { "bob-electricity" },
 		unit = {
 			count = 10,
 			ingredients = {

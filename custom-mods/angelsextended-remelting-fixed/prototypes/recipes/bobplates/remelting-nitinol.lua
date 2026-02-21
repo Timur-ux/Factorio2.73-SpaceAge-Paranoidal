@@ -9,7 +9,7 @@ data:extend({
 		subgroup = "angels-alloys-casting",
 		enabled = "false",
 		energy_required = 6,
-		ingredients = { { type = "item", name = "nitinol-alloy", amount = 4 } },
+		ingredients = { { type = "item", name = "bob-nitinol-alloy", amount = 4 } },
 		results = { { type = "fluid", name = "angels-liquid-molten-nitinol", amount = 35 } },
 
 		icons = {

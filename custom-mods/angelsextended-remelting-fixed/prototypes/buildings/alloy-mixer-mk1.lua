@@ -43,9 +43,9 @@ data:extend({
 		enabled = false,
 		ingredients = {
 			{ type = "item", name = "steel-plate", amount = 15 },
-			{ type = "item", name = "basic-circuit-board", amount = 5 },
+			{ type = "item", name = "bob-basic-circuit-board", amount = 5 },
 			{ type = "item", name = "stone-brick", amount = 25 },
-			{ type = "item", name = "steel-gear-wheel", amount = 9 },
+			{ type = "item", name = "bob-steel-gear-wheel", amount = 9 },
 			{ type = "item", name = "pipe", amount = 12 },
 		},
 		results = { type = "item", name = "alloy-mixer", amount = 1 },

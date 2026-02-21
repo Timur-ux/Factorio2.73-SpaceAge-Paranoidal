@@ -43,9 +43,9 @@ data.raw.locomotive["bet-locomotive"].selected_minimap_representation.scale = 0.
 	bobmods.lib.tech.add_prerequisite("bet-fuel-3", "bob-battery-3")
 	bobmods.lib.recipe.replace_ingredient("bet-fuel-3-empty", "battery", "bob-silver-zinc-battery")
 
-	bobmods.lib.tech.add_prerequisite("bet-fuel-4", "raw-speed-module-4")
+	bobmods.lib.tech.add_prerequisite("bet-fuel-4", "speed-module-3")
 	bobmods.lib.recipe.replace_ingredient("bet-fuel-4-empty", "battery", "bob-silver-zinc-battery")
-	bobmods.lib.recipe.replace_ingredient("bet-fuel-4-empty", "effectivity-module-3", "raw-speed-module-4")
+	bobmods.lib.recipe.replace_ingredient("bet-fuel-4-empty", "effectivity-module-3", "speed-module-3")
 	bobmods.lib.recipe.add_ingredient("bet-fuel-4-empty", { type = "item", name = "bob-advanced-processing-unit", amount = 3})
 
 	--recycling battery

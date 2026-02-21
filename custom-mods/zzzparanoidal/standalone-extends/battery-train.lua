@@ -83,7 +83,7 @@ if mods["BatteryElectricTrain"] then
 				{ type = "item", name = "bob-gilded-copper-cable", amount = 20 },
 				{ type = "item", name = "bob-nitinol-gear-wheel", amount = 5 },
 				{ type = "item", name = "bob-nitinol-alloy", amount = 30 },
-				{ type = "item", name = "raw-speed-module-6", amount = 2 },
+				{ type = "item", name = "bob-speed-module-4", amount = 2 },
 			},
 			results = { { type = "item", name = "super_charger", amount = 1 } },
 		},
@@ -146,7 +146,7 @@ if mods["BatteryElectricTrain"] then
 				{ type = "item", name = "bob-nitinol-bearing", amount = 20 },
 				{ type = "item", name = "bob-nitinol-gear-wheel", amount = 15 },
 				{ type = "item", name = "bob-nitinol-alloy", amount = 10 },
-				{ type = "item", name = "raw-speed-module-6", amount = 5 },
+				{ type = "item", name = "bob-speed-module-4", amount = 5 },
 			},
 			results = { { type = "item", name = "hiend_loco", amount = 1 } },
 		},
@@ -689,7 +689,7 @@ if mods["BatteryElectricTrain"] then
 				{ type = "unlock-recipe", recipe = "hiend_fluid_wagon" },
 				{ type = "unlock-recipe", recipe = "super_charger" },
 			},
-			prerequisites = { "bet-fuel-4", "bob-fluid-handling-4", "raw-speed-module-6" },
+			prerequisites = { "bet-fuel-4", "bob-fluid-handling-4", "bob-speed-module-4" },
 			unit = {
 				count = 1000,
 				ingredients = {

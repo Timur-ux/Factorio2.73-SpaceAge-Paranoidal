@@ -13,7 +13,7 @@ data.raw.recipe["advanced-nuclear-fuel-reprocessing"].results = {
 
 
 data.raw.recipe["advanced-thorium-nuclear-fuel-reprocessing"].ingredients = {
-    {type="item", name="used-up-thorium-fuel-cell", amount=5},
+    {type="item", name="bob-depleted-thorium-fuel-cell", amount=5},
     {type="item", name="55%-uranium", amount=2},
     {type="item", name="uranium-238", amount=6},
     {type="fluid", name="angels-liquid-nitric-acid", amount=300}
@@ -26,7 +26,7 @@ data.raw.recipe["advanced-thorium-nuclear-fuel-reprocessing"].results = {
 }
 
 data.raw.recipe["advanced-thorium-nuclear-fuel-reprocessing|b"].ingredients = {
-    {type="item", name="used-up-thorium-fuel-cell", amount=5},
+    {type="item", name="bob-depleted-thorium-fuel-cell", amount=5},
     {type="fluid", name="angels-liquid-nitric-acid", amount=150}
 }
 data.raw.recipe["advanced-thorium-nuclear-fuel-reprocessing|b"].results = {

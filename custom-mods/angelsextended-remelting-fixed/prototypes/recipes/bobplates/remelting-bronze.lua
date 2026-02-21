@@ -9,7 +9,7 @@ data:extend({
 		subgroup = "angels-alloys-casting",
 		enabled = "false",
 		energy_required = 6,
-		ingredients = { { type = "item", name = "bronze-alloy", amount = 4 } },
+		ingredients = { { type = "item", name = "bob-bronze-alloy", amount = 4 } },
 		results = { { type = "fluid", name = "angels-liquid-molten-bronze", amount = 35 } },
 
 		icons = {

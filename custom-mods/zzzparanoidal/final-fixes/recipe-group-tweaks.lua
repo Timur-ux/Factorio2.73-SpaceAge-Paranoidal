@@ -225,8 +225,8 @@ if not mods["angelsindustries"] then
 		data.raw["item"]["duct-long"].subgroup = "FluidMustFlow"
 		data.raw["recipe"]["check-valve"].subgroup = "FluidMustFlow"
 		data.raw["item"]["check-valve"].subgroup = "FluidMustFlow"
-		data.raw["recipe"]["bob-overflow-valve"].subgroup = "FluidMustFlow"
-		data.raw["item"]["bob-overflow-valve"].subgroup = "FluidMustFlow"
+		data.raw["recipe"]["valves-overflow"].subgroup = "FluidMustFlow"
+		data.raw["item"]["valves-overflow"].subgroup = "FluidMustFlow"
 		data.raw["recipe"]["underflow-valve"].subgroup = "FluidMustFlow"
 		data.raw["item"]["underflow-valve"].subgroup = "FluidMustFlow"
 	end

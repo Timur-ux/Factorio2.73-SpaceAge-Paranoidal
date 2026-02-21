@@ -5,9 +5,9 @@ data.raw["technology"]["angels-solder-smelting-basic"].icon_size = 64
 data.raw["technology"]["angels-solder-smelting-basic"].icon_mipmaps = 4
 -------------------------------------------------------------------------------------------------
 -- замена иконки рецепта дробленого камня из шлака
-data.raw["recipe"]["slag-processing-stone"].icon = "__Bio_Industries_2__/graphics/icons/crushed-stone.png"
-data.raw["recipe"]["slag-processing-stone"].icon_size = 64
---data.raw["recipe"]["slag-processing-stone"].icon_mipmaps = 4
+data.raw["recipe"]["angels-stone-crushed"].icon = "__Bio_Industries_2__/graphics/icons/crushed-stone.png"
+data.raw["recipe"]["angels-stone-crushed"].icon_size = 64
+--data.raw["recipe"]["angels-stone-crushed"].icon_mipmaps = 4
 -------------------------------------------------------------------------------------------------
 -- замена иконки на технологии "управление потоками в трубах"
 data.raw["technology"]["angels-fluid-control"].icon =
