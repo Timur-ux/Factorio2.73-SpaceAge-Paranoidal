@@ -6,9 +6,6 @@ angelsmods.trigger.smelting_products["cobalt"].plate = true
 require("prototypes/offshore-pump/item")
 require("prototypes/offshore-pump/recipe")
 require("prototypes/offshore-pump/more-offshore-pumps")
-require("prototypes/offshore-pump/entity-offshore-pump")
-require("prototypes/offshore-pump/entity-seafloor-pump")
-require("prototypes/offshore-pump/hidden-pole")
 require("prototypes/offshore-pump/technology")
 --
 require("prototypes.artillery-prototype.artillery-turret-prototype") --фикс убирающий био-арту и добовляющий новую на базе обычной
@@ -16,6 +13,13 @@ require("prototypes.artillery-prototype.artillery-turret-prototype") --фикс 
 require("prototypes.beltentities") --переехало из paranoidal-tweaks_0.18.34 (sbelyakov)
 
 -- require("prototypes.micro-fix") --доработка напильником всего подряд -- фиксы от Кирика -- not reviewed
+require("prototypes.recipe.glass")
+require("prototypes.recipe.alien-artifacts")
+require("fixes.subgroups")
+require("fixes.concrete-brick")
+require("standalone-extends.battery-train")
+require("standalone-extends.flame-car")
+
 
 require("prototypes.entity.entity") --фиксы неправильных имён от SEO
 require("prototypes.recipe-new") --новые рецепты
