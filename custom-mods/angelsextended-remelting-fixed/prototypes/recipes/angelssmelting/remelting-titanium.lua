@@ -1,20 +1,19 @@
-local intermediatemulti = angelsmods.marathon.intermediatemulti
 
 data:extend({
 	-- Titanium Plate
 	{
 		type = "recipe",
 		name = "molten-titanium-remelting",
-		category = "induction-smelting",
+		category = "angels-induction-smelting",
 		subgroup = "angels-titanium-casting",
-		enabled = "false",
+		enabled = false,
 		energy_required = 6,
 		ingredients = { { type = "item", name = "angels-plate-titanium", amount = 4 } },
 		results = { { type = "fluid", name = "angels-liquid-molten-titanium", amount = 15 } },
 
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-titanium.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-titanium.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",

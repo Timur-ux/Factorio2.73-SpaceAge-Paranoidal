@@ -43,4 +43,4 @@ prefix="$1"
 name="$2"
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-$SCRIPT_DIR/rename-the-name.sh $flags "${prefix}" "${prefix}${name}"
+$SCRIPT_DIR/rename-the-name.sh $flags "${name}" "${prefix}${name}"

@@ -1,20 +1,19 @@
-local intermediatemulti = angelsmods.marathon.intermediatemulti
 
 data:extend({
 	-- Bronze Plate
 	{
 		type = "recipe",
 		name = "molten-bronze-remelting",
-		category = "induction-smelting",
+		category = "angels-induction-smelting",
 		subgroup = "angels-alloys-casting",
-		enabled = "false",
+		enabled = false,
 		energy_required = 6,
 		ingredients = { { type = "item", name = "bob-bronze-alloy", amount = 4 } },
 		results = { { type = "fluid", name = "angels-liquid-molten-bronze", amount = 35 } },
 
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-bronze.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-bronze.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",
@@ -33,7 +32,7 @@ data:extend({
 		name = "molten-bronze-alloy-mixing-1",
 		category = "molten-alloy-mixing",
 		subgroup = "aragas-bronze-alloy-mixing",
-		enabled = "false",
+		enabled = false,
 		energy_required = 4,
 		ingredients = {
 			{ type = "fluid", name = "angels-liquid-molten-copper", amount = 180 },
@@ -42,7 +41,7 @@ data:extend({
 		results = { { type = "fluid", name = "angels-liquid-molten-bronze", amount = 240 } },
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-bronze.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-bronze.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",
@@ -59,7 +58,7 @@ data:extend({
 		name = "molten-bronze-alloy-mixing-2",
 		category = "molten-alloy-mixing",
 		subgroup = "aragas-bronze-alloy-mixing",
-		enabled = "false",
+		enabled = false,
 		energy_required = 4,
 		ingredients = {
 			{ type = "fluid", name = "angels-liquid-molten-copper", amount = 180 },
@@ -69,7 +68,7 @@ data:extend({
 		results = { { type = "fluid", name = "angels-liquid-molten-bronze", amount = 360 } },
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-bronze.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-bronze.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",
@@ -86,7 +85,7 @@ data:extend({
 		name = "molten-bronze-alloy-mixing-3",
 		category = "molten-alloy-mixing",
 		subgroup = "aragas-bronze-alloy-mixing",
-		enabled = "false",
+		enabled = false,
 		energy_required = 4,
 		ingredients = {
 			{ type = "fluid", name = "angels-liquid-molten-copper", amount = 180 },
@@ -96,7 +95,7 @@ data:extend({
 		results = { { type = "fluid", name = "angels-liquid-molten-bronze", amount = 360 } },
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-bronze.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-bronze.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",

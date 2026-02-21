@@ -4,12 +4,12 @@ data:extend({
 	{
 		type = "recipe",
 		name = "molten-magnesium-remelting",
-		category = "induction-smelting",
+		category = "angels-induction-smelting",
 		subgroup = "angels-alloys-casting",
 		enabled = false,
 		energy_required = 6,
 		ingredients = { { type = "item", name = "clowns-plate-magnesium", amount = 4 } },
-		results = { { type = "fluid", name = "liquid-molten-magnesium", amount = 35 } },
+		results = { { type = "fluid", name = "clowns-liquid-molten-magnesium", amount = 35 } },
 
 		icons = {
 			{

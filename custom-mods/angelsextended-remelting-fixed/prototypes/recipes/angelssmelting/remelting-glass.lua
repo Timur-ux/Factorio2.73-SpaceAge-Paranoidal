@@ -1,20 +1,19 @@
-local intermediatemulti = angelsmods.marathon.intermediatemulti
 
 data:extend({
 	-- Glass Plate
 	{
 		type = "recipe",
 		name = "molten-glass-remelting",
-		category = "induction-smelting",
+		category = "angels-induction-smelting",
 		subgroup = "angels-glass-casting",
-		enabled = "false",
+		enabled = false,
 		energy_required = 6,
 		ingredients = { { type = "item", name = "angels-plate-glass", amount = 4 } },
 		results = { { type = "fluid", name = "angels-liquid-molten-glass", amount = 10 } },
 
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-glass.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-glass.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",

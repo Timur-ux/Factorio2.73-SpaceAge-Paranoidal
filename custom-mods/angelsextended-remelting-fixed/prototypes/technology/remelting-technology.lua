@@ -3,7 +3,7 @@ data:extend({
 	{
 		type = "technology",
 		name = "remelting-alloy-mixer-1",
-		icon = "__angelssmelting__/graphics/technology/induction-furnace-tech.png",
+		icon = "__angelssmeltinggraphics__/graphics/technology/induction-furnace-tech.png",
 		icon_size = 256,
 		icon_mipmaps = 2,
 		prerequisites = {
@@ -28,7 +28,7 @@ data:extend({
 	{
 		type = "technology",
 		name = "remelting-alloy-mixer-2",
-		icon = "__angelssmelting__/graphics/technology/induction-furnace-tech.png",
+		icon = "__angelssmeltinggraphics__/graphics/technology/induction-furnace-tech.png",
 		icon_size = 256,
 		icon_mipmaps = 2,
 		prerequisites = {
@@ -54,7 +54,7 @@ data:extend({
 	{
 		type = "technology",
 		name = "remelting-alloy-mixer-3",
-		icon = "__angelssmelting__/graphics/technology/induction-furnace-tech.png",
+		icon = "__angelssmeltinggraphics__/graphics/technology/induction-furnace-tech.png",
 		icon_size = 256,
 		icon_mipmaps = 2,
 		prerequisites = {
@@ -81,7 +81,7 @@ data:extend({
 	{
 		type = "technology",
 		name = "remelting-alloy-mixer-4",
-		icon = "__angelssmelting__/graphics/technology/induction-furnace-tech.png",
+		icon = "__angelssmeltinggraphics__/graphics/technology/induction-furnace-tech.png",
 		icon_size = 256,
 		icon_mipmaps = 2,
 		prerequisites = {

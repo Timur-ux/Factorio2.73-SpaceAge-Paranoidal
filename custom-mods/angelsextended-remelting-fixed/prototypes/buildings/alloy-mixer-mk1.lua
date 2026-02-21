@@ -48,7 +48,7 @@ data:extend({
 			{ type = "item", name = "bob-steel-gear-wheel", amount = 9 },
 			{ type = "item", name = "pipe", amount = 12 },
 		},
-		results = { type = "item", name = "alloy-mixer", amount = 1 },
+		results = {{ type = "item", name = "alloy-mixer", amount = 1 }},
 	},
 	---------------------------------------------------------------------------------
 	{
@@ -106,7 +106,7 @@ data:extend({
 		animation = {
 			layers = {
 				{
-					filename = "__angelssmelting__/graphics/entity/induction-furnace/induction-furnace-base.png",
+					filename = "__angelssmeltinggraphics__/graphics/entity/induction-furnace/induction-furnace-base.png",
 					priority = "high",
 					width = 170,
 					height = 192,
@@ -121,12 +121,12 @@ data:extend({
 						frame_count = 36,
 						stripes = {
 							{
-								filename = "__angelssmelting__/graphics/entity/induction-furnace/hr-induction-furnace-base_01.png",
+								filename = "__angelssmeltinggraphics__/graphics/entity/induction-furnace/hr-induction-furnace-base_01.png",
 								width_in_frames = 6,
 								height_in_frames = 3,
 							},
 							{
-								filename = "__angelssmelting__/graphics/entity/induction-furnace/hr-induction-furnace-base_02.png",
+								filename = "__angelssmeltinggraphics__/graphics/entity/induction-furnace/hr-induction-furnace-base_02.png",
 								width_in_frames = 6,
 								height_in_frames = 3,
 							},
@@ -206,7 +206,7 @@ data:extend({
 					},
 				},
 				{
-					filename = "__angelssmelting__/graphics/entity/induction-furnace/induction-furnace-shadow.png",
+					filename = "__angelssmeltinggraphics__/graphics/entity/induction-furnace/induction-furnace-shadow.png",
 					priority = "high",
 					width = 216,
 					height = 170,
@@ -222,12 +222,12 @@ data:extend({
 						frame_count = 36,
 						stripes = {
 							{
-								filename = "__angelssmelting__/graphics/entity/induction-furnace/hr-induction-furnace-shadow_01.png",
+								filename = "__angelssmeltinggraphics__/graphics/entity/induction-furnace/hr-induction-furnace-shadow_01.png",
 								width_in_frames = 3,
 								height_in_frames = 6,
 							},
 							{
-								filename = "__angelssmelting__/graphics/entity/induction-furnace/hr-induction-furnace-shadow_02.png",
+								filename = "__angelssmeltinggraphics__/graphics/entity/induction-furnace/hr-induction-furnace-shadow_02.png",
 								width_in_frames = 3,
 								height_in_frames = 6,
 							},
@@ -245,7 +245,7 @@ data:extend({
 				apply_recipe_tint = "primary",
 				always_draw = true,
 				animation = {
-					filename = "__angelssmelting__/graphics/entity/induction-furnace/induction-furnace-working-recipe-tint-mask.png",
+					filename = "__angelssmeltinggraphics__/graphics/entity/induction-furnace/induction-furnace-working-recipe-tint-mask.png",
 					priority = "high",
 					width = 170,
 					height = 192,
@@ -260,12 +260,12 @@ data:extend({
 						frame_count = 36,
 						stripes = {
 							{
-								filename = "__angelssmelting__/graphics/entity/induction-furnace/hr-induction-furnace-working-recipe-tint-mask_01.png",
+								filename = "__angelssmeltinggraphics__/graphics/entity/induction-furnace/hr-induction-furnace-working-recipe-tint-mask_01.png",
 								width_in_frames = 6,
 								height_in_frames = 3,
 							},
 							{
-								filename = "__angelssmelting__/graphics/entity/induction-furnace/hr-induction-furnace-working-recipe-tint-mask_02.png",
+								filename = "__angelssmeltinggraphics__/graphics/entity/induction-furnace/hr-induction-furnace-working-recipe-tint-mask_02.png",
 								width_in_frames = 6,
 								height_in_frames = 3,
 							},
@@ -279,7 +279,7 @@ data:extend({
 			{
 				always_draw = true,
 				north_animation = {
-					filename = "__angelssmelting__/graphics/entity/induction-furnace/vertical-pipe-shadow-patch.png",
+					filename = "__angelssmeltinggraphics__/graphics/entity/induction-furnace/vertical-pipe-shadow-patch.png",
 					priority = "high",
 					width = 64,
 					height = 64,
@@ -287,7 +287,7 @@ data:extend({
 					draw_as_shadow = true,
 					shift = { 2, -2 },
 					hr_version = {
-						filename = "__angelssmelting__/graphics/entity/induction-furnace/hr-vertical-pipe-shadow-patch.png",
+						filename = "__angelssmeltinggraphics__/graphics/entity/induction-furnace/hr-vertical-pipe-shadow-patch.png",
 						priority = "high",
 						width = 128,
 						height = 128,
@@ -301,7 +301,7 @@ data:extend({
 			{
 				always_draw = true,
 				animation = {
-					filename = "__angelssmelting__/graphics/entity/induction-furnace/induction-furnace-working-lights.png",
+					filename = "__angelssmeltinggraphics__/graphics/entity/induction-furnace/induction-furnace-working-lights.png",
 					priority = "high",
 					width = 170,
 					height = 192,
@@ -317,12 +317,12 @@ data:extend({
 						frame_count = 36,
 						stripes = {
 							{
-								filename = "__angelssmelting__/graphics/entity/induction-furnace/hr-induction-furnace-working-lights_01.png",
+								filename = "__angelssmeltinggraphics__/graphics/entity/induction-furnace/hr-induction-furnace-working-lights_01.png",
 								width_in_frames = 6,
 								height_in_frames = 3,
 							},
 							{
-								filename = "__angelssmelting__/graphics/entity/induction-furnace/hr-induction-furnace-working-lights_02.png",
+								filename = "__angelssmeltinggraphics__/graphics/entity/induction-furnace/hr-induction-furnace-working-lights_02.png",
 								width_in_frames = 6,
 								height_in_frames = 3,
 							},
@@ -337,7 +337,7 @@ data:extend({
 		},
 		vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
 		working_sound = {
-			sound = { filename = "__angelssmelting__/sound/induction-furnace.ogg", volume = 0.45 },
+			sound = { filename = "__angelssmeltinggraphics__/sound/induction-furnace.ogg", volume = 0.45 },
 			idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
 			audible_distance_modifier = 0.5,
 			apparent_volume = 2.5,

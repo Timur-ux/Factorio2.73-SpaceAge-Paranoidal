@@ -22,12 +22,12 @@ data.raw["recipe"]["bob-alien-artifact-green"].group = "bio-processing-alien"
 data.raw["recipe"]["bob-alien-artifact-blue"].group = "bio-processing-alien"
 data.raw["recipe"]["bob-alien-artifact-purple"].group = "bio-processing-alien"
 
-data.raw["recipe"]["bob-alien-artifact-red"].subgroup = "bio-processing-alien-large"
-data.raw["recipe"]["bob-alien-artifact-orange"].subgroup = "bio-processing-alien-large"
-data.raw["recipe"]["bob-alien-artifact-yellow"].subgroup = "bio-processing-alien-large"
-data.raw["recipe"]["bob-alien-artifact-green"].subgroup = "bio-processing-alien-large"
-data.raw["recipe"]["bob-alien-artifact-blue"].subgroup = "bio-processing-alien-large"
-data.raw["recipe"]["bob-alien-artifact-purple"].subgroup = "bio-processing-alien-large"
+data.raw["recipe"]["bob-alien-artifact-red"].subgroup = "angels-bio-processing-alien-large"
+data.raw["recipe"]["bob-alien-artifact-orange"].subgroup = "angels-bio-processing-alien-large"
+data.raw["recipe"]["bob-alien-artifact-yellow"].subgroup = "angels-bio-processing-alien-large"
+data.raw["recipe"]["bob-alien-artifact-green"].subgroup = "angels-bio-processing-alien-large"
+data.raw["recipe"]["bob-alien-artifact-blue"].subgroup = "angels-bio-processing-alien-large"
+data.raw["recipe"]["bob-alien-artifact-purple"].subgroup = "angels-bio-processing-alien-large"
 
 data.raw["item"]["bob-alien-artifact"].group = "bio-processing-alien"
 data.raw["item"]["bob-alien-artifact-red"].group = "bio-processing-alien"
@@ -37,13 +37,13 @@ data.raw["item"]["bob-alien-artifact-green"].group = "bio-processing-alien"
 data.raw["item"]["bob-alien-artifact-blue"].group = "bio-processing-alien"
 data.raw["item"]["bob-alien-artifact-purple"].group = "bio-processing-alien"
 
-data.raw["item"]["bob-alien-artifact"].subgroup = "bio-processing-alien-large"
-data.raw["item"]["bob-alien-artifact-red"].subgroup = "bio-processing-alien-large"
-data.raw["item"]["bob-alien-artifact-orange"].subgroup = "bio-processing-alien-large"
-data.raw["item"]["bob-alien-artifact-yellow"].subgroup = "bio-processing-alien-large"
-data.raw["item"]["bob-alien-artifact-green"].subgroup = "bio-processing-alien-large"
-data.raw["item"]["bob-alien-artifact-blue"].subgroup = "bio-processing-alien-large"
-data.raw["item"]["bob-alien-artifact-purple"].subgroup = "bio-processing-alien-large"
+data.raw["item"]["bob-alien-artifact"].subgroup = "angels-bio-processing-alien-large"
+data.raw["item"]["bob-alien-artifact-red"].subgroup = "angels-bio-processing-alien-large"
+data.raw["item"]["bob-alien-artifact-orange"].subgroup = "angels-bio-processing-alien-large"
+data.raw["item"]["bob-alien-artifact-yellow"].subgroup = "angels-bio-processing-alien-large"
+data.raw["item"]["bob-alien-artifact-green"].subgroup = "angels-bio-processing-alien-large"
+data.raw["item"]["bob-alien-artifact-blue"].subgroup = "angels-bio-processing-alien-large"
+data.raw["item"]["bob-alien-artifact-purple"].subgroup = "angels-bio-processing-alien-large"
 
 --Фикс огромных аккумуляторов
 bobmods.lib.recipe.add_ingredient("bi-bio-accumulator", { type = "item", name = "accumulator", amount = 30 })
@@ -165,13 +165,16 @@ bobmods.lib.recipe.set_ingredients("inserter", {
 	{ type = "item", name = "electronic-circuit", amount = 4 },
 }) --в рецепт к фильтрующему добавляем фитльтрующий твердотопливный
 --13.08 починка рецепта кристаллического раствора
-bobmods.lib.recipe.set_ingredients(
+bobmods.lib.recipe.set_ingredients("angels-crystal-powder-slurry", {
+	{ type = "item", name = "angels-crystal-powder", amount = 10 },
+	{ type = "fluid", name = "angels-water-purified", amount = 10 },
+})
+bobmods.lib.recipe.set_result(
 	"angels-crystal-powder-slurry",
-	{ { type = "item", name = "angels-crystal-powder", amount = 10 }, { type = "item", name = "angels-water-purified", amount = 10 } }
+	{ name = "angels-crystal-slurry", type = "fluid", amount = 10 }
 )
-bobmods.lib.recipe.set_result("angels-crystal-powder-slurry", { name = "angels-crystal-slurry", type = "fluid", amount = 10 })
 --19.08 починка рецепта взрывчатки 3
-data.raw["recipe"]["angels-solid-trinitrotoluene"].category = "advanced-chemistry"
+data.raw["recipe"]["angels-solid-trinitrotoluene"].category = "angels-advanced-chemistry"
 
 --добавление табличек holographic_signs в технологию (AKMF)
 if data.raw.recipe["hs_holo_sign"] then

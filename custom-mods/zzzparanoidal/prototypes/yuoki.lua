@@ -103,7 +103,7 @@ data.raw.recipe["y-c22-recipe"].ingredients = {
           {
             "y-con_water",
             "angels-water-purified",
-            mods["angelspetrochem"] and {"__angelspetrochem__/graphics/icons/solid-sulfur.png", 32} or "bob-sulfur"
+            mods["angelspetrochem"] and {"__angelspetrochemgraphics__/graphics/icons/solid-sulfur.png", 32} or "bob-sulfur"
           },
           "wss"
         ),--

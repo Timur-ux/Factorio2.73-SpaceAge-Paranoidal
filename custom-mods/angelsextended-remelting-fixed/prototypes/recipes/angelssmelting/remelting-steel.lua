@@ -1,20 +1,19 @@
-local intermediatemulti = angelsmods.marathon.intermediatemulti
 
 data:extend({
 	-- Steel Plate
 	{
 		type = "recipe",
 		name = "molten-steel-remelting",
-		category = "induction-smelting",
+		category = "angels-induction-smelting",
 		subgroup = "angels-steel-casting",
-		enabled = "false",
+		enabled = false,
 		energy_required = 6,
 		ingredients = { { type = "item", name = "angels-plate-steel", amount = 4 } },
 		results = { { type = "fluid", name = "angels-liquid-molten-steel", amount = 15 } },
 
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-steel.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-steel.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",
@@ -33,7 +32,7 @@ data:extend({
 		name = "molten-steel-alloy-mixing",
 		category = "molten-alloy-mixing",
 		subgroup = "aragas-steel-alloy-mixing",
-		enabled = "false",
+		enabled = false,
 		energy_required = 4,
 		ingredients = {
 			{ type = "fluid", name = "angels-liquid-molten-iron", amount = 240 },
@@ -42,7 +41,7 @@ data:extend({
 		results = { { type = "fluid", name = "angels-liquid-molten-steel", amount = 60 } },
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-steel.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-steel.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",
@@ -59,7 +58,7 @@ data:extend({
 		name = "molten-steel-alloy-mixing-2",
 		category = "molten-alloy-mixing",
 		subgroup = "aragas-steel-alloy-mixing",
-		enabled = "false",
+		enabled = false,
 		energy_required = 4,
 		ingredients = {
 			{ type = "fluid", name = "angels-liquid-molten-iron", amount = 480 },
@@ -69,7 +68,7 @@ data:extend({
 		results = { { type = "fluid", name = "angels-liquid-molten-steel", amount = 240 } },
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-steel.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-steel.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",
@@ -86,7 +85,7 @@ data:extend({
 		name = "molten-steel-alloy-mixing-3",
 		category = "molten-alloy-mixing",
 		subgroup = "aragas-steel-alloy-mixing",
-		enabled = "false",
+		enabled = false,
 		energy_required = 4,
 		ingredients = {
 			{ type = "fluid", name = "angels-liquid-molten-iron", amount = 480 },
@@ -96,7 +95,7 @@ data:extend({
 		results = { { type = "fluid", name = "angels-liquid-molten-steel", amount = 240 } },
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-steel.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-steel.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",
@@ -113,7 +112,7 @@ data:extend({
 		name = "molten-steel-alloy-mixing-4",
 		category = "molten-alloy-mixing",
 		subgroup = "aragas-steel-alloy-mixing",
-		enabled = "false",
+		enabled = false,
 		energy_required = 4,
 		ingredients = {
 			{ type = "fluid", name = "angels-liquid-molten-iron", amount = 240 },
@@ -124,7 +123,7 @@ data:extend({
 		results = { { type = "fluid", name = "angels-liquid-molten-steel", amount = 440 } },
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-steel.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-steel.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",

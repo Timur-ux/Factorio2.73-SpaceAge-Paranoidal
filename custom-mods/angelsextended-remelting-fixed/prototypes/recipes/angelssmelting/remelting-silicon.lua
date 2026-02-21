@@ -1,20 +1,19 @@
-local intermediatemulti = angelsmods.marathon.intermediatemulti
 
 data:extend({
 	-- Silicon Plate
 	{
 		type = "recipe",
 		name = "molten-silicon-remelting",
-		category = "induction-smelting",
+		category = "angels-induction-smelting",
 		subgroup = "angels-silicon-casting",
-		enabled = "false",
+		enabled = false,
 		energy_required = 6,
 		ingredients = { { type = "item", name = "angels-mono-silicon", amount = 4 } },
 		results = { { type = "fluid", name = "angels-liquid-molten-silicon", amount = 15 } },
 
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-silicon.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-silicon.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",

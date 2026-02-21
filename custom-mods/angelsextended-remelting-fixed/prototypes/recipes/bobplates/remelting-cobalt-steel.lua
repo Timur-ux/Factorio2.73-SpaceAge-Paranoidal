@@ -1,20 +1,19 @@
-local intermediatemulti = angelsmods.marathon.intermediatemulti
 
 data:extend({
 	-- Cobalt Steel Plate
 	{
 		type = "recipe",
 		name = "molten-cobalt-steel-remelting",
-		category = "induction-smelting",
+		category = "angels-induction-smelting",
 		subgroup = "angels-alloys-casting",
-		enabled = "false",
+		enabled = false,
 		energy_required = 6,
 		ingredients = { { type = "item", name = "bob-cobalt-steel-alloy", amount = 4 } },
 		results = { { type = "fluid", name = "angels-liquid-molten-cobalt-steel", amount = 35 } },
 
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-cobalt-steel.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-cobalt-steel.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",
@@ -33,7 +32,7 @@ data:extend({
 		name = "molten-cobalt-steel-alloy-mixing-1",
 		category = "molten-alloy-mixing",
 		subgroup = "aragas-cobalt-steel-alloy-mixing",
-		enabled = "false",
+		enabled = false,
 		energy_required = 4,
 		ingredients = {
 			{ type = "fluid", name = "angels-liquid-molten-steel", amount = 240 },
@@ -42,7 +41,7 @@ data:extend({
 		results = { { type = "fluid", name = "angels-liquid-molten-cobalt-steel", amount = 360 } },
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-cobalt-steel.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-cobalt-steel.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",

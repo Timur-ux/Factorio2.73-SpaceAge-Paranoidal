@@ -1,20 +1,19 @@
-local intermediatemulti = angelsmods.marathon.intermediatemulti
 
 data:extend({
 	-- Nickel Plate
 	{
 		type = "recipe",
 		name = "molten-nickel-remelting",
-		category = "induction-smelting",
+		category = "angels-induction-smelting",
 		subgroup = "angels-nickel-casting",
-		enabled = "false",
+		enabled = false,
 		energy_required = 6,
 		ingredients = { { type = "item", name = "angels-plate-nickel", amount = 4 } },
 		results = { { type = "fluid", name = "angels-liquid-molten-nickel", amount = 15 } },
 
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-nickel.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-nickel.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",

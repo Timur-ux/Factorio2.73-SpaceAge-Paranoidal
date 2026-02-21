@@ -221,7 +221,7 @@ data:extend({
 		},
 		subgroup = "angels-smelting",
 		order = "f[ingot-nickel]-d",
-		category = "petrochem-electrolyser",
+		category = "angels-petrochem-electrolyser",
 		enabled = false,
 		energy_required = 12,
 		ingredients = {
@@ -254,7 +254,7 @@ data:extend({
 		},
 		subgroup = "angels-smelting",
 		order = "f[ingot-zinc]-d",
-		category = "petrochem-electrolyser",
+		category = "angels-petrochem-electrolyser",
 		enabled = false,
 		energy_required = 14,
 		ingredients = {
@@ -287,7 +287,7 @@ data:extend({
 		},
 		subgroup = "angels-smelting",
 		order = "f[ingot-zinc]-d",
-		category = "petrochem-electrolyser",
+		category = "angels-petrochem-electrolyser",
 		enabled = false,
 		energy_required = 17,
 		ingredients = {
@@ -324,7 +324,7 @@ data:extend({
 		},
 		subgroup = "angels-smelting",
 		order = "f[ingot-zinc]-d",
-		category = "petrochem-electrolyser",
+		category = "angels-petrochem-electrolyser",
 		enabled = false,
 		energy_required = 22,
 		ingredients = {

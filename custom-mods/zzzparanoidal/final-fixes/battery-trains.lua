@@ -67,7 +67,7 @@ data.raw.locomotive["bet-locomotive"].selected_minimap_representation.scale = 0.
 	data.raw.recipe["bet-charger-1"].icon = "__zzzparanoidal__/graphics/train/electric/factory_var_1_icon.png"
 	data.raw.recipe["bet-charger-1"].icon_size = 32
 
-	data.raw.furnace["bet-charger-1"].working_visualisations.animation = {
+	data.raw.furnace["bet-charger-1"].graphics_set.working_visualisations[1].animation = {
 		filename = "__zzzparanoidal__/graphics/train/electric/av1_sheet.png",
 		width = 320,
 		height = 320,
@@ -96,7 +96,7 @@ data.raw.locomotive["bet-locomotive"].selected_minimap_representation.scale = 0.
 	data.raw.technology["bet-charger-2"].icon = "__zzzparanoidal__/graphics/train/electric/bet-charger-2_tech.png"
 	data.raw.technology["bet-charger-2"].icon_size = 256
 	data.raw.technology["bet-charger-2"].icon_mipmaps = 4
-	data.raw.furnace["bet-charger-2"].working_visualisations.animation = {
+	data.raw.furnace["bet-charger-2"].graphics_set.working_visualisations[1].animation = {
 		filename = "__zzzparanoidal__/graphics/train/electric/av2_sheet.png",
 		width = 256,
 		height = 256,
@@ -126,7 +126,7 @@ data.raw.locomotive["bet-locomotive"].selected_minimap_representation.scale = 0.
 	data.raw.technology["bet-charger-3"].icon_size = 256
 	data.raw.technology["bet-charger-3"].icon_mipmaps = 4
 
-	data.raw.furnace["bet-charger-3"].working_visualisations.animation = {
+	data.raw.furnace["bet-charger-3"].graphics_set.working_visualisations[1].animation = {
 		filename = "__zzzparanoidal__/graphics/train/electric/av3_sheet.png",
 		width = 256,
 		height = 256,

@@ -1,20 +1,19 @@
-local intermediatemulti = angelsmods.marathon.intermediatemulti
 
 data:extend({
 	-- Lead Plate
 	{
 		type = "recipe",
 		name = "molten-lead-remelting",
-		category = "induction-smelting",
+		category = "angels-induction-smelting",
 		subgroup = "angels-lead-casting",
-		enabled = "false",
+		enabled = false,
 		energy_required = 6,
 		ingredients = { { type = "item", name = "angels-plate-lead", amount = 4 } },
 		results = { { type = "fluid", name = "angels-liquid-molten-lead", amount = 15 } },
 
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-lead.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-lead.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",

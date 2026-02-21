@@ -1,20 +1,19 @@
-local intermediatemulti = angelsmods.marathon.intermediatemulti
 
 data:extend({
 	-- Gunmetal Plate
 	{
 		type = "recipe",
 		name = "molten-gunmetal-remelting",
-		category = "induction-smelting",
+		category = "angels-induction-smelting",
 		subgroup = "angels-alloys-casting",
-		enabled = "false",
+		enabled = false,
 		energy_required = 6,
 		ingredients = { { type = "item", name = "bob-gunmetal-alloy", amount = 4 } },
-		results = { { type = "fluid", name = "liquid-molten-gunmetal", amount = 35 } },
+		results = { { type = "fluid", name = "angels-liquid-molten-gunmetal", amount = 35 } },
 
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-gunmetal.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-gunmetal.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",
@@ -33,17 +32,17 @@ data:extend({
 		name = "molten-gunmetal-alloy-mixing-1",
 		category = "molten-alloy-mixing",
 		subgroup = "aragas-gunmetal-alloy-mixing",
-		enabled = "false",
+		enabled = false,
 		energy_required = 4,
 		ingredients = {
 			{ type = "fluid", name = "angels-liquid-molten-copper", amount = 180 },
 			{ type = "fluid", name = "angels-liquid-molten-zinc", amount = 120 },
 			{ type = "fluid", name = "angels-liquid-molten-tin", amount = 60 },
 		},
-		results = { { type = "fluid", name = "liquid-molten-gunmetal", amount = 360 } },
+		results = { { type = "fluid", name = "angels-liquid-molten-gunmetal", amount = 360 } },
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-gunmetal.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-gunmetal.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",

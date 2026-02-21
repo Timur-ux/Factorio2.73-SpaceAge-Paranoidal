@@ -11,7 +11,7 @@ angelsmods.functions.OV.global_replace_item("bob-steel-gear-wheel", "bob-steel-b
 angelsmods.functions.OV.global_replace_item("engine-unit", "motor-2")
 angelsmods.functions.OV.global_replace_item("electric-engine-unit", "motor-4")
 angelsmods.functions.OV.global_replace_item("battery", "bob-battery-2")
-angelsmods.functions.OV.global_replace_item("bob-lab", "angels-basic-lab-2")
+angelsmods.functions.OV.global_replace_item("lab", "angels-basic-lab-2")
 angelsmods.functions.OV.global_replace_item("condensator", "circuit-transistor")
 angelsmods.functions.OV.global_replace_item("condensator2", "circuit-microchip")
 angelsmods.functions.OV.global_replace_item("condensator3", "circuit-transformer")

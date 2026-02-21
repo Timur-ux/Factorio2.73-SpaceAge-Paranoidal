@@ -241,6 +241,7 @@ if mods["bobpower"] then
     set_settings_default_value("bool-setting", "bobmods-power-fluidgenerator", false)
     set_settings_default_value("bool-setting", "bobmods-power-heatsources", false)
 end
+
 if mods["bobrevamp"] then
     set_settings_default_value("bool-setting", "bobmods-revamp-oil", false)
 end
@@ -301,7 +302,7 @@ if mods["P-U-M-P-S"] then
     set_settings_default_value("bool-setting", "osm-pumps-burner-offshore-pump", true)
 end
 if mods["PCPRedux"] then
-    set_settings_default_value("bool-setting", "pcp-glass-sink", false)
+    -- set_settings_default_value("bool-setting", "pcp-glass-sink", false)
 end
 -- not adapted to kry-picker. needs to review
 if mods["PickerTweaks"] then

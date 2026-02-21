@@ -7,7 +7,7 @@ data.raw["furnace"]["steel-furnace"].result_inventory_size = 2
 data.raw["furnace"]["electric-furnace"].result_inventory_size = 2
 data.raw["furnace"]["bob-electric-furnace-2"].result_inventory_size = 2
 data.raw["furnace"]["bob-electric-furnace-3"].result_inventory_size = 2
-data.raw["furnace"]["electric-steel-furnace"].result_inventory_size = 2
+-- data.raw["furnace"]["electric-steel-furnace"].result_inventory_size = 2 -- from MilesBobExpansion
 -------------------------------------------------------------------------------------------------
 -- подкрутка рецепта погрузчика/разгрузчика
 --bobmods.lib.recipe.replace_ingredient("railloader", "rail", "bi-rail-wood")
@@ -33,7 +33,7 @@ data.raw.locomotive.locomotive.braking_force = 14
 data.raw.locomotive.locomotive.friction_force = 0.27
 data.raw.locomotive.locomotive.air_resistance = 0.008
 data.raw.locomotive.locomotive.energy_per_hit_point = 5
-data.raw.locomotive.locomotive.burner.effectivity = 0.8
+data.raw.locomotive.locomotive.energy_source.effectivity = 0.8
 -------------------------------------------------------------------------------------------------
 data.raw.locomotive["bob-locomotive-2"].air_resistance = 0.0065
 -------------------------------------------------------------------------------------------------
@@ -77,8 +77,3 @@ data.raw["item"]["bob-vehicle-roboport-equipment-3"].subgroup = "vehicle-misc1"
 data.raw["item"]["bob-vehicle-roboport-equipment-4"].subgroup = "vehicle-misc1"
 data.raw["item"]["bob-vehicle-roboport-equipment-3"].order = "v[vehicle-equipment]-f[roboport-3]"
 data.raw["item"]["bob-vehicle-roboport-equipment-4"].order = "v[vehicle-equipment]-f[roboport-4]"
-
---прячем лишнюю жидкость
-data.raw["fluid"]["angels-liquid-boric-acid"].hidden = true
-data.raw["recipe"]["fill-liquid-boric-acid-barrel"].hidden = true
-data.raw["recipe"]["empty-liquid-boric-acid-barrel"].hidden = true

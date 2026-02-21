@@ -6,20 +6,22 @@ data.raw["ammo-turret"]["bob-sniper-turret-2"].attack_parameters.min_range = 17
 data.raw["ammo-turret"]["bob-sniper-turret-2"].attack_parameters.cooldown = 240
 data.raw["ammo-turret"]["bob-sniper-turret-3"].attack_parameters.min_range = 20
 data.raw["ammo-turret"]["bob-sniper-turret-3"].attack_parameters.cooldown = 210
-bobmods.lib.recipe.set_ingredients(
-	"bob-sniper-turret-1",
-	{ { type = "item", name = "bob-steel-gear-wheel", amount = 20}, { type = "item", name = "gun-turret", amount = 1}, { type = "item", name = "copper-plate", amount = 20} }
-)
+bobmods.lib.recipe.set_ingredients("bob-sniper-turret-1", {
+	{ type = "item", name = "bob-steel-gear-wheel", amount = 20 },
+	{ type = "item", name = "gun-turret", amount = 1 },
+	{ type = "item", name = "copper-plate", amount = 20 },
+})
 --###############################################################################################
 --Фикс легкихтурелей
-data.raw["ammo-turret"]["scattergun-turret"].attack_parameters.range = 18
-data.raw["ammo-turret"]["scattergun-turret"].attack_parameters.damage_modifier = 2.0
-data.raw["ammo-turret"]["scattergun-turret"].attack_parameters.min_range = 0
-data.raw["ammo-turret"]["scattergun-turret"].attack_parameters.turn_range = 1
-bobmods.lib.recipe.set_ingredients(
-	"scattergun-turret",
-	{ { type = "item", name = "iron-gear-wheel", amount = 20}, { type = "item", name = "gun-turret", amount = 1}, { type = "item", name = "stone-brick", amount = 50} }
-)
+data.raw["ammo-turret"]["w93-scattergun-turret"].attack_parameters.range = 18
+data.raw["ammo-turret"]["w93-scattergun-turret"].attack_parameters.damage_modifier = 2.0
+data.raw["ammo-turret"]["w93-scattergun-turret"].attack_parameters.min_range = 0
+data.raw["ammo-turret"]["w93-scattergun-turret"].attack_parameters.turn_range = 1
+bobmods.lib.recipe.set_ingredients("w93-scattergun-turret", {
+	{ type = "item", name = "iron-gear-wheel", amount = 20 },
+	{ type = "item", name = "gun-turret", amount = 1 },
+	{ type = "item", name = "stone-brick", amount = 50 },
+})
 --###############################################################################################
 --Фикс простых турелей
 data.raw["ammo-turret"]["gun-turret"].attack_parameters.damage_modifier = 1.5
@@ -36,8 +38,11 @@ data.raw["ammo-turret"]["w93-hmg-turret2"].attack_parameters.damage_modifier = 4
 data.raw["ammo-turret"]["w93-hmg-turret2"].attack_parameters.cooldown = 5
 
 data.raw["technology"]["w93-modular-turrets2"].prerequisites = { "w93-modular-turrets", "electric-engine", "plastics" }
-data.raw.technology["w93-modular-turrets2"].unit.ingredients =
-	{ { type = "item", name = "automation-science-pack", amount = 1}, { type = "item", name = "logistic-science-pack", amount = 1}, { type = "item", name = "military-science-pack", amount = 1} }
+data.raw.technology["w93-modular-turrets2"].unit.ingredients = {
+	{"automation-science-pack", 1 },
+	{"logistic-science-pack", 1 },
+	{"military-science-pack", 1 },
+}
 bobmods.lib.tech.remove_recipe_unlock("w93-modular-turrets", "w93-hmg-turret2")
 bobmods.lib.tech.add_recipe_unlock("w93-modular-turrets2", "w93-hmg-turret2")
 bobmods.lib.tech.add_prerequisite("w93-modular-turrets-gatling", "w93-modular-turrets2")

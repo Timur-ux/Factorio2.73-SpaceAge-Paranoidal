@@ -1,20 +1,19 @@
-local intermediatemulti = angelsmods.marathon.intermediatemulti
 
 data:extend({
 	-- Chrome Plate
 	{
 		type = "recipe",
 		name = "molten-chrome-remelting",
-		category = "induction-smelting",
+		category = "angels-induction-smelting",
 		subgroup = "angels-chrome-casting",
-		enabled = "false",
+		enabled = false,
 		energy_required = 6,
 		ingredients = { { type = "item", name = "angels-plate-chrome", amount = 4 } },
 		results = { { type = "fluid", name = "angels-liquid-molten-chrome", amount = 15 } },
 
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-chrome.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-chrome.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",

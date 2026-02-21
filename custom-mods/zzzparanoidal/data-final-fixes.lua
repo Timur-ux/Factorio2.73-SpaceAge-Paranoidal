@@ -32,7 +32,7 @@ require("final-fixes.concrete-brick")
 require("final-fixes.concrete")
 require("final-fixes.pipes")
 require("final-fixes.technologies")
-require("final-fixes.recipes")
+require("final-fixes.recipies")
 require("final-fixes.icons")
 require("final-fixes.tweaks")
 require("final-fixes.ore-nerfs")
@@ -59,13 +59,13 @@ require("prototypes.landfill-pump") --Установка насосов на о�
 require("recipes.poles") --Изменение рецептов ЛЭП
 -------------------------------------------------------------------------------------------------
 if mods["yuoki"] then
-    require("prototypes.yuoki")
+	require("prototypes.yuoki")
 end -- при наличии yuoki
 
 -- Uniform recipe mod
-for _,r in pairs(data.raw["recipe"]) do
-	r.always_show_products=true;
-	r.show_amount_in_title=false;
+for _, r in pairs(data.raw["recipe"]) do
+	r.always_show_products = true
+	r.show_amount_in_title = false
 end
 -- Uniform recipe end
 
@@ -77,3 +77,9 @@ require("recipes.flowfix")
 
 -- фикс части косяков с префиксами в рецептах angels-/bob-
 require("__zzzcompability__/fixes/prefixes")
+for tName, tech in pairs(data.raw.technology) do
+	if tName == "bob-electricity" then
+		log(serpent.block(tech))
+	end
+	log(tName)
+end

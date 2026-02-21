@@ -16,9 +16,9 @@ data.raw["technology"]["angels-fluid-control"].icon_size = 64
 data.raw["technology"]["angels-fluid-control"].icon_mipmaps = 4
 -------------------------------------------------------------------------------------------------
 -- замена иконки свалки
-data.raw["technology"]["zcs-trash-landfill"].icon = "__zzzparanoidal__/graphics/stockpile-icon.png"
---data.raw["technology"]["zcs-trash-landfill"].icon_size = 32
---data.raw["technology"]["zcs-trash-landfill"].icon_mipmaps = 4
+data.raw["technology"]["zcs-trash-landfill-tech"].icon = "__zzzparanoidal__/graphics/stockpile-icon.png"
+--data.raw["technology"]["zcs-trash-landfil-tech"].icon_size = 32
+--data.raw["technology"]["zcs-trash-landfill-tech"].icon_mipmaps = 4
 
 data.raw["container"]["zcs-trash-landfill"].icon = "__zzzparanoidal__/graphics/stockpile-icon.png"
 --data.raw["technology"]["zcs-trash-landfill"].icon_size = 32

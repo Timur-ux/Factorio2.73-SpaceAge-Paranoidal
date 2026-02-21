@@ -119,7 +119,7 @@ data.raw["assembling-machine"]["angels-steam-cracker-4"].module_slots = 3
 data.raw["assembling-machine"]["angels-advanced-chemical-plant"].module_slots = 2
 data.raw["assembling-machine"]["angels-advanced-chemical-plant-2"].module_slots = 3
 
-data.raw["assembling-machine"]["bob-chemical-plant"].module_slots = 1
+data.raw["assembling-machine"]["chemical-plant"].module_slots = 1
 data.raw["assembling-machine"]["angels-chemical-plant-2"].module_slots = 2
 data.raw["assembling-machine"]["angels-chemical-plant-3"].module_slots = 3
 data.raw["assembling-machine"]["angels-chemical-plant-4"].module_slots = 4

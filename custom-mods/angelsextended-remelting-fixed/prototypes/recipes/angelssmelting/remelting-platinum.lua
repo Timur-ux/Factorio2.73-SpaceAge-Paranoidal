@@ -1,20 +1,19 @@
-local intermediatemulti = angelsmods.marathon.intermediatemulti
 
 data:extend({
 	-- Platinum Plate
 	{
 		type = "recipe",
 		name = "molten-platinum-remelting",
-		category = "induction-smelting",
+		category = "angels-induction-smelting",
 		subgroup = "angels-platinum-casting",
-		enabled = "false",
+		enabled = false,
 		energy_required = 6,
 		ingredients = { { type = "item", name = "angels-plate-platinum", amount = 4 } },
 		results = { { type = "fluid", name = "angels-liquid-molten-platinum", amount = 15 } },
 
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-platinum.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-platinum.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",

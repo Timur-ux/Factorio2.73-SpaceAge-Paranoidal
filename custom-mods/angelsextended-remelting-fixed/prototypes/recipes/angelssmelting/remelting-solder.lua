@@ -1,20 +1,19 @@
-local intermediatemulti = angelsmods.marathon.intermediatemulti
 
 data:extend({
 	-- Solder Plate
 	{
 		type = "recipe",
 		name = "molten-solder-remelting",
-		category = "induction-smelting",
+		category = "angels-induction-smelting",
 		subgroup = "angels-solder-casting",
 		energy_required = 6,
-		enabled = "false",
+		enabled = false,
 		ingredients = { { type = "item", name = "angels-solder", amount = 4 } },
 		results = { { type = "fluid", name = "angels-liquid-molten-solder", amount = 15 } },
 
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-solder.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-solder.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",
@@ -33,7 +32,7 @@ data:extend({
 		name = "molten-solder-alloy-mixing-1",
 		category = "molten-alloy-mixing",
 		subgroup = "aragas-solder-alloy-mixing",
-		enabled = "false",
+		enabled = false,
 		energy_required = 4,
 		ingredients = {
 			{ type = "fluid", name = "angels-liquid-molten-tin", amount = 120 },
@@ -42,7 +41,7 @@ data:extend({
 		results = { { type = "fluid", name = "angels-liquid-molten-solder", amount = 240 } },
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-solder.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-solder.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",
@@ -59,7 +58,7 @@ data:extend({
 		name = "molten-solder-alloy-mixing-2",
 		category = "molten-alloy-mixing",
 		subgroup = "aragas-solder-alloy-mixing",
-		enabled = "false",
+		enabled = false,
 		energy_required = 4,
 		ingredients = {
 			{ type = "fluid", name = "angels-liquid-molten-tin", amount = 120 },
@@ -68,7 +67,7 @@ data:extend({
 		results = { { type = "fluid", name = "angels-liquid-molten-solder", amount = 240 } },
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-solder.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-solder.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",
@@ -85,7 +84,7 @@ data:extend({
 		name = "molten-solder-alloy-mixing-3",
 		category = "molten-alloy-mixing",
 		subgroup = "aragas-solder-alloy-mixing",
-		enabled = "false",
+		enabled = false,
 		energy_required = 4,
 		ingredients = {
 			{ type = "fluid", name = "angels-liquid-molten-tin", amount = 120 },
@@ -95,7 +94,7 @@ data:extend({
 		results = { { type = "fluid", name = "angels-liquid-molten-solder", amount = 360 } },
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-solder.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-solder.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",

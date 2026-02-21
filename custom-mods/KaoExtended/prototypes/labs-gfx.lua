@@ -1,4 +1,4 @@
-data.raw["bob-lab"]["bob-lab-2"].on_animation =
+data.raw["lab"]["bob-lab-2"].on_animation =
     {
       layers =
       {
@@ -15,7 +15,7 @@ data.raw["bob-lab"]["bob-lab-2"].on_animation =
       }
     }
 
-data.raw["bob-lab"]["bob-lab-2"].off_animation =
+data.raw["lab"]["bob-lab-2"].off_animation =
     {
       layers =
       {

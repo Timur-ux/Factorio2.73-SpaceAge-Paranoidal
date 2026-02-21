@@ -36,7 +36,7 @@ bobmods.lib.tech.add_prerequisite("worker-robots-storage-1", "chemical-science-p
 bobmods.lib.tech.add_prerequisite("bob-steel-axe-4", "chemical-science-pack")
 bobmods.lib.tech.add_prerequisite("research-speed-3", "chemical-science-pack")
 bobmods.lib.tech.add_prerequisite("inserter-capacity-bonus-3", "chemical-science-pack")
-bobmods.lib.tech.add_prerequisite("OilBurning-3", "chemical-science-pack")
+-- bobmods.lib.tech.add_prerequisite("OilBurning-3", "chemical-science-pack")
 bobmods.lib.tech.add_prerequisite("advanced-aerodynamics", "chemical-science-pack")
 bobmods.lib.tech.add_prerequisite("mining-productivity-2", "chemical-science-pack")
 bobmods.lib.tech.add_prerequisite("CW-air-filter-cleaning-3", "chemical-science-pack")
@@ -141,7 +141,6 @@ bobmods.lib.tech.remove_recipe_unlock("bob-tungsten-alloy-processing", "angels-c
 bobmods.lib.tech.remove_recipe_unlock("angels-tungsten-smelting-1", "angels-tungsten-pipe-casting")
 bobmods.lib.tech.remove_recipe_unlock("angels-tungsten-smelting-1", "angels-tungsten-pipe-to-ground-casting")
 
-
 --фикс кривых исследований углерода
 bobmods.lib.tech.remove_recipe_unlock("angels-coal-processing-2", "coke-purification-3")
 bobmods.lib.tech.remove_recipe_unlock("angels-coal-processing-3", "angels-coke-purification-2")
@@ -181,21 +180,24 @@ bobmods.lib.tech.add_recipe_unlock("angels-metallurgy-3", "advanced-structure-co
 bobmods.lib.tech.remove_prerequisite("bob-advanced-research", "bob-express-inserter")
 bobmods.lib.tech.add_prerequisite("bob-advanced-research", "bob-bulk-inserter-3")
 
---Добавлен дополнительный уровень технологий для Жидк.Бойлеров 4, 5 в соответсвии с их рецептом (AKMF)
-data.raw.technology["OilBurning-4"].unit.ingredients = {
-	{ type = "item", name = "automation-science-pack", amount = 2},
-	{ type = "item", name = "logistic-science-pack", amount = 2},
-	{ type = "item", name = "chemical-science-pack", amount = 2},
-	{ type = "item", name = "production-science-pack", amount = 2},
-}
-data.raw.technology["OilBurning-5"].unit.ingredients = {
-	{ type = "item", name = "automation-science-pack", amount = 2},
-	{ type = "item", name = "logistic-science-pack", amount = 2},
-	{ type = "item", name = "chemical-science-pack", amount = 2},
-	{ type = "item", name = "production-science-pack", amount = 2},
-	{ type = "item", name = "utility-science-pack", amount = 2},
-}
-
+-- --Добавлен дополнительный уровень технологий для Жидк.Бойлеров 4, 5 в соответсвии с их рецептом (AKMF)
+if data.raw.technology["OilBurning-4"] then
+	data.raw.technology["OilBurning-4"].unit.ingredients = {
+		{"automation-science-pack", 2 },
+		{"logistic-science-pack", 2 },
+		{"chemical-science-pack", 2 },
+		{"production-science-pack", 2 },
+	}
+end
+if data.raw.technology["OilBurning-5"] then
+	data.raw.technology["OilBurning-5"].unit.ingredients = {
+		{"automation-science-pack", 2 },
+		{"logistic-science-pack", 2 },
+		{"chemical-science-pack", 2 },
+		{"production-science-pack", 2 },
+		{"utility-science-pack", 2 },
+	}
+end
 --Ремонт дерева исследований
 bobmods.lib.tech.add_prerequisite("nuclear-power", "bob-boiler-4") --Ставим ядерку под Бойлер МК4
 bobmods.lib.tech.add_prerequisite("water-pumpjack-1", "bob-electricity") --помпа
@@ -204,10 +206,14 @@ bobmods.lib.tech.add_prerequisite("logistics", "bob-electricity") --логист
 bobmods.lib.tech.add_prerequisite("angels-basic-chemistry-2", "angels-metallurgy-1") --базовая химия 2
 bobmods.lib.tech.add_prerequisite("angels-bio-processing-green", "angels-metallurgy-1") --водоросли 2
 bobmods.lib.tech.add_prerequisite("angels-bio-processing-green", "electronics") --водоросли 2
-bobmods.lib.tech.remove_prerequisite("bi-tech-resin-extraction", "bi-tech-timber") --убираем смолу
+-- bobmods.lib.tech.remove_prerequisite("bi-tech-resin-extraction", "bi-tech-timber") --убираем смолу
 bobmods.lib.tech.remove_prerequisite("bi-tech-wooden-storage-1", "bi-tech-resin-extraction") --убираем смолу
-data.raw.technology["bi-tech-resin-extraction"].hidden = true --убираем смолу
-data.raw.technology["bi-tech-timber"].unit.count = 30 --совмещаем смолу и теплицы
+if data.raw.technology["bi-tech-resin-extraction"] then
+	data.raw.technology["bi-tech-resin-extraction"].hidden = true --убираем смолу
+end
+if data.raw.technology["bi-tech-timber"] then
+	data.raw.technology["bi-tech-timber"].unit.count = 30 --совмещаем смолу и теплицы
+end
 bobmods.lib.tech.add_prerequisite("bi-tech-wooden-storage-1", "bi-tech-timber") --ящики под теплицу
 bobmods.lib.tech.add_prerequisite("angels-steel-smelting-2", "angels-strand-casting-1") --сталь 2 под МНЛЗ
 bobmods.lib.tech.add_prerequisite("CW-air-filtering-1", "automation-2") --фильтры под автомат 2
@@ -220,7 +226,7 @@ bobmods.lib.tech.remove_prerequisite("angels-zinc-smelting-1", "angels-metallurg
 bobmods.lib.tech.remove_prerequisite("bob-zinc-processing", "angels-sulfur-processing-1") --металлургия 2 под латунь
 bobmods.lib.tech.remove_prerequisite("bob-zinc-processing", "angels-zinc-smelting-1") --металлургия 2 под латунь
 bobmods.lib.tech.remove_prerequisite("angels-liquid-molten-brass", "angels-zinc-smelting-1") --металлургия 2 под латунь
-bobmods.lib.tech.add_prerequisite("angels-metallurgy-2", "bob-zinc-processing") ----металлургия 2 под латунь
+-- bobmods.lib.tech.add_prerequisite("angels-metallurgy-2", "bob-zinc-processing") ----металлургия 2 под латунь
 bobmods.lib.tech.add_prerequisite("angels-zinc-smelting-1", "angels-metallurgy-2") --цинк под металлургию 2
 bobmods.lib.tech.add_prerequisite("angels-water-washing-2", "angels-metallurgy-2") --промывка 2  под металлургию 2
 bobmods.lib.tech.add_prerequisite("angels-ore-powderizer", "angels-stone-smelting-1") --измельчитель под кирпич
@@ -249,8 +255,8 @@ bobmods.lib.tech.add_prerequisite("CW-air-filter-cleaning-4", "production-scienc
 bobmods.lib.tech.add_prerequisite("afterburner", "utility-science-pack") --форсаж под утилити пакеты
 bobmods.lib.tech.add_prerequisite("angels-advanced-bio-processing", "production-science-pack") --водоросли 5 под производственн пакеты
 bobmods.lib.tech.add_prerequisite("angels-advanced-bio-processing", "utility-science-pack") --водоросли 5 под утилити пакеты
-bobmods.lib.tech.add_prerequisite("OilBurning-4", "production-science-pack") --жидк котёл 4 под производственн пакеты
-bobmods.lib.tech.add_prerequisite("OilBurning-4", "angels-titanium-smelting-1") --жидк котёл 4 под титан
+-- bobmods.lib.tech.add_prerequisite("OilBurning-4", "production-science-pack") --жидк котёл 4 под производственн пакеты
+-- bobmods.lib.tech.add_prerequisite("OilBurning-4", "angels-titanium-smelting-1") --жидк котёл 4 под титан
 bobmods.lib.tech.add_prerequisite("angels-stone-smelting-4", "angels-titanium-smelting-1") --титановый кирпич под титан
 bobmods.lib.tech.add_prerequisite("bob-steel-axe-5", "production-science-pack") --кирка 5 под производственн пакеты
 bobmods.lib.tech.add_prerequisite("bob-steel-axe-6", "utility-science-pack") --кирка 6 под утилити пакеты
@@ -276,10 +282,15 @@ bobmods.lib.tech.add_prerequisite("weapon-shooting-speed-6", "utility-science-pa
 bobmods.lib.tech.add_prerequisite("follower-robot-count-3", "chemical-science-pack") --боевых роботов под синие банки
 bobmods.lib.tech.add_prerequisite("stronger-explosives-3", "chemical-science-pack") --урон гранат 3  под военные банки
 bobmods.lib.tech.remove_prerequisite("bi-tech-garden-3", "angels-stone-smelting-4") --убираем огромные сады из под цемента 4
-data.raw.technology["angels-stone-smelting-4"].unit.count = 200 --меняем цену на цемент 4
-data.raw.technology["angels-stone-smelting-4"].unit.ingredients =
-	{ { type = "item", name = "automation-science-pack", amount = 1}, { type = "item", name = "logistic-science-pack", amount = 1}, { type = "item", name = "chemical-science-pack", amount = 1} } --меняем цену на цемент 4
-bobmods.lib.tech.add_prerequisite("production-science-pack", "angels-stone-smelting-4") -- производственн пакеты под цемент 4
+if data.raw.technology["angels-stone-smelting-4"] then
+	data.raw.technology["angels-stone-smelting-4"].unit.count = 200 --меняем цену на цемент 4
+	data.raw.technology["angels-stone-smelting-4"].unit.ingredients = {
+		{"automation-science-pack", 1 },
+		{"logistic-science-pack", 1 },
+		{"chemical-science-pack", 1 },
+	} --меняем цену на цемент 4
+end
+-- bobmods.lib.tech.add_prerequisite("production-science-pack", "angels-stone-smelting-4") -- производственн пакеты под цемент 4
 bobmods.lib.tech.add_prerequisite("bi-tech-garden-3", "production-science-pack") --огромные сады под производственн пакеты
 --08.07.24
 bobmods.lib.tech.add_prerequisite("angels-metallurgy-4", "processing-unit") -- Промышленная металлургия 4 под Продвинутую электронику 2
@@ -288,28 +299,42 @@ bobmods.lib.tech.add_prerequisite("angels-liquid-molten-brass", "angels-ore-floa
 --21.07.24
 bobmods.lib.tech.add_prerequisite("angels-metallurgy-3", "angels-ore-leaching") -- Промышленную металлургию 3 под Химическую обработку руды(кристаллы)
 bobmods.lib.tech.add_prerequisite("modules", "angels-gold-smelting-1") -- Модули под Золото!
-data.raw.technology["modules"].unit.ingredients =
-	{ { type = "item", name = "automation-science-pack", amount = 1}, { type = "item", name = "logistic-science-pack", amount = 1}, { type = "item", name = "chemical-science-pack", amount = 1} } --модули теперь за синие банки (как и должно быть)
-bobmods.lib.tech.add_prerequisite("OilBurning-2", "bob-boiler-2") -- Сжигание жидкого и газообразного топлива 2 под Бойлер 2
-bobmods.lib.tech.add_prerequisite("OilBurning-3", "bob-boiler-3") -- Сжигание жидкого и газообразного топлива 3 под Бойлер 3
-bobmods.lib.tech.add_prerequisite("OilBurning-4", "bob-boiler-4") -- Сжигание жидкого и газообразного топлива 4 под Бойлер 4
-bobmods.lib.tech.add_prerequisite("OilBurning-5", "bob-boiler-5") -- Сжигание жидкого и газообразного топлива 5 под Бойлер 5
-data.raw.technology["bob-drills-2"].unit.ingredients =
-	{ { type = "item", name = "automation-science-pack", amount = 1}, { type = "item", name = "logistic-science-pack", amount = 1}, { type = "item", name = "chemical-science-pack", amount = 1} } --синие банки для буров мк3
-data.raw.technology["bob-area-drills-2"].unit.ingredients =
-	{ { type = "item", name = "automation-science-pack", amount = 1}, { type = "item", name = "logistic-science-pack", amount = 1}, { type = "item", name = "chemical-science-pack", amount = 1} } --синие банки для буров мк3
+if data.raw.technology["modules"] then
+	data.raw.technology["modules"].unit.ingredients = {
+		{ "automation-science-pack", 1 },
+		{ "logistic-science-pack", 1 },
+		{ "chemical-science-pack", 1 },
+	} --модули теперь за синие банки (как и должно быть)
+end
+-- bobmods.lib.tech.add_prerequisite("OilBurning-2", "bob-boiler-2") -- Сжигание жидкого и газообразного топлива 2 под Бойлер 2
+-- bobmods.lib.tech.add_prerequisite("OilBurning-3", "bob-boiler-3") -- Сжигание жидкого и газообразного топлива 3 под Бойлер 3
+-- bobmods.lib.tech.add_prerequisite("OilBurning-4", "bob-boiler-4") -- Сжигание жидкого и газообразного топлива 4 под Бойлер 4
+-- bobmods.lib.tech.add_prerequisite("OilBurning-5", "bob-boiler-5") -- Сжигание жидкого и газообразного топлива 5 под Бойлер 5
+if data.raw.technology["bob-drills-2"] then
+	data.raw.technology["bob-drills-2"].unit.ingredients = {
+		{ "automation-science-pack", 1 },
+		{ "logistic-science-pack", 1 },
+		{ "chemical-science-pack", 1 },
+	} --синие банки для буров мк3
+end
+if data.raw.technology["bob-area-drills-2"] then
+	data.raw.technology["bob-area-drills-2"].unit.ingredients = {
+		{ "automation-science-pack", 1 },
+		{ "logistic-science-pack", 1 },
+		{ "chemical-science-pack", 1 },
+	} --синие банки для буров мк3
+end
 bobmods.lib.tech.add_prerequisite("energy-weapons-damage-4", "chemical-science-pack") -- Урон энергетического оружия под правильные банки
 bobmods.lib.tech.add_prerequisite("energy-weapons-damage-5", "utility-science-pack") -- Урон энергетического оружия под правильные банки
 bobmods.lib.tech.add_prerequisite("ober-nuclear-processing", "utility-science-pack") -- Высокотемпературная переработка сырья под правильные банки
 bobmods.lib.tech.add_prerequisite("refined-flammables-4", "utility-science-pack") -- Высокотемпературная переработка сырья под правильные банки
 bobmods.lib.tech.add_prerequisite("advanced-uranium-processing-1", "utility-science-pack") -- Продвинутая переработка урана 1 под правильные банки
 data.raw.technology["warehouse-logistics-research-2"].unit.ingredients = {
-	{ type = "item", name = "automation-science-pack", amount = 1},
-	{ type = "item", name = "logistic-science-pack", amount = 1},
-	{ type = "item", name = "chemical-science-pack", amount = 1},
-	{ type = "item", name = "bob-advanced-logistic-science-pack", amount = 1},
+	{"automation-science-pack", 1 },
+	{"logistic-science-pack", 1 },
+	{"chemical-science-pack", 1 },
+	{"bob-advanced-logistic-science-pack", 1 },
 } --Складская логистика 2 делаем правильные банки
-
 
 bobmods.lib.tech.remove_recipe_unlock("optics", "deadlock-large-lamp") --лампы
 bobmods.lib.tech.remove_recipe_unlock("optics", "deadlock-floor-lamp") --лампы
@@ -348,13 +373,29 @@ bobmods.lib.recipe.replace_ingredient("bob-turbo-bulk-inserter", "bob-titanium-b
 bobmods.lib.recipe.replace_ingredient("bob-turbo-inserter", "bob-titanium-bearing", "bob-cobalt-steel-bearing")
 bobmods.lib.recipe.replace_ingredient("bob-turbo-bulk-inserter", "bob-titanium-bearing", "bob-cobalt-steel-bearing")
 bobmods.lib.recipe.replace_ingredient("bob-turbo-inserter", "bob-titanium-gear-wheel", "bob-cobalt-steel-gear-wheel")
-bobmods.lib.recipe.replace_ingredient("bob-turbo-bulk-inserter", "bob-titanium-gear-wheel", "bob-cobalt-steel-gear-wheel")
+bobmods.lib.recipe.replace_ingredient(
+	"bob-turbo-bulk-inserter",
+	"bob-titanium-gear-wheel",
+	"bob-cobalt-steel-gear-wheel"
+)
 bobmods.lib.recipe.replace_ingredient("bob-turbo-inserter", "bob-titanium-gear-wheel", "bob-cobalt-steel-gear-wheel")
-bobmods.lib.recipe.replace_ingredient("bob-turbo-bulk-inserter", "bob-titanium-gear-wheel", "bob-cobalt-steel-gear-wheel")
+bobmods.lib.recipe.replace_ingredient(
+	"bob-turbo-bulk-inserter",
+	"bob-titanium-gear-wheel",
+	"bob-cobalt-steel-gear-wheel"
+)
 bobmods.lib.recipe.replace_ingredient("bob-turbo-transport-belt", "bob-nitinol-bearing", "bob-cobalt-steel-bearing")
-bobmods.lib.recipe.replace_ingredient("bob-turbo-transport-belt", "bob-nitinol-gear-wheel", "bob-cobalt-steel-gear-wheel")
+bobmods.lib.recipe.replace_ingredient(
+	"bob-turbo-transport-belt",
+	"bob-nitinol-gear-wheel",
+	"bob-cobalt-steel-gear-wheel"
+)
 bobmods.lib.recipe.replace_ingredient("bob-turbo-underground-belt", "bob-nitinol-bearing", "bob-cobalt-steel-bearing")
-bobmods.lib.recipe.replace_ingredient("bob-turbo-underground-belt", "bob-nitinol-gear-wheel", "bob-cobalt-steel-gear-wheel")
+bobmods.lib.recipe.replace_ingredient(
+	"bob-turbo-underground-belt",
+	"bob-nitinol-gear-wheel",
+	"bob-cobalt-steel-gear-wheel"
+)
 bobmods.lib.recipe.replace_ingredient("bob-turbo-splitter", "bob-nitinol-bearing", "bob-cobalt-steel-bearing")
 bobmods.lib.recipe.replace_ingredient("bob-turbo-splitter", "bob-nitinol-gear-wheel", "bob-cobalt-steel-gear-wheel")
 bobmods.lib.recipe.replace_ingredient("nco-wide-crane", "bob-cobalt-steel-gear-wheel", "bob-titanium-gear-wheel")
@@ -367,17 +408,29 @@ bobmods.lib.recipe.replace_ingredient("nco-filter-crane", "bob-cobalt-steel-gear
 bobmods.lib.recipe.replace_ingredient("nco-filter-crane", "bob-cobalt-steel-bearing", "bob-titanium-bearing")
 bobmods.lib.recipe.replace_ingredient("nco-wide-turbo-crane", "bob-titanium-gear-wheel", "bob-cobalt-steel-gear-wheel")
 bobmods.lib.recipe.replace_ingredient("nco-wide-turbo-crane", "bob-titanium-bearing", "bob-cobalt-steel-bearing")
-bobmods.lib.recipe.replace_ingredient("nco-wide-turbo-filter-crane", "bob-titanium-gear-wheel", "bob-cobalt-steel-gear-wheel")
+bobmods.lib.recipe.replace_ingredient(
+	"nco-wide-turbo-filter-crane",
+	"bob-titanium-gear-wheel",
+	"bob-cobalt-steel-gear-wheel"
+)
 bobmods.lib.recipe.replace_ingredient("nco-wide-turbo-filter-crane", "bob-titanium-bearing", "bob-cobalt-steel-bearing")
 bobmods.lib.recipe.replace_ingredient("nco-turbo-crane", "bob-titanium-gear-wheel", "bob-cobalt-steel-gear-wheel")
 bobmods.lib.recipe.replace_ingredient("nco-turbo-crane", "bob-titanium-bearing", "bob-cobalt-steel-bearing")
-bobmods.lib.recipe.replace_ingredient("nco-turbo-filter-crane", "bob-titanium-gear-wheel", "bob-cobalt-steel-gear-wheel")
+bobmods.lib.recipe.replace_ingredient(
+	"nco-turbo-filter-crane",
+	"bob-titanium-gear-wheel",
+	"bob-cobalt-steel-gear-wheel"
+)
 bobmods.lib.recipe.replace_ingredient("nco-turbo-filter-crane", "bob-titanium-bearing", "bob-cobalt-steel-bearing")
 
 --ремонт рецепта материнской бактерии (AKMF)
-data.raw["recipe"]["bacterial-growth-seed-cultivation-2"].category = "advanced-chemistry"
+if data.raw["recipe"]["bacterial-growth-seed-cultivation-2"] then
+	data.raw["recipe"]["bacterial-growth-seed-cultivation-2"].category = "angels-advanced-chemistry"
+end
 --ремонт рецепта высокооктанового обогащенного топлива (AKMF)
-data.raw["recipe"]["high-octane-enriched-fuel"].category = "advanced-chemistry"
+if data.raw["recipe"]["high-octane-enriched-fuel"] then
+	data.raw["recipe"]["high-octane-enriched-fuel"].category = "angels-advanced-chemistry"
+end
 
 --добавление цепочки рецептов для утилизации Хлорида кальция(AKMF)
 data:extend({
@@ -385,7 +438,7 @@ data:extend({
 		type = "recipe",
 		name = "Calcium-chloride-Calcium-carbonate",
 		category = "chemistry",
-		subgroup = "petrochem-sulfur",
+		subgroup = "angels-petrochem-sulfur",
 		energy_required = 4,
 		enabled = false,
 		ingredients = {
@@ -397,7 +450,7 @@ data:extend({
 			{ type = "item", name = "angels-solid-calcium-carbonate", amount = 1 },
 			{ type = "item", name = "angels-solid-salt", amount = 2 },
 		},
-		icon = "__angelsbioprocessing__/graphics/icons/solid-calcium-carbonate.png",
+		icon = "__angelsbioprocessinggraphics__/graphics/icons/solid-calcium-carbonate.png",
 		icon_size = 32,
 		order = "h",
 	},
@@ -405,7 +458,7 @@ data:extend({
 		type = "recipe",
 		name = "Calcium-carbonate-Calcium-sulfate",
 		category = "chemistry",
-		subgroup = "petrochem-sulfur",
+		subgroup = "angels-petrochem-sulfur",
 		energy_required = 4,
 		enabled = false,
 		ingredients = {
@@ -418,7 +471,7 @@ data:extend({
 			{ type = "fluid", name = "water", amount = 50 },
 			{ type = "fluid", name = "angels-gas-carbon-dioxide", amount = 50 },
 		},
-		icon = "__angelspetrochem__/graphics/icons/solid-calcium-sulfate.png",
+		icon = "__angelspetrochemgraphics__/graphics/icons/solid-calcium-sulfate.png",
 		icon_size = 32,
 		order = "h",
 	},
@@ -442,10 +495,12 @@ bobmods.lib.tech.add_prerequisite("bob-electronics-machine-3", "bob-turbo-insert
 --Финальный Ремонт дерева исследований
 bobmods.lib.tech.remove_prerequisite("radar", "electronics") --фикс радара
 -- bobmods.lib.tech.add_prerequisite ("radar", "bob-electricity") --фикс радара
-bobmods.lib.recipe.set_ingredients(
-	"radar",
-	{ { type = "item", name = "electric-motor", amount = 12}, { type = "item", name = "bob-basic-circuit-board", amount = 20}, { type = "item", name = "stone-brick", amount = 20}, { type = "item", name = "iron-plate", amount = 20} }
-) --фикс радара
+bobmods.lib.recipe.set_ingredients("radar", {
+	{ type = "item", name = "electric-motor", amount = 12 },
+	{ type = "item", name = "bob-basic-circuit-board", amount = 20 },
+	{ type = "item", name = "stone-brick", amount = 20 },
+	{ type = "item", name = "iron-plate", amount = 20 },
+}) --фикс радара
 bobmods.lib.tech.add_prerequisite("bob-nuclear-power-2", "centrifuging-1") --ториевая энергетика под Продвинутое центрифугирование 1
 bobmods.lib.tech.add_prerequisite("bob-area-drills-2", "bob-drills-2") --фикс буров
 bobmods.lib.tech.add_prerequisite("bob-area-drills-3", "bob-drills-3") --фикс буров
@@ -455,11 +510,13 @@ bobmods.lib.tech.remove_recipe_unlock("bob-advanced-processing-unit", "intellige
 bobmods.lib.tech.add_recipe_unlock("bob-god-module", "intelligent-io") -- Интеллектуальное арифметико-логическое устройство под Квантовые модули 1
 bobmods.lib.tech.remove_recipe_unlock("bi-tech-resin-extraction", "bi-resin-pulp") --прячем лишнюю смолу
 bobmods.lib.tech.remove_recipe_unlock("bi-tech-resin-extraction", "bi-wood-from-pulp") --прячем лишнюю смолу
-data.raw.technology["bi-tech-resin-extraction"].hidden = true --прячем лишнюю смолу
+if data.raw.technology["bi-tech-resin-extraction"] then
+	data.raw.technology["bi-tech-resin-extraction"].hidden = true --прячем лишнюю смолу
+end
 bobmods.lib.tech.add_prerequisite("hiend_train", "bob-fluid-wagon-3") -- привязать магнитный локомотив и вагоны к вагонам и цистернам мк3
 bobmods.lib.tech.add_prerequisite("angels-water-chemistry-2", "bob-thorium-fuel-reprocessing") -- привязатьо дейтериевую энергетику к Переработки тория (нет ядерного катализатора)
 bobmods.lib.tech.add_prerequisite("extremely-advanced-rocket-payloads", "space-lab") -- Привязать КОсмический челнок к Космическая лаборатория (Данные с космической станции недоступны)
-bobmods.lib.recipe.add_ingredient("offshore-pump", { type = "item", name = "offshore-mk0-pump", amount = 2}) -- к Электрический береговой насос добавляем Твердотопливный береговой насос 2 штуки
+bobmods.lib.recipe.add_ingredient("offshore-pump", { type = "item", name = "offshore-mk0-pump", amount = 2 }) -- к Электрический береговой насос добавляем Твердотопливный береговой насос 2 штуки
 
 --###############################################################################################
 --Финальный Ремонт дерева исследований от ЮШРАКА прости Господи
@@ -518,4 +575,3 @@ bobmods.lib.tech.add_prerequisite("bob-efficiency-module-5", "bob-advanced-proce
 bobmods.lib.tech.add_prerequisite("bob-productivity-module-5", "bob-advanced-processing-unit")
 bobmods.lib.tech.add_prerequisite("bob-pollution-clean-module-5", "bob-advanced-processing-unit")
 bobmods.lib.tech.add_prerequisite("bob-pollution-create-module-5", "bob-advanced-processing-unit")
-

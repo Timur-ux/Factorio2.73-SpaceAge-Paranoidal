@@ -8,7 +8,7 @@ flame_car.resistances = {
 	{ type = "acid", percent = 20 },
 }
 flame_car.guns = { "tank-flamethrower" }
-flame_car.equipment_grid = "car"
+flame_car.equipment_grid = "small-equipment-grid"
 
 data:extend({ flame_car })
 -------------------------------------------------------------------------------------------------

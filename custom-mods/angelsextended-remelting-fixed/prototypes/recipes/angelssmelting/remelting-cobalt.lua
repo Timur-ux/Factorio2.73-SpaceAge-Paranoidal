@@ -1,20 +1,19 @@
-local intermediatemulti = angelsmods.marathon.intermediatemulti
 
 data:extend({
 	-- Cobalt Plate
 	{
 		type = "recipe",
 		name = "molten-cobalt-remelting",
-		category = "induction-smelting",
+		category = "angels-induction-smelting",
 		subgroup = "angels-cobalt-casting",
-		enabled = "false",
+		enabled = false,
 		energy_required = 6,
 		ingredients = { { type = "item", name = "angels-plate-cobalt", amount = 4 } },
 		results = { { type = "fluid", name = "angels-liquid-molten-cobalt", amount = 15 } },
 
 		icons = {
 			{
-				icon = "__angelssmelting__/graphics/icons/molten-cobalt.png",
+				icon = "__angelssmeltinggraphics__/graphics/icons/molten-cobalt.png",
 			},
 			{
 				icon = "__angelsextended-remelting-fixed__/graphics/icons/remelting.png",
