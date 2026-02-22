@@ -66,7 +66,7 @@ script.on_event(defines.events.on_research_started, function(event)
 			return
 		end
 		if storage.infinite_research_units == nil then
-			global.infinite_research_units = {}
+			storage.infinite_research_units = {}
 		end
 		storage.infinite_research_units[tech.name] = tech.research_unit_count -- save researched technology units count for later use
 	end

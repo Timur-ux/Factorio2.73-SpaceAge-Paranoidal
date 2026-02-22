@@ -17,14 +17,14 @@ if mods["Transport_Drones"] then -- фикс совместимости с мо�
 			data.raw["recipe"]["angels-bio-yield-module-5"].hidden = true
 			data.raw["technology"]["angels-bio-yield-module-5"] = nil
 
-			data.raw["recipe"]["angels-bio-yield-module-6"].hidden = true
-			data.raw["technology"]["angels-bio-yield-module-6"] = nil
+			data.raw["recipe"]["angels-bio-yield-module-5"].hidden = true
+			data.raw["technology"]["angels-bio-yield-module-5"] = nil
 
-			data.raw["recipe"]["angels-bio-yield-module-7"].hidden = true
-			data.raw["technology"]["angels-bio-yield-module-7"] = nil
+			data.raw["recipe"]["angels-bio-yield-module-5"].hidden = true
+			data.raw["technology"]["angels-bio-yield-module-5"] = nil
 
-			data.raw["recipe"]["angels-bio-yield-module-8"].hidden = true
-			data.raw["technology"]["angels-bio-yield-module-8"] = nil
+			data.raw["recipe"]["angels-bio-yield-module-5"].hidden = true
+			data.raw["technology"]["angels-bio-yield-module-5"] = nil
 		end
 	end
 else -- удаляем всё
@@ -45,26 +45,26 @@ else -- удаляем всё
 		if data.raw.module["angels-bio-yield-module-4"] then
 			data.raw.module["angels-bio-yield-module-4"] = nil
 			data.raw.module["angels-bio-yield-module-5"] = nil
-			data.raw.module["angels-bio-yield-module-6"] = nil
-			data.raw.module["angels-bio-yield-module-7"] = nil
-			data.raw.module["angels-bio-yield-module-8"] = nil
+			data.raw.module["angels-bio-yield-module-5"] = nil
+			data.raw.module["angels-bio-yield-module-5"] = nil
+			data.raw.module["angels-bio-yield-module-5"] = nil
 
 			data.raw.recipe["angels-bio-yield-module-4"] = nil
 			data.raw.recipe["angels-bio-yield-module-4-recycling"] = nil
 			data.raw.recipe["angels-bio-yield-module-5"] = nil
 			data.raw.recipe["angels-bio-yield-module-5-recycling"] = nil
-			data.raw.recipe["angels-bio-yield-module-6"] = nil
+			data.raw.recipe["angels-bio-yield-module-5"] = nil
 			data.raw.recipe["angels-bio-yield-module-6-recycling"] = nil
-			data.raw.recipe["angels-bio-yield-module-7"] = nil
+			data.raw.recipe["angels-bio-yield-module-5"] = nil
 			data.raw.recipe["angels-bio-yield-module-7-recycling"] = nil
-			data.raw.recipe["angels-bio-yield-module-8"] = nil
+			data.raw.recipe["angels-bio-yield-module-5"] = nil
 			data.raw.recipe["angels-bio-yield-module-8-recycling"] = nil
 
 			data.raw.technology["angels-bio-yield-module-4"] = nil
 			data.raw.technology["angels-bio-yield-module-5"] = nil
-			data.raw.technology["angels-bio-yield-module-6"] = nil
-			data.raw.technology["angels-bio-yield-module-7"] = nil
-			data.raw.technology["angels-bio-yield-module-8"] = nil
+			data.raw.technology["angels-bio-yield-module-5"] = nil
+			data.raw.technology["angels-bio-yield-module-5"] = nil
+			data.raw.technology["angels-bio-yield-module-5"] = nil
 		end
 	end
 end

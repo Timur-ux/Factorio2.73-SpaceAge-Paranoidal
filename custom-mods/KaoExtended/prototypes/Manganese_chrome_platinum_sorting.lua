@@ -123,7 +123,7 @@ data:extend({
     prerequisites = 
         {
             "angels-advanced-ore-refining-3",
-            "ore-electro-whinning-cell"
+            "angels-ore-electro-whinning-cell"
         },
     effects = {{type = "unlock-recipe", recipe = "angelsore-pure-chrome-processing"}},
     unit =

@@ -3,14 +3,14 @@
 if mods["Transport_Drones"] then
 
 -- в настройках в качестве топлива нужно указать водород
---settings.startup["fuel-fluid"].value = "gas-hydrogen"
+--settings.startup["fuel-fluid"].value = "angels-gas-hydrogen"
 
 --подкрутка технологий
 bobmods.lib.tech.remove_prerequisite("transport-system", "engine")
 bobmods.lib.tech.remove_prerequisite("transport-system", "angels-oil-processing")
 bobmods.lib.tech.add_prerequisite("transport-system", "steel-processing")
 bobmods.lib.tech.add_prerequisite("transport-system", "angels-fluid-control")
-bobmods.lib.tech.add_prerequisite("transport-system", "basic-chemistry-2")
+bobmods.lib.tech.add_prerequisite("transport-system", "angels-basic-chemistry-2")
 
 bobmods.lib.tech.remove_science_pack("transport-system", "logistic-science-pack")
 -------------------------------------------------------------------------------------------------
@@ -21,7 +21,7 @@ bobmods.lib.tech.add_prerequisite ("transport-drone-capacity-1", "logistic-scien
 --подкрутка рецептов
 --депо
 bobmods.lib.recipe.add_ingredient("fuel-depot", { type = "item", name = "angels-storage-tank-3", amount = 4})
-bobmods.lib.recipe.add_ingredient("fuel-depot", { type = "item", name = "valve-underflow", amount = 1})
+bobmods.lib.recipe.add_ingredient("fuel-depot", { type = "item", name = "angels-valve-top-up", amount = 1})
 bobmods.lib.recipe.add_ingredient("fuel-depot", { type = "item", name = "basic-structure-components", amount = 5})
 bobmods.lib.recipe.add_ingredient("fuel-depot", { type = "item", name = "electronic-circuit", amount = 10})
 

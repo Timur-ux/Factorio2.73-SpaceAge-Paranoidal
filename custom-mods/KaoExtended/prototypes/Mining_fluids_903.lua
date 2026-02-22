@@ -32,9 +32,9 @@ local function extendBobs()
 		data.raw["resource"]["bob-tin-ore"].minable.fluid_amount = 20
 	end
 
-	if data.raw["resource"]["sulfur"] then
-		data.raw["resource"]["sulfur"].minable.required_fluid = "steam"
-		data.raw["resource"]["sulfur"].minable.fluid_amount = 20
+	if data.raw["resource"]["bob-sulfur"] then
+		data.raw["resource"]["bob-sulfur"].minable.required_fluid = "steam"
+		data.raw["resource"]["bob-sulfur"].minable.fluid_amount = 20
 	end
 
 	if data.raw["resource"]["bob-sort-gem-ore"] then

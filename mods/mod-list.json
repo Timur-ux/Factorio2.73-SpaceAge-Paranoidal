@@ -64,11 +64,6 @@
     },
     
     {
-      "name": "angelsaddons-liquidrobot",
-      "enabled": false
-    },
-    
-    {
       "name": "angelsaddons-mobility",
       "enabled": true
     },
@@ -89,16 +84,6 @@
     },
     
     {
-      "name": "angelsaddons-nilaus",
-      "enabled": false
-    },
-    
-    {
-      "name": "angelsaddons-shred",
-      "enabled": false
-    },
-    
-    {
       "name": "angelsaddons-storage",
       "enabled": true
     },
@@ -111,21 +96,6 @@
     {
       "name": "angelsbioprocessinggraphics",
       "enabled": true
-    },
-    
-    {
-      "name": "angelsdev-unit-test",
-      "enabled": true
-    },
-    
-    {
-      "name": "angelsexploration",
-      "enabled": false
-    },
-    
-    {
-      "name": "angelsexplorationgraphics",
-      "enabled": false
     },
     
     {
@@ -400,11 +370,16 @@
     
     {
       "name": "extendedangels",
-      "enabled": false
+      "enabled": true
     },
     
     {
       "name": "Factorissimo2-Space-Age-Port",
+      "enabled": true
+    },
+    
+    {
+      "name": "Fe-C-accumulator",
       "enabled": true
     },
     
@@ -570,6 +545,16 @@
     
     {
       "name": "Orphan Finder",
+      "enabled": true
+    },
+    
+    {
+      "name": "osm-lib",
+      "enabled": true
+    },
+    
+    {
+      "name": "osm-lib-postprocess",
       "enabled": true
     },
     
