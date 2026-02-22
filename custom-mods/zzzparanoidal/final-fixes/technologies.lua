@@ -575,3 +575,7 @@ bobmods.lib.tech.add_prerequisite("bob-efficiency-module-5", "bob-advanced-proce
 bobmods.lib.tech.add_prerequisite("bob-productivity-module-5", "bob-advanced-processing-unit")
 bobmods.lib.tech.add_prerequisite("bob-pollution-clean-module-5", "bob-advanced-processing-unit")
 bobmods.lib.tech.add_prerequisite("bob-pollution-create-module-5", "bob-advanced-processing-unit")
+
+
+-- Hide starting bob-burner-lab tech
+bobmods.lib.tech.hide("bob-burner-lab")
