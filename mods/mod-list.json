@@ -20,7 +20,7 @@
     
     {
       "name": "space-age",
-      "enabled": true
+      "enabled": false
     },
     
     {
@@ -95,6 +95,11 @@
     
     {
       "name": "angelsbioprocessinggraphics",
+      "enabled": true
+    },
+    
+    {
+      "name": "angelsextended-remelting-fixed",
       "enabled": true
     },
     
@@ -300,7 +305,7 @@
     
     {
       "name": "Clowns-AngelBob-Nuclear",
-      "enabled": false
+      "enabled": true
     },
     
     {
@@ -565,7 +570,7 @@
     
     {
       "name": "PCPRedux",
-      "enabled": false
+      "enabled": true
     },
     
     {
@@ -760,7 +765,7 @@
     
     {
       "name": "Warheads_Continued",
-      "enabled": true
+      "enabled": false
     },
     
     {
