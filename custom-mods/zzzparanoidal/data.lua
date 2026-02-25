@@ -1,4 +1,4 @@
--- -- new entities
+-- new entities
 require("prototypes.entity.bio-content")
 require("prototypes.entity.offshore-pumps")
 require("prototypes.entity.battery-electric-train")
@@ -13,7 +13,6 @@ require("prototypes.item.battery-electric-train")
 require("prototypes.item.flame-car")
 require("prototypes.item.artillery-prototype")
 require("prototypes.item.concrete-brick")
-
 
 -- new recipies
 require("prototypes.recipe.bio-content")

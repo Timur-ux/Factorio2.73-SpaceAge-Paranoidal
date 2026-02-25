@@ -143,7 +143,7 @@ data:extend({ -- Greenhouse
 		ingredients = {
 			{type="item", name= "bi-bio-garden", amount=10 },
 			{type="item", name= "seedling", amount=100 },
-			{type="item", name= "reinforced-concrete-brick", amount=100 },
+			{type="item", name= "angels-reinforced-concrete-brick", amount=100 },
 		},
 		results = {{type="item", name = "bi-bio-garden-large", amount=1}},
 		subgroup = "bio-bio-gardens-fluid",
@@ -164,7 +164,7 @@ data:extend({ -- Greenhouse
 		ingredients = {
 			{type="item", name= "bi-bio-garden-large", amount=10 },
 			{type="item", name= "iron-plate", amount=50 },
-			{type="item", name= "titanium-concrete-brick", amount=500 },
+			{type="item", name= "angels-titanium-concrete-brick", amount=500 },
 			{type="item", name= "seedling", amount=200 },
 		},
 		results = {{type="item", name = "bi-bio-garden-huge", amount=1}},
