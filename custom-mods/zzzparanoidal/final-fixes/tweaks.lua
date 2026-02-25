@@ -1,3 +1,4 @@
+require("__zzzparanoidal__.paralib")
 -- подкрутка чтобы сборщик1 мог собирать сам себя
 data.raw["assembling-machine"]["assembling-machine-1"].ingredient_count = 5
 -- Добавление нужных для крафта конденсаторов категорий в сборочники
@@ -25,8 +26,8 @@ data.raw["furnace"]["bob-electric-furnace-3"].result_inventory_size = 2
 -- data.raw["furnace"]["electric-steel-furnace"].result_inventory_size = 2 -- from MilesBobExpansion
 -------------------------------------------------------------------------------------------------
 -- подкрутка рецепта погрузчика/разгрузчика
---bobmods.lib.recipe.replace_ingredient("railloader", "rail", "bi-rail-wood")
---bobmods.lib.recipe.replace_ingredient("railunloader", "rail", "bi-rail-wood")
+--paralib.bobmods.lib.recipe.replace_ingredient("railloader", "rail", "bi-rail-wood")
+--paralib.bobmods.lib.recipe.replace_ingredient("railunloader", "rail", "bi-rail-wood")
 
 
 -- твики из TrainOverhaul

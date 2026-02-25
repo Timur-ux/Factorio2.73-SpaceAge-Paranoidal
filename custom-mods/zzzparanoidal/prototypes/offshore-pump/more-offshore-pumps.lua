@@ -1,3 +1,4 @@
+require("__zzzparanoidal__.paralib")
 -- Fetch external properties
 local ofshore_pump_template = table.deepcopy(data.raw["offshore-pump"]["offshore-pump"])
 
@@ -34,9 +35,9 @@ CreateOffshorePump("offshore-mk3-pump", energySources.electric, "2800kW", 40)
 CreateOffshorePump("offshore-mk4-pump", energySources.electric, "3700kW", 80)
 
 -- tweak default (mk1) pump
-bobmods.lib.recipe.set_ingredients("offshore-pump", {
+paralib.bobmods.lib.recipe.set_ingredients("offshore-pump", {
 	{ type = "item", name = "electronic-circuit", amount = 2 },
 	{ type = "item", name = "pipe", amount = 5 },
 	{ type = "item", name = "iron-gear-wheel", amount = 5 },
 })
-bobmods.lib.tech.add_recipe_unlock("electronics", "offshore-pump")
+paralib.bobmods.lib.tech.add_recipe_unlock("electronics", "offshore-pump")

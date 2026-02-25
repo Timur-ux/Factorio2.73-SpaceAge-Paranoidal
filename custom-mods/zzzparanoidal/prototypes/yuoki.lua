@@ -1,3 +1,4 @@
+require("__zzzparanoidal__.paralib")
 -- Ненужные рецепты скрываем
 
 data.raw.recipe["slag-processing-yi"].enabled = false
@@ -30,17 +31,17 @@ data.raw.technology["yi-inserters"].hidden = true
 
 -- Ненужные вещи из рецептов удаляем
 
--- bobmods.lib.recipe.remove_result("Recipename", "Itemname")
--- bobmods.lib.recipe.remove_ingredient ("Recipename", "itemname")
--- bobmods.lib.recipe.add_new_ingredient ("Recipename", {type="item", name="Itemname", amount=2})
+-- paralib.bobmods.lib.recipe.remove_result("Recipename", "Itemname")
+-- paralib.bobmods.lib.recipe.remove_ingredient ("Recipename", "itemname")
+-- paralib.bobmods.lib.recipe.add_new_ingredient ("Recipename", {type="item", name="Itemname", amount=2})
 -- table.insert( data.raw["recipe"]["Recipename"].ingredients, { type = "item", name = "Itemname", amount = 14})
 
-bobmods.lib.recipe.remove_result ("angels-ore1-chunk", "y-res1")
-bobmods.lib.recipe.remove_result ("angels-ore3-chunk", "y-res2")
-bobmods.lib.recipe.remove_result ("angels-ore1-crystal", "y-res1")
-bobmods.lib.recipe.remove_result ("angels-ore3-crystal", "y-res2")
-bobmods.lib.recipe.remove_result ("angels-ore1-pure", "y-res1")
-bobmods.lib.recipe.remove_result ("angels-ore3-pure", "y-res2")
+paralib.bobmods.lib.recipe.remove_result ("angels-ore1-chunk", "y-res1")
+paralib.bobmods.lib.recipe.remove_result ("angels-ore3-chunk", "y-res2")
+paralib.bobmods.lib.recipe.remove_result ("angels-ore1-crystal", "y-res1")
+paralib.bobmods.lib.recipe.remove_result ("angels-ore3-crystal", "y-res2")
+paralib.bobmods.lib.recipe.remove_result ("angels-ore1-pure", "y-res1")
+paralib.bobmods.lib.recipe.remove_result ("angels-ore3-pure", "y-res2")
 
 
 

@@ -1,17 +1,18 @@
+require("__zzzparanoidal__.paralib")
 --data.raw["technology"]["xxx"].prerequisites = {"xxx", "xxx"}
 --data.raw.technology["xxx"].hidden = true
 
---bobmods.lib.tech.add_recipe_unlock("technology", "recipe")
---bobmods.lib.tech.remove_recipe_unlock("technology", "recipe")
+--paralib.bobmods.lib.tech.add_recipe_unlock("technology", "recipe")
+--paralib.bobmods.lib.tech.remove_recipe_unlock("technology", "recipe")
 
---bobmods.lib.tech.replace_prerequisite("technology", "old", "new")
---bobmods.lib.tech.add_prerequisite("technology", "prerequisite")
---bobmods.lib.tech.remove_prerequisite("technology", "prerequisite")
+--paralib.bobmods.lib.tech.replace_prerequisite("technology", "old", "new")
+--paralib.bobmods.lib.tech.add_prerequisite("technology", "prerequisite")
+--paralib.bobmods.lib.tech.remove_prerequisite("technology", "prerequisite")
 
---bobmods.lib.recipe.add_ingredient("recipe", { type = "item", name = "ingredient", amount = 2})
---bobmods.lib.recipe.set_energy_required("recipe", 2)
---bobmods.lib.recipe.set_ingredient("recipe", { type = "item", name = "item", amount = 20})
---bobmods.lib.recipe.set_result("recipe", {name = "item", type = "item", amount = 5})
+--paralib.bobmods.lib.recipe.add_ingredient("recipe", { type = "item", name = "ingredient", amount = 2})
+--paralib.bobmods.lib.recipe.set_energy_required("recipe", 2)
+--paralib.bobmods.lib.recipe.set_ingredient("recipe", { type = "item", name = "item", amount = 20})
+--paralib.bobmods.lib.recipe.set_result("recipe", {name = "item", type = "item", amount = 5})
 
 --###############################################################################################
 --баланс мостовых рельс
@@ -20,12 +21,12 @@ if mods["beautiful_straight_bridge_railway"] then
 	data.raw["rail-planner"]["bbr-rail-brick"].order = "d"
 	data.raw["rail-planner"]["bbr-rail-brick"].icons =
 		{ { icon = "__zzzparanoidal__/graphics/train/bbr-rail-brick-icon.png", size = 64, icon_mipmaps = 4 } }
-	bobmods.lib.recipe.clear_ingredients("bbr-rail-brick")
-	bobmods.lib.recipe.add_ingredient("bbr-rail-brick", { type = "item", name = "iron-stick", amount = 2 })
-	bobmods.lib.recipe.add_ingredient("bbr-rail-brick", { type = "item", name = "concrete", amount = 20 })
-	bobmods.lib.recipe.add_ingredient("bbr-rail-brick", { type = "item", name = "steel-plate", amount = 2 })
-	bobmods.lib.recipe.add_ingredient("bbr-rail-brick", { type = "item", name = "angels-stone-crushed", amount = 10 })
-	bobmods.lib.recipe.set_energy_required("bbr-rail-brick", 2)
+	paralib.bobmods.lib.recipe.clear_ingredients("bbr-rail-brick")
+	paralib.bobmods.lib.recipe.add_ingredient("bbr-rail-brick", { type = "item", name = "iron-stick", amount = 2 })
+	paralib.bobmods.lib.recipe.add_ingredient("bbr-rail-brick", { type = "item", name = "concrete", amount = 20 })
+	paralib.bobmods.lib.recipe.add_ingredient("bbr-rail-brick", { type = "item", name = "steel-plate", amount = 2 })
+	paralib.bobmods.lib.recipe.add_ingredient("bbr-rail-brick", { type = "item", name = "angels-stone-crushed", amount = 10 })
+	paralib.bobmods.lib.recipe.set_energy_required("bbr-rail-brick", 2)
 end
 --###############################################################################################
 --будет вшито в биоиндустрию
@@ -68,9 +69,9 @@ data.raw["assembling-machine"]["dpa"].energy_usage = "1000kW"
 
 --Синие фильтрующие манипуляторы встают на место
 data.raw.technology["filter-inserters"].hidden = true
-bobmods.lib.tech.add_recipe_unlock("bob-express-inserter", "fast-inserter")
+paralib.bobmods.lib.tech.add_recipe_unlock("bob-express-inserter", "fast-inserter")
 
-bobmods.lib.recipe.set_ingredient("landfill", { type = "item", name = "stone", amount = 50 }) --Отсыпка по 50
+paralib.bobmods.lib.recipe.set_ingredient("landfill", { type = "item", name = "stone", amount = 50 }) --Отсыпка по 50
 
 -- Seems like already fixed
 --фикс стрелок порта для сероводорода промывочных машин
@@ -85,16 +86,16 @@ data.raw["recipe"]["osmium-ore-processing"].category = "angels-ore-processing-4"
 data.raw["recipe"]["osmium-processed-processing"].category = "pellet-pressing-4" --фикс слишком легкого осмия
 data.raw["recipe"]["osmium-pellet-smelting"].category = "blast-smelting-4" --фикс слишком легкого осмия
 data.raw["recipe"]["casting-powder-osmium"].category = "powder-mixing-4" --фикс слишком легкого осмия
-bobmods.lib.tech.add_prerequisite("astrometrics", "advanced-osmium-smelting") --Астрометрика под осмий
-bobmods.lib.tech.add_recipe_unlock("bi-tech-stone-crushing-1", "stone-crushed-2") --открываем рецепт камня
+paralib.bobmods.lib.tech.add_prerequisite("astrometrics", "advanced-osmium-smelting") --Астрометрика под осмий
+paralib.bobmods.lib.tech.add_recipe_unlock("bi-tech-stone-crushing-1", "stone-crushed-2") --открываем рецепт камня
 data.raw["rocket-silo"]["rocket-silo"].energy_usage = "250000kW" --увеличиваем потребление энергии ракетной шахтой
 data.raw["rocket-silo"]["rocket-silo"].module_specification.module_slots = 6 --но добавляем ей больше слотов модулей
-bobmods.lib.tech.add_prerequisite("advanced-osmium-smelting", "angels-ore-processing-5") --фикс дерева осмия
-bobmods.lib.tech.add_prerequisite("advanced-osmium-smelting", "angels-powder-metallurgy-5") --фикс дерева осмия
-bobmods.lib.tech.remove_prerequisite("spidertron", "radar") --фикс паукатрона
+paralib.bobmods.lib.tech.add_prerequisite("advanced-osmium-smelting", "angels-ore-processing-5") --фикс дерева осмия
+paralib.bobmods.lib.tech.add_prerequisite("advanced-osmium-smelting", "angels-powder-metallurgy-5") --фикс дерева осмия
+paralib.bobmods.lib.tech.remove_prerequisite("spidertron", "radar") --фикс паукатрона
 --###############################################################################################
 --Баланс телепортера под параноидал
-bobmods.lib.recipe.set_ingredients("teleporter", {
+paralib.bobmods.lib.recipe.set_ingredients("teleporter", {
 	{ type = "item", name = "bob-speed-module-5", amount = 2 },
 	{ type = "item", name = "space-science-pack", amount = 50 },
 	{ type = "item", name = "bob-advanced-processing-unit", amount = 50 },
@@ -113,7 +114,7 @@ data.raw.technology["teleporter"].unit.ingredients = {
 	{ "space-science-pack", 1 },
 }
 data.raw.technology["teleporter"].unit.count = 2000
-bobmods.lib.tech.add_prerequisite("teleporter", "space-science-pack")
+paralib.bobmods.lib.tech.add_prerequisite("teleporter", "space-science-pack")
 --###############################################################################################
 -- попытка исправить ошибку с отсутсвием насоса на старте
 data.raw.container["crash-site-spaceship"].minable = {

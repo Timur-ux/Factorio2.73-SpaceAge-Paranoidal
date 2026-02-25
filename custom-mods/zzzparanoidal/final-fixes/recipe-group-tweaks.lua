@@ -1,3 +1,4 @@
+require("__zzzparanoidal__.paralib")
 --переносим рецепты в новые вкладки
 --перенос в логику
 if not mods["angelsindustries"] then
@@ -31,8 +32,8 @@ if not mods["angelsindustries"] then
 	data.raw.item["programmable-speaker"].subgroup = "circuit-auditory"
 
 	if mods["InlaidLampsExtended"] then
-		bobmods.lib.tech.add_prerequisite("flat-lamp-t", "electronics")
-		bobmods.lib.tech.add_prerequisite("flat-lamp-t", "logistic-science-pack")
+		paralib.bobmods.lib.tech.add_prerequisite("flat-lamp-t", "electronics")
+		paralib.bobmods.lib.tech.add_prerequisite("flat-lamp-t", "logistic-science-pack")
 		data.raw["recipe"]["flat-lamp-c"].group = "circuit"
 		data.raw["recipe"]["flat-lamp-c"].subgroup = "circuit-visual"
 		data.raw.item["flat-lamp"].subgroup = "circuit-visual"

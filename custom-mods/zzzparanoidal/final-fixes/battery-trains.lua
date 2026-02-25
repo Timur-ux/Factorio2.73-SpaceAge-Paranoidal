@@ -1,3 +1,4 @@
+require("__zzzparanoidal__.paralib")
 -- баланс электрички
 if mods["BatteryElectricTrain"] then
 	data.raw.locomotive["bet-locomotive"].max_health = 2000
@@ -37,16 +38,16 @@ data.raw.locomotive["bet-locomotive"].selected_minimap_representation.scale = 0.
 	data.raw.item["bet-fuel-4-full"].fuel_acceleration_multiplier = 3.5
 	data.raw.item["bet-fuel-4-full"].fuel_top_speed_multiplier = 3
 
-	bobmods.lib.tech.add_prerequisite("bet-fuel-2", "bob-battery-2")
-	bobmods.lib.recipe.replace_ingredient("bet-fuel-2-empty", "battery", "bob-lithium-ion-battery")
+	paralib.bobmods.lib.tech.add_prerequisite("bet-fuel-2", "bob-battery-2")
+	paralib.bobmods.lib.recipe.replace_ingredient("bet-fuel-2-empty", "battery", "bob-lithium-ion-battery")
 
-	bobmods.lib.tech.add_prerequisite("bet-fuel-3", "bob-battery-3")
-	bobmods.lib.recipe.replace_ingredient("bet-fuel-3-empty", "battery", "bob-silver-zinc-battery")
+	paralib.bobmods.lib.tech.add_prerequisite("bet-fuel-3", "bob-battery-3")
+	paralib.bobmods.lib.recipe.replace_ingredient("bet-fuel-3-empty", "battery", "bob-silver-zinc-battery")
 
-	bobmods.lib.tech.add_prerequisite("bet-fuel-4", "speed-module-3")
-	bobmods.lib.recipe.replace_ingredient("bet-fuel-4-empty", "battery", "bob-silver-zinc-battery")
-	bobmods.lib.recipe.replace_ingredient("bet-fuel-4-empty", "effectivity-module-3", "speed-module-3")
-	bobmods.lib.recipe.add_ingredient("bet-fuel-4-empty", { type = "item", name = "bob-advanced-processing-unit", amount = 3})
+	paralib.bobmods.lib.tech.add_prerequisite("bet-fuel-4", "speed-module-3")
+	paralib.bobmods.lib.recipe.replace_ingredient("bet-fuel-4-empty", "battery", "bob-silver-zinc-battery")
+	paralib.bobmods.lib.recipe.replace_ingredient("bet-fuel-4-empty", "effectivity-module-3", "speed-module-3")
+	paralib.bobmods.lib.recipe.add_ingredient("bet-fuel-4-empty", { type = "item", name = "bob-advanced-processing-unit", amount = 3})
 
 	-------------------------------------------------------------------------------------------------
 	--зарядные

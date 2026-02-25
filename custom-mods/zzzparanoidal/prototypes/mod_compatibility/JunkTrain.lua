@@ -1,3 +1,4 @@
+require("__zzzparanoidal__.paralib")
 if mods["JunkTrain3"] then
 	--создаем новый локомотив
 	data:extend({
@@ -532,18 +533,18 @@ if mods["JunkTrain3"] then
 	}
 	-------------------------------------------------------------------------------------------------
 	--подкручиваем рецепт стандартных рельс
-	bobmods.lib.recipe.set_ingredient("rail", { type = "item", name = "angels-stone-crushed", amount = 10 })
+	paralib.bobmods.lib.recipe.set_ingredient("rail", { type = "item", name = "angels-stone-crushed", amount = 10 })
 	-------------------------------------------------------------------------------------------------
 	--переставляем рецепты рельс в технологиях
-	--bobmods.lib.tech.remove_recipe_unlock("railway", "bi-rail-wood")
-	bobmods.lib.tech.add_recipe_unlock("railway", "rail")
-	bobmods.lib.tech.remove_recipe_unlock("bob-railway-2", "rail")
+	--paralib.bobmods.lib.tech.remove_recipe_unlock("railway", "bi-rail-wood")
+	paralib.bobmods.lib.tech.add_recipe_unlock("railway", "rail")
+	paralib.bobmods.lib.tech.remove_recipe_unlock("bob-railway-2", "rail")
 	-------------------------------------------------------------------------------------------------
 	--добавляем рецепты обновления примитивов в технологию
-	bobmods.lib.tech.add_recipe_unlock("railway", "scrap-rail-to-rail")
-	bobmods.lib.tech.add_recipe_unlock("rail-signals", "rail-signal-scrap-to-rail-signal")
-	bobmods.lib.tech.add_recipe_unlock("rail-signals", "rail-chain-signal-scrap-to-rail-chain-signal")
-	bobmods.lib.tech.add_recipe_unlock("automated-rail-transportation", "train-stop-scrap-to-train-stop")
+	paralib.bobmods.lib.tech.add_recipe_unlock("railway", "scrap-rail-to-rail")
+	paralib.bobmods.lib.tech.add_recipe_unlock("rail-signals", "rail-signal-scrap-to-rail-signal")
+	paralib.bobmods.lib.tech.add_recipe_unlock("rail-signals", "rail-chain-signal-scrap-to-rail-chain-signal")
+	paralib.bobmods.lib.tech.add_recipe_unlock("automated-rail-transportation", "train-stop-scrap-to-train-stop")
 	-------------------------------------------------------------------------------------------------
 	--подкрашиваем примитивы
 	--иконки итемов
