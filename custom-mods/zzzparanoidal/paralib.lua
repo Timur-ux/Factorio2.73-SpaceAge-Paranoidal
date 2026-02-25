@@ -3,7 +3,7 @@ paralib.utils = paralib.utils or {}
 paralib.debugLevels = { NoDebug = 0, DebugToLog = 1, DebugAbort = 2 }
 paralib.debug = paralib.debugLevels.DebugToLog
 
-paralib.ProcessError = function(message)
+function paralib.ProcessError(message)
 	if paralib.debug == paralib.debugLevels.NoDebug then
 		return
 	end
@@ -19,6 +19,10 @@ paralib.ProcessError = function(message)
 	end
 end
 
+-- ----------- --
+-- BOB LIBRARY --
+-- ----------- --
+
 paralib.bobmods = paralib.bobmods or {}
 paralib.bobmods.lib = paralib.bobmods.lib or {}
 paralib.bobmods.lib.tech = paralib.bobmods.lib.tech or {}
@@ -27,7 +31,7 @@ paralib.bobmods.lib.recipe = paralib.bobmods.lib.recipe or {}
 ---Check that data.raw[section][name] exists
 ---@param section string
 ---@param name string
-paralib.EnsureExists = function(section, name)
+function paralib.EnsureExists(section, name)
 	if not data.raw[section] then
 		paralib.ProcessError("data.raw[" .. section .. "] does not exists!")
 		return
@@ -41,7 +45,7 @@ end
 ---Check that recipe part(ingredient/result) exists
 ---@param partName string
 ---@param recipePart table {type = "...", name = "...", amount = ...}
-paralib.utils.EnsureRecipePartExists = function(partName, recipePart)
+function paralib.utils.EnsureRecipePartExists(partName, recipePart)
 	if type(recipePart) ~= "table" then
 		paralib.ProcessError("Recipe " .. partName .. " expected to be table. But it is: " .. type(recipePart))
 		return
@@ -60,7 +64,7 @@ paralib.utils.EnsureRecipePartExists = function(partName, recipePart)
 	end
 end
 
-paralib.utils.IsTablesEqual = function(tbl1, tbl2)
+function paralib.utils.IsTablesEqual(tbl1, tbl2)
 	if type(tbl1) ~= "table" or type(tbl2) ~= "table" then
 		return false
 	end
@@ -99,7 +103,7 @@ end
 
 ---Check that given table is array
 ---@param tbl table
-paralib.utils.IsArray = function(tbl)
+function paralib.utils.IsArray(tbl)
 	if type(tbl) ~= "table" then
 		return false
 	end
@@ -115,33 +119,35 @@ paralib.utils.IsArray = function(tbl)
 	return true
 end
 
-paralib.EnsureIngredientExists = function(ingredient)
+function paralib.EnsureIngredientExists(ingredient)
 	paralib.utils.EnsureRecipePartExists("ingredient", ingredient)
 end
 
-paralib.EnsureResultExists = function(result)
+function paralib.EnsureResultExists(result)
 	paralib.utils.EnsureRecipePartExists("result", result)
 end
 
 -- ---------------------------- --
 -- TECHNOLOGY FUNCTION WRAPPERS --
 -- ---------------------------- --
-paralib.bobmods.lib.tech.add_prerequisite = function(techBase, techRequired)
+function paralib.bobmods.lib.tech.add_prerequisite(techBase, techRequired)
 	paralib.EnsureExists("technology", techBase)
 	paralib.EnsureExists("technology", techRequired)
 	bobmods.lib.tech.add_prerequisite(techBase, techRequired)
 end
-paralib.bobmods.lib.tech.replace_prerequisite = function(techBase, techOld, techNew)
+function paralib.bobmods.lib.tech.replace_prerequisite(techBase, techOld, techNew)
 	paralib.EnsureExists("technology", techBase)
 	paralib.EnsureExists("technology", techOld)
 	paralib.EnsureExists("technology", techNew)
 	bobmods.lib.tech.replace_prerequisite(techBase, techOld, techNew)
 end
 
-paralib.bobmods.lib.tech.remove_prerequisite = function(techBase, techRequired)
+function paralib.bobmods.lib.tech.remove_prerequisite(techBase, techRequired)
 	paralib.EnsureExists("technology", techBase)
 	paralib.EnsureExists("technology", techRequired)
-	if not data.raw.technology[techBase] then return end
+	if not data.raw.technology[techBase] then
+		return
+	end
 	local prereqExists = false
 	for _, prereq in ipairs(data.raw.technology[techBase].prerequisites) do
 		if prereq == techRequired then
@@ -156,29 +162,34 @@ paralib.bobmods.lib.tech.remove_prerequisite = function(techBase, techRequired)
 	bobmods.lib.tech.remove_prerequisite(techBase, techRequired)
 end
 
-paralib.bobmods.lib.tech.add_recipe_unlock = function(tech, recipe)
+function paralib.bobmods.lib.tech.add_recipe_unlock(tech, recipe)
 	paralib.EnsureExists("technology", tech)
 	paralib.EnsureExists("recipe", recipe)
 	bobmods.lib.tech.add_recipe_unlock(tech, recipe)
 end
-paralib.bobmods.lib.tech.remove_recipe_unlock = function(tech, recipe)
+function paralib.bobmods.lib.tech.remove_recipe_unlock(tech, recipe)
 	paralib.EnsureExists("technology", tech)
 	paralib.EnsureExists("recipe", recipe)
 	bobmods.lib.tech.add_recipe_unlock(tech, recipe)
 end
 
-paralib.bobmods.lib.tech.hide = function(tech)
+function paralib.bobmods.lib.tech.hide(tech)
 	paralib.EnsureExists("technology", tech)
 	bobmods.lib.tech.hide(tech)
 end
 
-paralib.bobmods.lib.tech.remove_science_pack = function(tech, pack)
+function paralib.bobmods.lib.tech.remove_science_pack(tech, pack)
 	paralib.EnsureExists("technology", tech)
 	paralib.EnsureExists("item", pack)
 	bobmods.lib.tech.remove_science_pack(tech, pack)
 end
 
-paralib.bobmods.lib.tech.replace_science_pack = function(tech, packOld, packNew)
+function paralib.bobmods.lib.tech.set_science_packs(tech, packs)
+	paralib.EnsureExists("technology", tech)
+	bobmods.lib.tech.set_science_packs(tech, packs)
+end
+
+function paralib.bobmods.lib.tech.replace_science_pack(tech, packOld, packNew)
 	paralib.EnsureExists("technology", tech)
 	paralib.EnsureExists("item", packOld)
 	paralib.EnsureExists("item", packNew)
@@ -188,60 +199,71 @@ end
 -- ------------------------ --
 -- RECIPE FUNCTION WRAPPERS --
 -- ------------------------ --
-paralib.bobmods.lib.recipe.enabled = function(recipe, bool)
+function paralib.bobmods.lib.recipe.enabled(recipe, bool)
 	paralib.EnsureExists("recipe", recipe)
 	bobmods.lib.recipe.enabled(recipe, bool)
 end
 
-paralib.bobmods.lib.recipe.set_result = function(recipe, result)
+function paralib.bobmods.lib.recipe.hide(recipe)
+	paralib.EnsureExists("recipe", recipe)
+	bobmods.lib.recipe.hide(recipe)
+end
+
+function paralib.bobmods.lib.recipe.set_result(recipe, result)
 	paralib.EnsureExists("recipe", recipe)
 	paralib.EnsureResultExists(result)
 	bobmods.lib.recipe.set_result(recipe, result)
 end
 
-paralib.bobmods.lib.recipe.add_result = function(recipe, result)
+function paralib.bobmods.lib.recipe.set_results(recipe, results)
+	assert(bobmods.lib.recipe.set_results == nil, "Rewrite me to use bobmods.lib.recipe.set_results please!")
+	paralib.EnsureExists("recipe", recipe)
+	data.raw.recipe[recipe].results = results
+end
+
+function paralib.bobmods.lib.recipe.add_result(recipe, result)
 	paralib.EnsureExists("recipe", recipe)
 	paralib.EnsureResultExists(result)
 	bobmods.lib.recipe.add_result(recipe, result)
 end
 
-paralib.bobmods.lib.recipe.remove_result = function(recipe, result)
+function paralib.bobmods.lib.recipe.remove_result(recipe, result)
 	paralib.EnsureExists("recipe", recipe)
 	paralib.EnsureResultExists(result)
 	bobmods.lib.recipe.remove_result(recipe, result)
 end
 
-paralib.bobmods.lib.recipe.clear_ingredients = function(recipe)
+function paralib.bobmods.lib.recipe.clear_ingredients(recipe)
 	paralib.EnsureExists("recipe", recipe)
 	bobmods.lib.recipe.clear_ingredients(recipe)
 end
 
-paralib.bobmods.lib.recipe.add_ingredient = function(recipe, ingredient)
+function paralib.bobmods.lib.recipe.add_ingredient(recipe, ingredient)
 	paralib.EnsureExists("recipe", recipe)
 	paralib.EnsureIngredientExists(ingredient)
 	bobmods.lib.recipe.add_ingredient(recipe, ingredient)
 end
 
-paralib.bobmods.lib.recipe.add_new_ingredient = function(recipe, ingredient)
+function paralib.bobmods.lib.recipe.add_new_ingredient(recipe, ingredient)
 	paralib.EnsureExists("recipe", recipe)
 	paralib.EnsureIngredientExists(ingredient)
 	bobmods.lib.recipe.add_new_ingredient(recipe, ingredient)
 end
 
-paralib.bobmods.lib.recipe.remove_ingredient = function(recipe, ingredient)
+function paralib.bobmods.lib.recipe.remove_ingredient(recipe, ingredient)
 	paralib.EnsureExists("recipe", recipe)
 	paralib.EnsureIngredientExists(ingredient)
 	bobmods.lib.recipe.remove_ingredient(recipe, ingredient)
 end
 
-paralib.bobmods.lib.recipe.replace_ingredient = function(recipe, ingredientOld, ingredientNew)
+function paralib.bobmods.lib.recipe.replace_ingredient(recipe, ingredientOld, ingredientNew)
 	paralib.EnsureExists("recipe", recipe)
 	paralib.EnsureIngredientExists(ingredientOld)
 	paralib.EnsureIngredientExists(ingredientNew)
 	bobmods.lib.recipe.replace_ingredient(recipe, ingredientOld, ingredientNew)
 end
 
-paralib.bobmods.lib.recipe.set_ingredients = function(recipe, ingredients)
+function paralib.bobmods.lib.recipe.set_ingredients(recipe, ingredients)
 	paralib.EnsureExists("recipe", recipe)
 	if not paralib.utils.IsArray(ingredients) then
 		paralib.ProcessError("Ingredient expected to be array but it is not!")
@@ -252,13 +274,25 @@ paralib.bobmods.lib.recipe.set_ingredients = function(recipe, ingredients)
 	bobmods.lib.recipe.set_ingredients(recipe, ingredients)
 end
 
-paralib.bobmods.lib.recipe.set_ingredient = function(recipe, ingredient)
+function paralib.bobmods.lib.recipe.set_ingredient(recipe, ingredient)
 	paralib.EnsureExists("recipe", recipe)
 	paralib.EnsureIngredientExists(ingredient)
 	bobmods.lib.recipe.set_ingredient(recipe, ingredient)
 end
 
-paralib.bobmods.lib.recipe.set_energy_required = function(recipe, time)
+function paralib.bobmods.lib.recipe.set_energy_required(recipe, time)
 	paralib.EnsureExists("recipe", recipe)
 	bobmods.lib.recipe.set_energy_required(recipe, time)
+end
+
+-- -------------- --
+-- ANGELS LIBRARY --
+-- -------------- --
+
+paralib.angelsmods = paralib.angelsmods or {}
+paralib.angelsmods.functions = paralib.angelsmods.functions or {}
+
+function paralib.angelsmods.functions.allow_productivity(recipe)
+	paralib.EnsureExists("recipe", recipe)
+	angelsmods.functions.allow_productivity(recipe)
 end

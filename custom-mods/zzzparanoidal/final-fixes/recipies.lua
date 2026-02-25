@@ -1,19 +1,18 @@
 require("__zzzparanoidal__.paralib")
 --скрываем рецепты шариков. технология в prototypes/recipe/alien-artifact.lua
-data.raw["recipe"]["bob-alien-artifact-red"].enabled = false
-data.raw["recipe"]["bob-alien-artifact-orange"].enabled = false
-data.raw["recipe"]["bob-alien-artifact-yellow"].enabled = false
-data.raw["recipe"]["bob-alien-artifact-green"].enabled = false
-data.raw["recipe"]["bob-alien-artifact-blue"].enabled = false
-data.raw["recipe"]["bob-alien-artifact-purple"].enabled = false
-
-data.raw["recipe"]["bob-alien-artifact"].enabled = false
-data.raw["recipe"]["bob-alien-artifact-red-from-small"].enabled = false
-data.raw["recipe"]["bob-alien-artifact-orange-from-small"].enabled = false
-data.raw["recipe"]["bob-alien-artifact-yellow-from-small"].enabled = false
-data.raw["recipe"]["bob-alien-artifact-green-from-small"].enabled = false
-data.raw["recipe"]["bob-alien-artifact-blue-from-small"].enabled = false
-data.raw["recipe"]["bob-alien-artifact-purple-from-small"].enabled = false
+paralib.bobmods.lib.recipe.enabled("bob-alien-artifact-red", false)
+paralib.bobmods.lib.recipe.enabled("bob-alien-artifact-orange", false)
+paralib.bobmods.lib.recipe.enabled("bob-alien-artifact-yellow", false)
+paralib.bobmods.lib.recipe.enabled("bob-alien-artifact-green", false)
+paralib.bobmods.lib.recipe.enabled("bob-alien-artifact-blue", false)
+paralib.bobmods.lib.recipe.enabled("bob-alien-artifact-purple", false)
+paralib.bobmods.lib.recipe.enabled("bob-alien-artifact", false)
+paralib.bobmods.lib.recipe.enabled("bob-alien-artifact-red-from-small", false)
+paralib.bobmods.lib.recipe.enabled("bob-alien-artifact-orange-from-small", false)
+paralib.bobmods.lib.recipe.enabled("bob-alien-artifact-yellow-from-small", false)
+paralib.bobmods.lib.recipe.enabled("bob-alien-artifact-green-from-small", false)
+paralib.bobmods.lib.recipe.enabled("bob-alien-artifact-blue-from-small", false)
+paralib.bobmods.lib.recipe.enabled("bob-alien-artifact-purple-from-small", false)
 -------------------------------------------------------------------------------------------------
 --перемещаем рецепты и предметы больших шариков куда следует
 data.raw["recipe"]["bob-alien-artifact-red"].group = "bio-processing-alien"
@@ -49,8 +48,14 @@ data.raw["item"]["bob-alien-artifact-purple"].subgroup = "angels-bio-processing-
 --Фикс огромных аккумуляторов
 paralib.bobmods.lib.recipe.add_ingredient("bi-bio-accumulator", { type = "item", name = "accumulator", amount = 30 })
 --Добавляем осмий в лейт гейм рецепты
-paralib.bobmods.lib.recipe.add_ingredient("hull-component", { type = "item", name = "clowns-plate-osmium", amount = 100 })
-paralib.bobmods.lib.recipe.add_ingredient("space-thruster", { type = "item", name = "clowns-plate-osmium", amount = 100 })
+paralib.bobmods.lib.recipe.add_ingredient(
+	"hull-component",
+	{ type = "item", name = "clowns-plate-osmium", amount = 100 }
+)
+paralib.bobmods.lib.recipe.add_ingredient(
+	"space-thruster",
+	{ type = "item", name = "clowns-plate-osmium", amount = 100 }
+)
 paralib.bobmods.lib.recipe.add_ingredient("fuel-cell", { type = "item", name = "clowns-plate-osmium", amount = 100 })
 paralib.bobmods.lib.recipe.add_ingredient("habitation", { type = "item", name = "clowns-plate-osmium", amount = 100 })
 paralib.bobmods.lib.recipe.add_ingredient("life-support", { type = "item", name = "clowns-plate-osmium", amount = 100 })
@@ -186,7 +191,7 @@ end
 
 --Убрана левая печь из электо печи для сплавов (AKMF)
 paralib.bobmods.lib.recipe.remove_ingredient("bob-electric-mixing-furnace", "bob-electric-chemical-furnace")
-KaoExtended.recipe.add_to_recipe(
+paralib.bobmods.lib.recipe.add_ingredient(
 	"bob-electric-mixing-furnace",
 	{ type = "item", name = "electric-furnace", amount = 1 }
 )
@@ -197,6 +202,6 @@ paralib.bobmods.lib.recipe.enabled("iron-stick", true)
 --Фикс рецепта базовой микросхемы
 paralib.bobmods.lib.recipe.set_ingredients("bob-basic-circuit-board", {
 	{ type = "item", name = "condensator", amount = 2 },
-    { type = "item", name = "bob-wooden-board", amount = 1 },
-    { type = "item", name = "copper-cable", amount = 3 },
+	{ type = "item", name = "bob-wooden-board", amount = 1 },
+	{ type = "item", name = "copper-cable", amount = 3 },
 })
