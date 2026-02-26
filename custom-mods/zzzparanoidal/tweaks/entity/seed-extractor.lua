@@ -14,4 +14,3 @@ if mods.extendedangels then
 	data.raw["assembling-machine"]["angels-seed-extractor-3"].fluid_boxes = seed_extractor_fluid_box
 	data.raw["assembling-machine"]["angels-seed-extractor-3"].fluid_boxes_off_when_no_fluid_recipe = true
 end
-

@@ -1,3 +1,5 @@
+require("prototypes.tips-and-tricks.tips-and-tricks") -- подсказки
+
 -- new entities
 require("prototypes.entity.bio-content")
 require("prototypes.entity.offshore-pumps")
@@ -18,6 +20,8 @@ require("prototypes.item.artillery-prototype")
 require("prototypes.item.concrete-brick")
 
 -- new recipies
+require("prototypes.recipe.warehouses")
+require("prototypes.recipe.chemistry")
 require("prototypes.recipe.manganese-chrome-platinum-sorting")
 require("prototypes.recipe.mining-drill-bit")
 require("prototypes.recipe.electronics")
@@ -49,14 +53,4 @@ require("prototypes.selection-tool.heroturrets")
 require("prototypes.subgroups.angels-subgroups")
 
 -- tweaks
-require("tweaks.entity.fuel")
-require("tweaks.entity.belts")
-require("tweaks.entity.seed-extractor")
-require("tweaks.entity.boilers")
-require("tweaks.entity.alert-arrow")
-
-require("tweaks.recipe.fuel")
-require("tweaks.recipe.science-packs")
-
 require("tweaks.custom.angelsmods")
-require("tweaks.custom.uniform-recipies")
