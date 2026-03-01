@@ -12,7 +12,7 @@ data.raw["recipe"]["bi-seed-4"].category = "biofarm-mod-greenhouse-3" -- Пря�
 data.raw["recipe"]["bi-seedling-4"].category = "biofarm-mod-greenhouse-3" -- Прячем рецепты под новую теплицу 3
 
 data.raw["assembling-machine"]["bi-bio-reactor"].energy_usage = "200kW" --увеличиваем потребление биореактора мк 1
-data.raw["assembling-machine"]["bi-bio-reactor"].module_specification.module_slots = 1 -- 1 слот модулей для мк1
+data.raw["assembling-machine"]["bi-bio-reactor"].module_slots = 1 -- 1 слот модулей для мк1
 paralib.bobmods.lib.recipe.set_ingredients(
 	"bi-bio-reactor",
 	{ { type = "item", name = "assembling-machine-1", amount = 2}, { type = "item", name = "steel-plate", amount = 20}, { type = "item", name = "bob-basic-circuit-board", amount = 5} }
