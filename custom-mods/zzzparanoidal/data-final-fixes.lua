@@ -56,14 +56,13 @@ require("tweaks.custom.map-gen-presets")
 require("tweaks.custom.icons")
 require("tweaks.custom.selections")
 
-
 require("removals.bio-modules")
 require("removals.fishes")
 
 require("graphics.train.train_reskin") -- рескин поездов
 -------------------------------------------------------------------------------------------------
 require("final-fixes.technologies") -- Пожалуйста не добавляйте сюда новых записей. Поищите раздел в tweaks/technology или создайте там новый
-require("final-fixes.recipies")-- Пожалуйста не добавляйте сюда новых записей. Поищите раздел в tweaks/recipe или создайте там новый
+require("final-fixes.recipies") -- Пожалуйста не добавляйте сюда новых записей. Поищите раздел в tweaks/recipe или создайте там новый
 
 require("tweaks.custom.uniform-recipies")
 
@@ -72,3 +71,8 @@ angelsmods.functions.OV.execute()
 
 --должно быть последним. После всех рецептов.
 require("tweaks.custom.flowfix")
+
+if paralib.debug ~= paralib.debugLevels.NoDebug then
+	paralib.develop.parseTechnologiesAsJson()
+	paralib.develop.parseRecipiesAsJson()
+end

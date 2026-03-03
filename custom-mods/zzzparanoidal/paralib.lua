@@ -116,17 +116,27 @@ function paralib.utils.IsTablesEqual(tbl1, tbl2)
 	return true
 end
 
+local tbl_size = function(tbl)
+	assert(type(tbl) == "table", "tbl_size: expected table but got: " .. type(tbl))
+	local i = 0
+	for _, _ in pairs(tbl) do
+		i = i + 1
+	end
+	return i
+end
+
 ---Check that given table is array
 ---@param tbl table
 function paralib.utils.IsArray(tbl)
 	if type(tbl) ~= "table" then
 		return false
 	end
-	if #tbl == 0 then
+	local size = tbl_size(tbl)
+	if size == 0 then
 		return true
 	end
 
-	for i = 1, #tbl do
+	for i = 1, size do
 		if tbl[i] == nil then
 			return false
 		end
@@ -310,4 +320,123 @@ paralib.angelsmods.functions = paralib.angelsmods.functions or {}
 function paralib.angelsmods.functions.allow_productivity(recipe)
 	paralib.EnsureExists("recipe", recipe)
 	angelsmods.functions.allow_productivity(recipe)
+end
+
+-- -------------------- --
+-- DEVELOPING FUNCTIONS --
+-- -------------------- --
+
+paralib.develop = paralib.develop or {}
+paralib.utils.toJson = function(value)
+	if type(value) == "nil" then
+		return "null"
+	end
+	if type(value) == "number" then
+		return value
+	end
+	if type(value) == "boolean" then
+		return tostring(value)
+	end
+	if type(value) == "string" then
+		return '"' .. value .. '"'
+	end
+	assert(type(value) == "table", "Expected nil, number, boolean, string or table, but got: " .. type(value))
+
+	if paralib.utils.IsArray(value) then
+		if #value == 0 then
+			return "[]"
+		end
+		local result = "[" .. paralib.utils.toJson(value[1])
+		for i = 2, #value, 1 do
+			result = result .. "," .. paralib.utils.toJson(value[i])
+		end
+		result = result .. "]"
+		return result
+	end
+
+	local i = 0
+	local result = "{"
+	for k, v in pairs(value) do
+		i = i + 1
+		if i > 1 then
+			result = result .. ","
+		end
+		result = result .. '"' .. k .. '": ' .. paralib.utils.toJson(v)
+	end
+	result = result .. "}"
+	return result
+end
+
+function paralib.develop.parseTechnologiesAsJson()
+	log("Fetching technology data begins")
+	local result = {}
+	for tName, tech in pairs(data.raw.technology) do
+		local techData = { name = tName, icon = tech.icon }
+		if tech.unit then
+			techData.unit = {
+				count = tech.unit.count,
+				time = tech.unit.time,
+				ingredients = {},
+			}
+			for _, unitIngredient in ipairs(tech.unit.ingredients) do
+				table.insert(techData.unit.ingredients, { unitIngredient[1], unitIngredient[2] })
+			end
+		end
+		if tech.research_trigger then
+			techData.research_trigger = {}
+			for k, v in pairs(tech.research_trigger) do
+				techData.research_trigger[k] = table.deepcopy(v)
+			end
+		end
+		if tech.prerequisites then
+			techData.prerequisites = {}
+			for _, prereq in ipairs(tech.prerequisites) do
+				table.insert(techData.prerequisites, prereq)
+			end
+		end
+		if tech.effects then
+			techData.effects = {}
+			for _, effect in ipairs(tech.effects) do
+				table.insert(techData.effects, table.deepcopy(effect))
+			end
+		end
+		table.insert(result, techData)
+	end
+	log("technologyData: " .. paralib.utils.toJson(result))
+end
+
+function paralib.develop.parseRecipiesAsJson()
+	log("Fetching recipe data begins")
+	local result = {}
+	for rName, recipe in pairs(data.raw.recipe) do
+		local rData = {
+			name = rName,
+			icon = recipe.icon,
+			category = recipe.category,
+			energy_required = recipe.energy_required,
+		}
+
+		rData.ingredients = {}
+		if recipe.ingredients then
+			for _, ingredient in ipairs(recipe.ingredients) do
+				if ingredient then
+					table.insert(rData.ingredients, ingredient)
+				end
+			end
+		end
+
+		rData.results = {}
+		if recipe.results then
+			for _, result_ in ipairs(recipe.results) do
+				if result_ then
+					table.insert(rData.results, result_)
+				end
+			end
+		end
+		-- for 1.1 compatibility
+		rData.result = recipe.result
+		rData.result_count = recipe.result_count
+		table.insert(result, rData)
+	end
+	log("recipeData: " .. paralib.utils.toJson(result))
 end
