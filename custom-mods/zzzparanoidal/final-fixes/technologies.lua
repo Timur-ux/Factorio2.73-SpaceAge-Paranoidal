@@ -7,11 +7,8 @@ paralib.bobmods.lib.tech.add_recipe_unlock("bob-tungsten-processing", "anotherwo
 
 paralib.bobmods.lib.tech.add_recipe_unlock("angels-iron-smelting-1", "angels-iron-gear-wheel-stack-casting")
 paralib.bobmods.lib.tech.add_recipe_unlock("angels-iron-smelting-2", "angels-iron-gear-wheel-stack-casting-fast")
-paralib.bobmods.lib.tech.add_recipe_unlock("angels-steel-smelting-1", "angels-steel-gear-wheel-stack-casting")
-paralib.bobmods.lib.tech.add_recipe_unlock("angels-steel-smelting-2", "angels-steel-gear-wheel-stack-casting-fast")
 
 paralib.bobmods.lib.tech.add_recipe_unlock("angels-iron-smelting-1", "angels-iron-gear-wheel-stack-converting")
-paralib.bobmods.lib.tech.add_recipe_unlock("angels-steel-smelting-1", "angels-steel-gear-wheel-stack-converting")
 
 paralib.bobmods.lib.tech.add_recipe_unlock("angels-sulfur-processing-1", "condensator2")
 paralib.bobmods.lib.tech.add_recipe_unlock("angels-aluminium-smelting-1", "condensator3")
@@ -379,12 +376,19 @@ paralib.bobmods.lib.tech.remove_recipe_unlock("angels-iron-smelting-2", "angels-
 paralib.bobmods.lib.tech.add_recipe_unlock("angels-iron-casting-2", "angels-iron-gear-wheel-stack-casting") --заготовки во 1 литье железа
 paralib.bobmods.lib.tech.add_recipe_unlock("angels-iron-casting-2", "angels-iron-gear-wheel-stack-converting") --заготовки во 1 литье железа
 paralib.bobmods.lib.tech.add_recipe_unlock("angels-iron-casting-3", "angels-iron-gear-wheel-stack-casting-fast") --заготовки шестеренок в 2  литье железа
+paralib.bobmods.lib.tech.add_recipe_unlock("angels-iron-casting-3", "angels-iron-gear-wheel-stack-converting-2")
+paralib.bobmods.lib.tech.add_recipe_unlock("angels-iron-casting-4", "angels-iron-gear-wheel-stack-converting-3")
 paralib.bobmods.lib.tech.remove_recipe_unlock("angels-steel-smelting-1", "angels-steel-gear-wheel-stack-casting") --убираем заготовки шестеренок из 1 стали
 paralib.bobmods.lib.tech.remove_recipe_unlock("angels-steel-smelting-1", "angels-steel-gear-wheel-stack-converting") --убираем заготовки шестеренок из 1 стали
 paralib.bobmods.lib.tech.remove_recipe_unlock("angels-steel-smelting-2", "angels-steel-gear-wheel-stack-casting-fast") --убираем заготовки шестеренок из 2 стали
+
 paralib.bobmods.lib.tech.add_recipe_unlock("angels-steel-smelting-2", "angels-steel-gear-wheel-stack-casting") --рецепты заготовок во 2 сталь
 paralib.bobmods.lib.tech.add_recipe_unlock("angels-steel-smelting-2", "angels-steel-gear-wheel-stack-converting") --рецепты заготовок во 2 сталь
+
 paralib.bobmods.lib.tech.add_recipe_unlock("angels-steel-smelting-3", "angels-steel-gear-wheel-stack-casting-fast") --рецепты заготовок во 3 сталь
+paralib.bobmods.lib.tech.add_recipe_unlock("angels-steel-smelting-3", "angels-steel-gear-wheel-stack-converting-2") --рецепты заготовок во 3 сталь
+
+paralib.bobmods.lib.tech.add_recipe_unlock("angels-steel-smelting-4", "angels-steel-gear-wheel-stack-converting-3") --рецепты заготовок во 4 сталь
 paralib.bobmods.lib.tech.remove_recipe_unlock("angels-ore-floatation", "bob-silver-plate") --удаление простого рецепта серебра
 paralib.bobmods.lib.tech.remove_recipe_unlock("angels-advanced-chemistry-4", "advanced-chemical-plant-3") --удаляем хим завод 3 из химии 4
 paralib.bobmods.lib.tech.add_recipe_unlock("angels-advanced-chemistry-5", "advanced-chemical-plant-3") --добавляем хим завод 3 в химию 5

@@ -334,24 +334,13 @@ data:extend({
 		name = "angels-iron-gear-wheel-stack-casting",
 		category = "angels-strand-casting",
 		subgroup = "angels-iron-casting",
-		normal = {
-			enabled = false,
-			energy_required = 4,
-			ingredients = {
-				{ type = "fluid", name = "angels-liquid-molten-iron", amount = 80 },
-				{ type = "fluid", name = "water", amount = 40 },
-			},
-			results = { { type = "item", name = "angels-iron-gear-wheel-stack", amount = 2 } },
+		enabled = false,
+		energy_required = 4,
+		ingredients = {
+			{ type = "fluid", name = "angels-liquid-molten-iron", amount = 80 },
+			{ type = "fluid", name = "water", amount = 40 },
 		},
-		expensive = {
-			enabled = false,
-			energy_required = 4,
-			ingredients = {
-				{ type = "fluid", name = "angels-liquid-molten-iron", amount = 100 },
-				{ type = "fluid", name = "water", amount = 40 },
-			},
-			results = { { type = "item", name = "angels-iron-gear-wheel-stack", amount = 2 } },
-		},
+		results = { { type = "item", name = "angels-iron-gear-wheel-stack", amount = 2 } },
 		icons = {
 			{
 				icon = "__zzzparanoidal__/graphics/smelting/iron-gear-wheel-stack.png",
@@ -373,32 +362,17 @@ data:extend({
 		name = "angels-iron-gear-wheel-stack-casting-fast",
 		category = "angels-strand-casting",
 		subgroup = "angels-iron-casting",
-		normal = {
-			enabled = false,
-			energy_required = 2,
-			ingredients = {
-				{ type = "fluid", name = "angels-liquid-molten-iron", amount = 140 },
-				{ type = "fluid", name = "angels-liquid-coolant", amount = 40, maximum_temperature = 50 },
-			},
-			results = {
-				{ type = "item", name = "angels-iron-gear-wheel-stack", amount = 4 },
-				{ type = "fluid", name = "angels-liquid-coolant-used", amount = 40, temperature = 300 },
-			},
-			main_product = "angels-iron-gear-wheel-stack",
+		enabled = false,
+		energy_required = 2,
+		ingredients = {
+			{ type = "fluid", name = "angels-liquid-molten-iron", amount = 140 },
+			{ type = "fluid", name = "angels-liquid-coolant", amount = 40, maximum_temperature = 50 },
 		},
-		expensive = {
-			enabled = false,
-			energy_required = 2,
-			ingredients = {
-				{ type = "fluid", name = "angels-liquid-molten-iron", amount = 180 },
-				{ type = "fluid", name = "angels-liquid-coolant", amount = 40, maximum_temperature = 50 },
-			},
-			results = {
-				{ type = "item", name = "angels-iron-gear-wheel-stack", amount = 4 },
-				{ type = "fluid", name = "angels-liquid-coolant-used", amount = 40, temperature = 300 },
-			},
-			main_product = "angels-iron-gear-wheel-stack",
+		results = {
+			{ type = "item", name = "angels-iron-gear-wheel-stack", amount = 3 },
+			{ type = "fluid", name = "angels-liquid-coolant-used", amount = 40, temperature = 300 },
 		},
+		main_product = "angels-iron-gear-wheel-stack",
 		icons = {
 			{
 				icon = "__zzzparanoidal__/graphics/smelting/iron-gear-wheel-stack.png",
@@ -421,24 +395,13 @@ data:extend({
 		name = "angels-steel-gear-wheel-stack-casting",
 		category = "angels-strand-casting",
 		subgroup = "angels-steel-casting",
-		normal = {
-			enabled = false,
-			energy_required = 4,
-			ingredients = {
-				{ type = "fluid", name = "angels-liquid-molten-steel", amount = 80 },
-				{ type = "fluid", name = "water", amount = 40 },
-			},
-			results = { { type = "item", name = "angels-steel-gear-wheel-stack", amount = 2 } },
+		enabled = false,
+		energy_required = 4,
+		ingredients = {
+			{ type = "fluid", name = "angels-liquid-molten-steel", amount = 80 },
+			{ type = "fluid", name = "water", amount = 40 },
 		},
-		expensive = {
-			enabled = false,
-			energy_required = 4,
-			ingredients = {
-				{ type = "fluid", name = "angels-liquid-molten-steel", amount = 100 },
-				{ type = "fluid", name = "water", amount = 40 },
-			},
-			results = { { type = "item", name = "angels-steel-gear-wheel-stack", amount = 2 } },
-		},
+		results = { { type = "item", name = "angels-steel-gear-wheel-stack", amount = 2 } },
 		icons = {
 			{
 				icon = "__zzzparanoidal__/graphics/smelting/steel-gear-wheel-stack.png",
@@ -460,32 +423,17 @@ data:extend({
 		name = "angels-steel-gear-wheel-stack-casting-fast",
 		category = "angels-strand-casting",
 		subgroup = "angels-steel-casting",
-		normal = {
-			enabled = false,
-			energy_required = 2,
-			ingredients = {
-				{ type = "fluid", name = "angels-liquid-molten-steel", amount = 140 },
-				{ type = "fluid", name = "angels-liquid-coolant", amount = 40, maximum_temperature = 50 },
-			},
-			results = {
-				{ type = "item", name = "angels-steel-gear-wheel-stack", amount = 4 },
-				{ type = "fluid", name = "angels-liquid-coolant-used", amount = 40, temperature = 300 },
-			},
-			main_product = "angels-steel-gear-wheel-stack",
+		enabled = false,
+		energy_required = 2,
+		ingredients = {
+			{ type = "fluid", name = "angels-liquid-molten-steel", amount = 140 },
+			{ type = "fluid", name = "angels-liquid-coolant", amount = 40, maximum_temperature = 50 },
 		},
-		expensive = {
-			enabled = false,
-			energy_required = 2,
-			ingredients = {
-				{ type = "fluid", name = "angels-liquid-molten-steel", amount = 180 },
-				{ type = "fluid", name = "angels-liquid-coolant", amount = 40, maximum_temperature = 50 },
-			},
-			results = {
-				{ type = "item", name = "angels-steel-gear-wheel-stack", amount = 4 },
-				{ type = "fluid", name = "angels-liquid-coolant-used", amount = 40, temperature = 300 },
-			},
-			main_product = "angels-steel-gear-wheel-stack",
+		results = {
+			{ type = "item", name = "angels-steel-gear-wheel-stack", amount = 3 },
+			{ type = "fluid", name = "angels-liquid-coolant-used", amount = 40, temperature = 300 },
 		},
+		main_product = "angels-steel-gear-wheel-stack",
 		icons = {
 			{
 				icon = "__zzzparanoidal__/graphics/smelting/steel-gear-wheel-stack.png",
@@ -516,7 +464,7 @@ data:extend({
 			{ type = "item", name = "angels-iron-gear-wheel-stack", amount = 1 },
 		},
 		results = {
-			{ type = "item", name = "iron-gear-wheel", amount = 5 },
+			{ type = "item", name = "iron-gear-wheel", amount = 4 },
 		},
 		icons = {
 			{
@@ -545,7 +493,7 @@ data:extend({
 			{ type = "item", name = "angels-steel-gear-wheel-stack", amount = 1 },
 		},
 		results = {
-			{ type = "item", name = "bob-steel-gear-wheel", amount = 5 },
+			{ type = "item", name = "bob-steel-gear-wheel", amount = 4 },
 		},
 		icons = {
 			{
@@ -561,5 +509,121 @@ data:extend({
 		},
 		icon_size = 64,
 		order = "kc",
+	},
+	{
+		type = "recipe",
+		name = "angels-iron-gear-wheel-stack-converting-2",
+		category = "advanced-crafting",
+		subgroup = "angels-iron-casting",
+		energy_required = 0.5,
+		allow_decomposition = false,
+		enabled = false,
+		ingredients = {
+			{ type = "item", name = "angels-iron-gear-wheel-stack", amount = 1 },
+		},
+		results = {
+			{ type = "item", name = "iron-gear-wheel", amount = 6 },
+		},
+		icons = {
+			{
+				icon = data.raw.item["iron-gear-wheel"].icon,
+				icon_size = data.raw.item["iron-gear-wheel"].iconsize,
+			},
+			{
+				icon = "__zzzparanoidal__/graphics/smelting/iron-gear-wheel-stack.png",
+				icon_size = 64,
+				scale = 0.2,
+				shift = { -12, -12 },
+			},
+		},
+		icon_size = 64,
+		order = "kd",
+	},
+	{
+		type = "recipe",
+		name = "angels-iron-gear-wheel-stack-converting-3",
+		category = "advanced-crafting",
+		subgroup = "angels-iron-casting",
+		energy_required = 0.5,
+		allow_decomposition = false,
+		enabled = false,
+		ingredients = {
+			{ type = "item", name = "angels-iron-gear-wheel-stack", amount = 1 },
+		},
+		results = {
+			{ type = "item", name = "iron-gear-wheel", amount = 8 },
+		},
+		icons = {
+			{
+				icon = data.raw.item["iron-gear-wheel"].icon,
+				icon_size = data.raw.item["iron-gear-wheel"].iconsize,
+			},
+			{
+				icon = "__zzzparanoidal__/graphics/smelting/iron-gear-wheel-stack.png",
+				icon_size = 64,
+				scale = 0.2,
+				shift = { -12, -12 },
+			},
+		},
+		icon_size = 64,
+		order = "ke",
+	},
+	{
+		type = "recipe",
+		name = "angels-steel-gear-wheel-stack-converting-2",
+		category = "advanced-crafting",
+		subgroup = "angels-steel-casting",
+		energy_required = 0.5,
+		enabled = false,
+		allow_decomposition = false,
+		ingredients = {
+			{ type = "item", name = "angels-steel-gear-wheel-stack", amount = 1 },
+		},
+		results = {
+			{ type = "item", name = "bob-steel-gear-wheel", amount = 6 },
+		},
+		icons = {
+			{
+				icon = "__bobplates__/graphics/icons/steel-gear-wheel.png",
+				icon_size = 32,
+			},
+			{
+				icon = "__zzzparanoidal__/graphics/smelting/steel-gear-wheel-stack.png",
+				icon_size = 64,
+				scale = 0.2,
+				shift = { -12, -12 },
+			},
+		},
+		icon_size = 64,
+		order = "kd",
+	},
+	{
+		type = "recipe",
+		name = "angels-steel-gear-wheel-stack-converting-3",
+		category = "advanced-crafting",
+		subgroup = "angels-steel-casting",
+		energy_required = 0.5,
+		enabled = false,
+		allow_decomposition = false,
+		ingredients = {
+			{ type = "item", name = "angels-steel-gear-wheel-stack", amount = 1 },
+		},
+		results = {
+			{ type = "item", name = "bob-steel-gear-wheel", amount = 8 },
+		},
+		icons = {
+			{
+				icon = "__bobplates__/graphics/icons/steel-gear-wheel.png",
+				icon_size = 32,
+			},
+			{
+				icon = "__zzzparanoidal__/graphics/smelting/steel-gear-wheel-stack.png",
+				icon_size = 64,
+				scale = 0.2,
+				shift = { -12, -12 },
+			},
+		},
+		icon_size = 64,
+		order = "ke",
 	},
 })
