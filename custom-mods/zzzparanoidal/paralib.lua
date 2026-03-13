@@ -185,7 +185,7 @@ end
 function paralib.bobmods.lib.tech.remove_recipe_unlock(tech, recipe)
 	paralib.EnsureExists("technology", tech)
 	paralib.EnsureExists("recipe", recipe)
-	bobmods.lib.tech.add_recipe_unlock(tech, recipe)
+	bobmods.lib.tech.remove_recipe_unlock(tech, recipe)
 end
 
 function paralib.bobmods.lib.tech.hide(tech)
