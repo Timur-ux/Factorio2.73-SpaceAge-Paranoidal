@@ -157,14 +157,36 @@ if data.raw.recipe["bob-lead-plate-2"] then
     r.enabled = true
     r.hidden = false
     r.localised_name = nil
-    r.icons = {
-        { icon = "__bobplates__/graphics/icons/plate/lead-plate.png", icon_size = 32 }
-    }
-    r.icon = nil
+    r.icon = "__angelssmeltinggraphics__/graphics/icons/plate-lead.png"
     r.icon_size = 32
-    log("[NEXUS-UA] bob-lead-plate-2 set icon path: __bobplates__/graphics/icons/plate/lead-plate.png")
+    r.icons = nil
+    log("[NEXUS-UA] bob-lead-plate-2 set icon path: __angelssmeltinggraphics__/graphics/icons/plate-lead.png")
 end
 
+
+-- Fix missing small-iron-electric-pole
+if data.raw.recipe["small-iron-electric-pole"] then
+    data.raw.recipe["small-iron-electric-pole"].enabled = false
+    data.raw.recipe["small-iron-electric-pole"].hidden = false
+    local tech = data.raw.technology["electricity"]
+    if tech then
+        local found = false
+        if tech.effects then
+            for _, effect in pairs(tech.effects) do
+                if effect.type == "unlock-recipe" and effect.recipe == "small-iron-electric-pole" then
+                    found = true
+                    break
+                end
+            end
+        else
+            tech.effects = {}
+        end
+        if not found then
+            table.insert(tech.effects, {type="unlock-recipe", recipe="small-iron-electric-pole"})
+        end
+    end
+    log("[NEXUS-UA] Restored missing recipe: small-iron-electric-pole")
+end
 
 --должно быть последним. После всех рецептов.
 require("tweaks.custom.flowfix")
